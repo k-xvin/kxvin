@@ -20,12 +20,20 @@ console.log("BEGIN")
  * @param {string} inputString 
  * @returns {string} String with additional YAML frontmatter
  */
-function AddExtraFrontmatter(inputString) {
+function AddExtraFrontmatter(filePath, inputString, clientData) {
     const { data, content } = matter(inputString);
     const firstFourLines = content.split('\n').slice(0, 4);
     if (firstFourLines.length == 4) {
         data["title"] = firstFourLines[3].replace('#', '').trim();
         data["description"] = firstFourLines[1];
+
+        let map = clientData;
+        let fileParsed = path.parse(filePath);
+        let filename = fileParsed.name;
+        let noLeadingDirPath = fileParsed.dir.replace(/^\/?[^\/]+/, '');
+        let finalPath = noLeadingDirPath + "/" + slugify(data["title"]);
+        map.set(filename, finalPath);
+        data["permalink"] = finalPath + "/";
     }
     return matter.stringify(content, data);
 }
@@ -54,10 +62,6 @@ function AddExtraFrontmatter(inputString) {
 //         .replace(/\[INLINE IMAGE (.*?)\]/g, (match, filename) => `![[${filename}]]`);
 // }
 
-function GetSlugTitle(filename) {
-
-}
-
 /**
  * Replace all wikilink-style links with standard Markdown links.
  * Converts image wikilinks to Markdown image links with absolute paths.
@@ -66,7 +70,7 @@ function GetSlugTitle(filename) {
  * @param {string} inputString String to perform the wikilink replacement on
  * @return {string} Replaced string
  */
-function ReplaceWikilinks(inputString) {
+function ReplaceWikilinks(filePath, inputString, clientData) {
     // Step 1: Escape links inside code blocks and inline code
     const escapedCodeBlocks = inputString
         .replace(/```([\s\S]*?)```/g, (match, code) =>
@@ -85,7 +89,11 @@ function ReplaceWikilinks(inputString) {
     const replacedLinks = replacedImages.replace(/\[\[(.*?)(?:\|(.*?))?\]\]/g, (match, filename, alias) => {
         const text = alias || filename; // Use alias if available; otherwise, use the target
         // return `[${text}](/path/to/${target}/)`; // Replace with Markdown link syntax
-        return `[${text}](/path/to/article-hi/)`; // Replace with Markdown link syntax
+        // return `[${text}](/path/to/article-hi/)`; // Replace with Markdown link syntax
+
+        let map = clientData;
+        let path = map.get(filename);
+        return `[${text}](${path})`; // Replace with Markdown link syntax
     });
 
     // Step 4: Restore placeholders in code blocks and inline code
@@ -100,8 +108,7 @@ function ReplaceWikilinks(inputString) {
 // console.log(ReplaceImageWikilinks(str))
 // fs.writeFileSync("src2/projects/Architect2.md", ReplaceImageWikilinks(str), 'utf-8');
 
-function ModifyMarkdownFiles(directoryPath, processCallback) {
-    let modifiedFiles = [];
+function ModifyMarkdownFiles(directoryPath, processCallback, clientData) {
     try {
         const files = fs.readdirSync(directoryPath);
         // Process each file or subdirectory
@@ -111,30 +118,29 @@ function ModifyMarkdownFiles(directoryPath, processCallback) {
             // Check if it's a directory
             if (fs.statSync(filePath).isDirectory()) {
                 // Recursively process the files in the subdirectory
-                modifiedFiles.push(...ModifyMarkdownFiles(filePath, processCallback));
+                ModifyMarkdownFiles(filePath, processCallback, clientData);
             } else if (file.endsWith('.md')) {
                 // Process .md files
                 const content = fs.readFileSync(filePath, 'utf8');
 
                 // Process the file content
-                const updatedContent = processCallback(content);
+                const updatedContent = processCallback(filePath, content, clientData);
 
                 // Save the updated content back to the file
                 fs.writeFileSync(filePath, updatedContent, 'utf8');
                 console.log(`Processed and saved: ${filePath}`);
-                modifiedFiles.push(file);
             }
         });
     } catch (err) {
         console.error('Error processing file:', err);
     }
-    return modifiedFiles;
 }
 
 // ModifyMarkdownFiles(INPUT_DIR, ReplaceImageWikilinks);
-let files = ModifyMarkdownFiles(INPUT_DIR, AddExtraFrontmatter);
-console.log(files);
-ModifyMarkdownFiles(INPUT_DIR, ReplaceWikilinks);
+let filenameToSlug = new Map();
+ModifyMarkdownFiles(INPUT_DIR, AddExtraFrontmatter, filenameToSlug);
+console.log(filenameToSlug);
+ModifyMarkdownFiles(INPUT_DIR, ReplaceWikilinks, filenameToSlug);
 
 
 

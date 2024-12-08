@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "kxvin",
   "scripts": {
-    "sync": "rsync -av --delete ~/Everything/Public/ test",
+    "sync": "rsync -av --delete ~/Everything/Public/ src2",
     "preprocess": "node preprocess.mjs",
     "start": "eleventy --serve",
     "build": "eleventy"
@@ -12,7 +12,6 @@
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-img": "^5.0.0",
     "@sindresorhus/slugify": "^2.2.1",
-    "gray-matter": "^4.0.3",
-    "markdown-it": "^14.1.0"
+    "gray-matter": "^4.0.3"
   }
 }
