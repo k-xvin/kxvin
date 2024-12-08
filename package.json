@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "kxvin",
   "scripts": {
-    "start": "eleventy --serve"
+    "sync": "rsync -av --delete ~/Everything/Public/ test",
+    "preprocess": "node preprocess.mjs",
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-img": "^5.0.0",
+    "@sindresorhus/slugify": "^2.2.1",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.0"
   }
 }

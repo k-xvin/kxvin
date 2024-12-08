@@ -1,20 +1,30 @@
-module.exports = function (eleventyConfig) {
-    // eleventyConfig.addFilter("jsonParse", function (value) { return JSON.parse(value) });
-    // eleventyConfig.addFilter("adjustImagePaths", function (value) {
-    //     // Replace Markdown image reference paths with absolute ones
-    //     // Regex: ![alt](path)
-    //     return value.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, src) => {
-    //         // Prepend `assets/` to the image path
-    //         const newSrc = src.startsWith('/') ? `/assets${src}` : `/assets/${src}`;
-    //         return `![${alt}](${newSrc})`;
-    //     });
-    // });
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
-    // eleventyConfig.addPassthroughCopy({ "src/_data/export/*.{jpg,jpeg,png,gif}": "assets" })
+module.exports = function (eleventyConfig) {
+    eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+        // which file extensions to process
+        extensions: "html",
+
+        // Add any other Image utility options here:
+
+        // optional, output image formats
+        formats: ["jpeg"],
+        // formats: ["auto"],
+
+        // optional, output image widths
+        // widths: ["auto"],
+
+        // optional, attributes assigned on <img> override these values.
+        defaultAttributes: {
+            loading: "lazy",
+            decoding: "async",
+        },
+    });
 
     return {
         dir: {
-            input: "src",
+            // input: "src",
+            input: "src2",
             output: "public",
         }
     };
