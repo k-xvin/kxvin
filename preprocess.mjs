@@ -37,6 +37,7 @@ function AddExtraFrontmatter(filePath, fileContent, filenameToSlugMapToFill) {
         let finalPath = fileParsed.dir + "/" + slugify(data.title);
         filenameToSlugMapToFill.set(filename, finalPath);
 
+        data.tags = [fileParsed.dir];
         data.permalink = finalPath + "/";
     }
 
