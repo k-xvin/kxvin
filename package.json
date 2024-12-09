@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "kxvin",
   "scripts": {
-    "copy": "rsync -av --delete ~/Everything/Public/ src2",
+    "copy": "rsync -av --delete --exclude=src/index.md ~/Everything/Public/ src/content",
     "preprocess": "node preprocess.mjs",
     "sync": "npm run copy && npm run preprocess",
     "start": "eleventy --serve",

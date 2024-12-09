@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import slugify from '@sindresorhus/slugify';
 
-const INPUT_DIR = "src2/"
+const INPUT_DIR = "src/content/"
 
 /**
  * Begin the preprocessing of Markdown files.
@@ -32,10 +32,9 @@ function AddExtraFrontmatter(filePath, fileContent, filenameToSlugMapToFill) {
         data.title = firstFourLines[3].replace('#', '').trim();
         data.description = firstFourLines[1];
 
-        let fileParsed = path.parse(filePath);
+        let fileParsed = path.parse(path.relative(INPUT_DIR, filePath));
         let filename = fileParsed.name;
-        let noLeadingDirPath = fileParsed.dir.replace(/^\/?[^\/]+/, '');
-        let finalPath = noLeadingDirPath + "/" + slugify(data.title);
+        let finalPath = fileParsed.dir + "/" + slugify(data.title);
         filenameToSlugMapToFill.set(filename, finalPath);
 
         data.permalink = finalPath + "/";
@@ -65,7 +64,8 @@ function ReplaceWikilinks(filePath, content, filenameToSlugMap) {
 
     // Step 2: Replace image links outside of code blocks
     const replacedImages = escapedCodeBlocks.replace(/!\[\[(.*?\.(?:jpg|jpeg|png|gif|webp|bmp|tiff))\]\]/gi, (match, filename) => {
-        return `![${filename}](/attachments/${filename})`; // Replace with Markdown image syntax
+        const noBaseDirPath = INPUT_DIR.replace(/^\/?[^\/]+/, '');
+        return `![${filename}](${noBaseDirPath}attachments/${filename})`; // Replace with Markdown image syntax
     });
 
     // Step 3: Replace non-image wikilinks outside of code blocks
