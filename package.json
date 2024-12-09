@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "kxvin",
   "scripts": {
-    "sync": "rsync -av --delete ~/Everything/Public/ src2",
+    "copy": "rsync -av --delete ~/Everything/Public/ src2",
     "preprocess": "node preprocess.mjs",
+    "sync": "npm run copy && npm run preprocess",
     "start": "eleventy --serve",
     "build": "eleventy"
   },
