@@ -1,14 +1,15 @@
 ---
 permalink: notes/
+title: Notes
+layout: base.njk
 ---
-# Notes
 
-list all notes here, possibly group by topic
-
+<h1>Notes</h1>
+<p>all my notes here</p>
 <ul>
   {% for page in collections.notes %}
-      <li>
-        <a href="{{ page.url }}">{{ page.data.title }}</a>
-      </li>
+    <li>
+      <a href="{{ page.url }}">{{ page.data.title }}</a>
+    </li>
   {% endfor %}
 </ul>

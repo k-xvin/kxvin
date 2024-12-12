@@ -39,6 +39,7 @@ function AddExtraFrontmatter(filePath, fileContent, filenameToSlugMapToFill) {
 
         data.tags = [fileParsed.dir, data.topic];
         data.permalink = slug + "/";
+        data.layout = "base.njk";
     }
 
     return matter.stringify(content, data);

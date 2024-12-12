@@ -1,16 +1,17 @@
 ---
 permalink: projects/
+title: Projects
+layout: base.njk
 ---
-# Hello
 
-list all projects here, possibly group by topic
-
+<h1>Projects</h1>
+<p>all my projects here</p>
 <ul>
   {% for page in collections.projects %}
-      <li>
-        [{{page.data.topic}}]
-        <a href="{{ page.url }}"> {{ page.data.title }}</a>
-      </li>
+    <li>
+      [{{ page.data.topic }}]
+      <a href="{{ page.url }}">
+        {{ page.data.title }}</a>
+    </li>
   {% endfor %}
 </ul>
-
