@@ -1,0 +1,12 @@
+.cards {
+    background-color: bisque;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.cards>li {
+    background-color: aqua;
+}

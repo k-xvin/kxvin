@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
         // formats: ["auto"],
 
         // optional, output image widths
-        // widths: ["auto"],
+        widths: ["300"],
 
         // optional, attributes assigned on <img> override these values.
         defaultAttributes: {
@@ -25,6 +25,12 @@ module.exports = function (eleventyConfig) {
         dir: {
             input: "src",
             output: "public",
-        }
+        },
+        templateFormats: [
+            "md",
+            "njk",
+            "css" // Manually specify that css files should be copied into the output
+        ],
+        passthroughFileCopy: true
     };
 };
