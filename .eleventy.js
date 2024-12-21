@@ -1,6 +1,11 @@
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
+
+    eleventyConfig.addFilter("postDate", (dateStr) => {
+        return new Date(dateStr).toLocaleDateString("en-US", { timeZone: "UTC" });
+    });
+
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
         // which file extensions to process
         extensions: "html",
