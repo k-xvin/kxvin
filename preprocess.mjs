@@ -41,6 +41,7 @@ function AddExtraFrontmatter(filePath, fileContent, filenameToSlugMapToFill) {
         data.permalink = slug + "/";
         data.layout = "base.njk";
         // TODO: acquire a link to the first image in the page to use as the display image? else, placeholder!
+        data.thumbnail = "/content/attachments/architect.webp"
     }
 
     return matter.stringify(content, data);

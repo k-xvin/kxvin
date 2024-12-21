@@ -5,8 +5,26 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
+    gap: 1rem;
 }
 
-.cards>li {
+.card {
     background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.card img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    object-position: 50% 50%;
 }

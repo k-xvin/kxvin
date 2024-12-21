@@ -9,8 +9,22 @@ layout: base.njk
 <ul class="cards">
   {% for page in collections.projects %}
     <li>
-      <a href="{{ page.url }}">
-        {{ page.data.title }}
+      <a class="card" href="{{ page.url }}">
+        <img src="{{ page.data.thumbnail }}" alt="{{ page.data.thumbnail }}"></img>
+        <div>
+          <p>
+            {{ page.data.created }}
+          </p>
+          <p>
+            {{ page.data.tags[1] }}
+          </p>
+          <p>
+            {{ page.data.title }}
+          </p>
+          <p>
+            {{ page.data.description }}
+          </p>
+        </div>
       </a>
     </li>
   {% endfor %}
