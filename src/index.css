@@ -1,3 +1,54 @@
+:root {
+    --background-color: #171a25;
+    --background-color-transparent: rgba(0, 0, 0, 0.4);
+    --text-color: #f0f0f0;
+
+    --nav-offset: 1rem;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: var(--nav-offset) 0 0 0;
+    padding: 0 5vw;
+
+    font-family: Helvetica, sans-serif;
+
+    height: 1000px;
+}
+
+header {
+    position: sticky;
+    top: var(--nav-offset);
+    z-index: 5;
+
+    font-family: Consolas, monospace;
+    font-weight: bold;
+
+    max-width: fit-content;
+    margin: 0 auto 1rem auto;
+}
+
+nav {
+    background-color: var(--background-color-transparent);
+    padding: 0.5rem;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a {
+    color: var(--text-color);
+}
+
 .cards {
     background-color: bisque;
     list-style-type: none;
@@ -14,6 +65,7 @@
     flex-direction: row;
     text-decoration: none;
     color: inherit;
+    height: 8rem;
 }
 
 .card a {
@@ -22,9 +74,11 @@
     height: 100%;
 }
 
+.card p {
+    margin: 0;
+}
+
 .card img {
-    width: 8rem;
-    height: 8rem;
     object-fit: cover;
-    object-position: 50% 50%;
+    height: inherit;
 }
