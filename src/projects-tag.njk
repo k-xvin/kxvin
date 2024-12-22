@@ -1,12 +1,18 @@
 ---
-permalink: projects/
-title: Projects
+pagination:
+    data: collections.projectsTags
+    size: 1
+    alias: tag
+permalink: /projects/{{ tag }}/
 layout: main.njk
 ---
 
 {% from "tags.njk" import tags %}
 {{ tags("projects", collections.projectsTags) }}
+<p>
+    project page for {{ tag }}
+</p>
 <h1>Projects</h1>
 <p>all my projects here</p>
 {% from "cards.njk" import cards %}
-{{ cards(collections.projects) }}
+{{ cards(collections.projects, tag) }}

@@ -1,0 +1,27 @@
+{% macro cards(collection, tag) %}
+    <ul class="cards">
+        {% for page in collection | reverse %}
+            {% if page.data.tags[1] == tag or tag == undefined %}
+                <li>
+                    <a class="card" href="{{ page.url }}">
+                        <img src="{{ page.data.thumbnail }}" alt="{{ page.data.thumbnail }}"></img>
+                        <div>
+                            <p>
+                                {{ page.data.created | postDate }}
+                            </p>
+                            <p>
+                                {{ page.data.tags[1] }}
+                            </p>
+                            <h2>
+                                {{ page.data.title }}
+                            </h2>
+                        </div>
+                    </a>
+                    <p class="card-desc">
+                        {{ page.data.description }}
+                    </p>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endmacro %}

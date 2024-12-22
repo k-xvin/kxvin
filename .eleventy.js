@@ -2,6 +2,29 @@ const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
 
+    // Tag filters based on https://github.com/11ty/eleventy/issues/927#issuecomment-793493549
+    eleventyConfig.addCollection('projectsTags', collections => {
+        const tags = collections
+            .getAll()
+            .filter(item => item.data.tags !== undefined)
+            .filter(item => item.data.tags.includes('projects'))
+            .reduce((tags, item) => tags.concat(item.data.tags), [])
+            .filter(tag => tag !== 'projects')
+            .sort();
+        return Array.from(new Set(tags))
+    });
+
+    eleventyConfig.addCollection('notesTags', collections => {
+        const tags = collections
+            .getAll()
+            .filter(item => item.data.tags !== undefined)
+            .filter(item => item.data.tags.includes('notes'))
+            .reduce((tags, item) => tags.concat(item.data.tags), [])
+            .filter(tag => tag !== 'notes')
+            .sort();
+        return Array.from(new Set(tags))
+    });
+
     eleventyConfig.addFilter("postDate", (dateStr) => {
         return new Date(dateStr).toLocaleDateString("en-US", { timeZone: "UTC" });
     });

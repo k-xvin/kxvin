@@ -1,0 +1,12 @@
+{% macro tags(base, list) %}
+    <div class="tags">
+        <span class="panel">
+            <a href="/{{ base }}">all</a>
+        </span>
+        {% for tag in list %}
+            <span class="panel">
+                <a href="/{{ base }}/{{ tag }}">{{ tag }}</a>
+            </span>
+        {% endfor %}
+    </div>
+{% endmacro %}
