@@ -155,7 +155,7 @@ footer {
     text-decoration: none;
 }
 
-.card {
+.card-body {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -165,33 +165,11 @@ footer {
 .card-thumbnail {
     object-fit: cover;
     height: 4rem;
-    width: 4rem;
+    max-width: 4rem;
+    width: 100%;
+    border: 4px solid var(--accent-color-2);
 }
 
 .card-content>* {
     margin: 0
 }
-
-/*
-.card-header {
-    width: fit-content;
-}
-
- .card-content {
-    display: flex;
-    flex-direction: row;
-    height: 1rem;
-}
-
-.card a {
-    text-decoration: none;
-}
-
-.card p {
-    margin: 0;
-}
-
-.card img {
-    object-fit: cover;
-    height: inherit;
-} */

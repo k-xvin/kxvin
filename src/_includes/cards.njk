@@ -3,12 +3,13 @@
         {% for page in collection | reverse %}
             {% if page.data.tags[1] == tag or tag == undefined %}
                 <li>
-                    <a class="card panel" href="{{ page.url }}">
+                    <div class="card-header panel">
+                        {{ page.data.created | postDate }} /
+                        {{ page.data.tags[1] }}
+                    </div>
+                    <a class="card-body panel" href="{{ page.url }}">
                         <img class="card-thumbnail" src="{{ page.data.thumbnail }}" alt="{{ page.data.thumbnail }}"/>
                         <div class="card-content">
-                            <p>
-                                {{ page.data.created | postDate }} / {{ page.data.tags[1] }}
-                            </p>
                             <h3>
                                 {{ page.data.title }}
                             </h3>
