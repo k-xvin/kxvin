@@ -15,6 +15,8 @@ function main() {
     ModifyMarkdownFiles(INPUT_DIR, AddExtraFrontmatter, filenameToSlug);
     // Go through all Markdown files and update wikilinks with standard Markdown links
     ModifyMarkdownFiles(INPUT_DIR, ReplaceWikilinks, filenameToSlug);
+    // Go through all Markdown files and pull the link of the first image into the frontmatter
+    ModifyMarkdownFiles(INPUT_DIR, AddThumbnailImage, filenameToSlug);
 }
 
 /**
@@ -40,8 +42,6 @@ function AddExtraFrontmatter(filePath, fileContent, filenameToSlugMapToFill) {
         data.tags = [fileParsed.dir, data.topic];
         data.permalink = slug + "/";
         data.layout = "main-panel.njk";
-        // TODO: acquire a link to the first image in the page to use as the display image? else, placeholder!
-        data.thumbnail = "/content/attachments/architect.webp"
     }
 
     return matter.stringify(content, data);
@@ -85,6 +85,23 @@ function ReplaceWikilinks(filePath, content, filenameToSlugMap) {
         .replace(/\[INLINE IMAGE (.*?)\]/g, (match, filename) => `![[${filename}]]`)
         .replace(/\[BLOCK LINK (.*?)\|(.*?)\]/g, (match, filename, alias) => alias ? `[[${filename}|${alias}]]` : `[[${filename}]]`)
         .replace(/\[INLINE LINK (.*?)\|(.*?)\]/g, (match, filename, alias) => alias ? `[[${filename}|${alias}]]` : `[[${filename}]]`);
+}
+
+/**
+ * Find the first valid image link in a Markdown file and add it to the "thumbnail" key of the frontmatter
+ * @param {string} filePath path to a file
+ * @param {string} fileContent contents of the file
+ * @param {map} filenameToSlugMapToFill map object to store filename to slug mapping
+ * @returns {string} String with additional YAML frontmatter added
+ */
+function AddThumbnailImage(filePath, fileContent, filenameToSlugMapToFill) {
+    const { data, content } = matter(fileContent);
+
+    const regex = /(?<!`|```)[^`]*?\!\[.*?\]\((.*?\.(?:jpg|jpeg|png|gif|webp|bmp|tiff))\)/i;
+    const match = content.match(regex);
+    data.thumbnail = match ? match[1] : "/content/attachments/placeholder.png"
+
+    return matter.stringify(content, data);
 }
 
 /**

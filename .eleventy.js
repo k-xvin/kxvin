@@ -26,7 +26,12 @@ module.exports = function (eleventyConfig) {
     });
 
     eleventyConfig.addFilter("postDate", (dateStr) => {
-        return new Date(dateStr).toLocaleDateString("en-US", { timeZone: "UTC" });
+        // return new Date(dateStr).toLocaleDateString("en-US", { timeZone: "UTC" });
+        const date = new Date(dateStr);
+        const year = date.getUTCFullYear();
+        const month = String(date.getUTCMonth() + 1).padStart(2, "0");
+        const day = String(date.getUTCDate()).padStart(2, "0");
+        return `${year}-${month}-${day}`;
     });
 
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
@@ -40,12 +45,13 @@ module.exports = function (eleventyConfig) {
         // formats: ["auto"],
 
         // optional, output image widths
-        widths: ["300"],
+        widths: ["128", "512"],
 
         // optional, attributes assigned on <img> override these values.
         defaultAttributes: {
             loading: "lazy",
             decoding: "async",
+            sizes: "auto",
         },
     });
 
