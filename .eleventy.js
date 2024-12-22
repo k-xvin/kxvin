@@ -26,6 +26,8 @@ module.exports = function (eleventyConfig) {
         },
     });
 
+    eleventyConfig.addPassthroughCopy({ "src/content/attachments/nightsky2.png": "background.png" });
+
     return {
         dir: {
             input: "src",
