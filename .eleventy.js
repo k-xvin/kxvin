@@ -42,15 +42,15 @@ module.exports = function (eleventyConfig) {
 
         // optional, output image formats
         formats: ["jpeg"],
-        // formats: ["auto"],
 
         // optional, output image widths
-        widths: ["128"],
+        widths: ["128", "512"],
 
         // optional, attributes assigned on <img> override these values.
         defaultAttributes: {
             loading: "lazy",
             decoding: "async",
+            sizes: "auto",
         },
     });
 
