@@ -1,4 +1,5 @@
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
 
@@ -54,6 +55,10 @@ module.exports = function (eleventyConfig) {
         },
     });
 
+    eleventyConfig.addFilter("cssmin", function (code) {
+        return new CleanCSS({}).minify(code).styles;
+    });
+
     eleventyConfig.addPassthroughCopy({ "src/content/attachments/nightsky2.png": "background.png" });
 
     return {
@@ -64,8 +69,6 @@ module.exports = function (eleventyConfig) {
         templateFormats: [
             "md",
             "njk",
-            "css" // Manually specify that css files should be copied into the output
         ],
-        passthroughFileCopy: true
     };
 };
