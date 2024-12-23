@@ -8,11 +8,6 @@ layout: main.njk
 ---
 
 {% from "tags.njk" import tags %}
-{{ tags("projects", collections.projectsTags) }}
-<p>
-    project page for {{ tag }}
-</p>
-<h1>Projects</h1>
-<p>all my projects here</p>
+{{ tags("projects", collections.projectsTags, page.url) }}
 {% from "cards.njk" import cards %}
 {{ cards(collections.projects, tag) }}

@@ -4,8 +4,17 @@
             {% if page.data.tags[1] == tag or tag == undefined %}
                 <li>
                     <div class="card-header panel">
-                        {{ page.data.created | postDate }} /
-                        {{ page.data.tags[1] }}
+                        <span>
+                            <b>
+                                {{ page.data.created | postDate }}
+                            </b>
+                        </span>
+                        <span>
+                            /
+                        </span>
+                        <span>
+                            {{ page.data.tags[1] }}
+                        </span>
                     </div>
                     <a class="card-body panel" href="{{ page.url }}">
                         <img class="card-thumbnail" src="{{ page.data.thumbnail }}" alt="{{ page.data.thumbnail }}"/>

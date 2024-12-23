@@ -1,11 +1,11 @@
-{% macro tags(base, list) %}
+{% macro tags(base, list, url) %}
     <div class="tags">
         <span class="panel">
-            <a href="/{{ base }}">all</a>
+            <a href="/{{ base }}" {% if url == "/" + base + "/" %} class="active" {% endif %}>all</a>
         </span>
         {% for tag in list %}
             <span class="panel">
-                <a href="/{{ base }}/{{ tag }}">{{ tag }}</a>
+                <a href="/{{ base }}/{{ tag }}" {% if tag in url %} class="active" {% endif %}>{{ tag }}</a>
             </span>
         {% endfor %}
     </div>

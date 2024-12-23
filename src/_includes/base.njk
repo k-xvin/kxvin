@@ -11,16 +11,16 @@
     </head>
     <header class="panel">
         <nav>
-            <a href="/">
+            <a href="/" {% if page.url == "/" %} class="active" {% endif %}}>
                 [HOME]
             </a>
-            <a href="/projects/">
+            <a href="/projects/" {% if ("/projects/" in page.url) or ("projects" in tags) %} class="active" {% endif %}}>
                 [PROJECTS]
             </a>
-            <a href="/notes/">
+            <a href="/notes/" {% if ("/notes/" in page.url) or ("notes" in tags) %} class="active" {% endif %}}>
                 [NOTES]
             </a>
-            <a href="/about/">
+            <a href="/about/" {% if ("/about/" in page.url) %} class="active" {% endif %}}>
                 [ABOUT]
             </a>
         </nav>
