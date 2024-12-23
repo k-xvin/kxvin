@@ -14,10 +14,10 @@
             <a href="/" {% if page.url == "/" %} class="active" {% endif %}}>
                 [HOME]
             </a>
-            <a href="/projects/" {% if ("/projects/" in page.url) or ("projects" in tags) %} class="active" {% endif %}}>
+            <a href="/projects/" {% if ("/projects/" in page.url) or (tags and "projects" in tags) %} class="active" {% endif %}}>
                 [PROJECTS]
             </a>
-            <a href="/notes/" {% if ("/notes/" in page.url) or ("notes" in tags) %} class="active" {% endif %}}>
+            <a href="/notes/" {% if ("/notes/" in page.url) or (tags and "notes" in tags) %} class="active" {% endif %}}>
                 [NOTES]
             </a>
             <a href="/about/" {% if ("/about/" in page.url) %} class="active" {% endif %}}>
