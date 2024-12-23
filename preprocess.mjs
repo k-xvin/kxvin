@@ -33,6 +33,7 @@ function AddExtraFrontmatter(filePath, fileContent, filenameToSlugMapToFill) {
     if (firstFourLines.length == 4) {
         data.title = firstFourLines[3].replace('#', '').trim();
         data.description = firstFourLines[1];
+        data.date = data.created; // Eleventy relies on the "date" field to sort
 
         let fileParsed = path.parse(path.relative(INPUT_DIR, filePath));
         let filename = fileParsed.name;
@@ -41,7 +42,7 @@ function AddExtraFrontmatter(filePath, fileContent, filenameToSlugMapToFill) {
 
         data.tags = [fileParsed.dir, data.topic];
         data.permalink = slug + "/";
-        data.layout = "main-panel.njk";
+        data.layout = "post.njk";
     }
 
     return matter.stringify(content, data);

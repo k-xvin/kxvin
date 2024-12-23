@@ -1,0 +1,22 @@
+---
+layout: base.njk
+---
+
+<main>
+    <div class="panel date-header">
+        <span>
+            <b>
+                {{ created | postDate }}
+            </b>
+        </span>
+        <span>
+            /
+        </span>
+        <span>
+            {{ tags[1] }}
+        </span>
+    </div>
+    <div class="panel post">
+        {{ content | safe }}
+    </div>
+</main>

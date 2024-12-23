@@ -3,7 +3,7 @@
         {% for page in collection | reverse %}
             {% if page.data.tags[1] == tag or tag == undefined %}
                 <li>
-                    <div class="card-header panel">
+                    <div class="date-header panel">
                         <span>
                             <b>
                                 {{ page.data.created | postDate }}
