@@ -4,12 +4,13 @@ permalink: /sitemap.xml
 date: Last Modified
 ---
 
+{# https://dev.to/loige/create-a-sitemap-for-your-eleventy-website-25h/ #}
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for item in collections.all %}
         <url>
             <loc>{{ site.url }}{{ item.url }}</loc>
-            <lastmod>{{ item.date | postDate }}</lastmod>
+            <lastmod>{{ item.data.modified | postDate }}</lastmod>
             <changefreq>{{ item.data.sitemapChangefreq | default("monthly") }}</changefreq>
             <priority>{{ item.data.sitemapPriority | default(0.8) }}</priority>
         </url>
