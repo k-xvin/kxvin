@@ -58,6 +58,9 @@ function AddExtraFrontmatter(filePath, fileContent, filenameToSlugMapToFill) {
  * @returns 
  */
 function ReplaceWikilinks(filePath, content, filenameToSlugMap) {
+
+    // TODO: Does the below even work? I think there's some edge cases with inline code blocks this hasn't accounted for...
+
     // Step 1: Escape links inside code blocks and inline code
     const escapedCodeBlocks = content
         .replace(/```([\s\S]*?)```/g, (match, code) =>
