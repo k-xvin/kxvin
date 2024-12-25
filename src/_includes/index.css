@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: Helvetica, ui-sans-serif, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
 
@@ -47,6 +47,19 @@ main {
 
 a {
     color: var(--text-color);
+}
+
+a:hover {
+    color: var(--background-color);
+    background-color: var(--accent-color-1);
+}
+
+h1 {
+    border-bottom: 3px solid var(--accent-color-2);
+}
+
+hr {
+    border-color: var(--accent-color-1);
 }
 
 .active {
@@ -122,27 +135,33 @@ footer {
 }
 
 /** HOME PAGE **/
-
 .home {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;
 }
 
 .home img {
     object-fit: cover;
-    width: 16rem;
-}
-
-.home div {
-    max-width: 100%;
-    flex: 1 1 0;
+    height: 16rem;
+    max-width: 16rem;
+    width: 100%;
+    margin: auto auto;
 }
 
 .home a {
     text-decoration: none;
     font-family: Consolas, monospace;
     font-weight: bold;
+}
+
+.home-text {
+    padding: 0rem 1.5rem;
+}
+
+@media (width < 700px) {
+    .home {
+        flex-direction: column;
+    }
 }
 
 /** POST LISTS **/
