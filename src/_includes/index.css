@@ -116,7 +116,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 1rem;
+    column-gap: 0.5rem;
     justify-content: center;
 }
 
@@ -137,33 +137,24 @@ footer {
 }
 
 /** HOME PAGE **/
+
 .home {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 1.5rem;
 }
 
 .home img {
     object-fit: cover;
-    height: 16rem;
-    max-width: 16rem;
+    max-height: 16rem;
+    height: 100%;
     width: 100%;
-    margin: auto auto;
 }
 
 .home a {
     text-decoration: none;
     font-family: Consolas, monospace;
     font-weight: bold;
-}
-
-.home-text {
-    padding: 0rem 1.5rem;
-}
-
-@media (width < 700px) {
-    .home {
-        flex-direction: column;
-    }
 }
 
 /** POST LISTS **/
