@@ -63,6 +63,10 @@ hr {
     border-color: var(--accent-color-1);
 }
 
+li {
+    margin-bottom: 0.5rem;
+}
+
 .active {
     color: var(--background-color);
     background-color: var(--accent-color-1);
@@ -186,6 +190,10 @@ footer {
     margin-top: 1rem;
     padding: 0;
     gap: 1rem;
+}
+
+.cards li {
+    margin-bottom: 0;
 }
 
 .cards a {
