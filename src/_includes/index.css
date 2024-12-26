@@ -10,7 +10,11 @@
 
     --nav-offset: 1rem;
 
-    scrollbar-gutter: stable;
+}
+
+html {
+    /* Account for scrollbar width */
+    margin-left: calc(100vw - 100%);
 }
 
 body {
@@ -32,7 +36,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     height: 100%;
     z-index: -1;
