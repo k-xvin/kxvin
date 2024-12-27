@@ -24,7 +24,7 @@ hello i am kevin this is my website hooray
 ---
 # December 2024
 * Moved my personal note system (back to) Obsidian after running into some flaws in Notion's export system which locked me out of downloading my files locally
-* Revamped the whole website and how I manage the website's content. [Writeup here](/TODO).
+* Revamped the whole website and how I manage the website's content. [Writeup here](/december-2024-website-revamp).
 
 # September 2024
 * Reorganized my personal note system (in Notion) to better keep track of my ideas and projects.

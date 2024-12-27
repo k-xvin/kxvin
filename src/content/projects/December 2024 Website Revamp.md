@@ -19,6 +19,8 @@ Yet another website redesign
 The primary motivation to rework my website (again) was to improve how I store and organize my articles.
 
 Previously, I wrote all my articles directly into my repo, into fixed categories, with the images haphazardly stored for each article. This was okay for a few years, but over time I wanted a better integration with my personal note system rather than needing to do a dance of copy-pasting and reformatting to publish something.
+
+The old website is still up at [old.kxvin.com](https://old.kxvin.com/). If I ever redo my website again, expect the one referenced in this article to go to the titular old2.kxvin.com.
 # The Result
 ![website_20241224191902.png](/content/attachments/website_20241224191902.png)
 * Better content management system
