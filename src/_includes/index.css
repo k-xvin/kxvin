@@ -115,6 +115,7 @@ li {
 
 header {
     position: sticky;
+    top: 1rem;
     z-index: 5;
 
     font-family: Consolas, monospace;
