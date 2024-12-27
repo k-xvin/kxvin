@@ -12,6 +12,7 @@
         <meta name="description" content="Where Kevin documents his projects (and more) ">
         <title>{{ title }}</title>
     </head>
+    <div class="background"></div>
     <header class="panel">
         <nav>
             <a href="/" {% if page.url == "/" %} class="active" {% endif %}}>
@@ -28,7 +29,6 @@
             </a>
         </nav>
     </header>
-    <div class="background"></div>
     <body>
         {{ content | safe }}
     </body>

@@ -1,5 +1,4 @@
 /** BODY **/
-
 :root {
     --background-color-darker: #0E0F13;
     --background-color: #171A25;
@@ -7,9 +6,6 @@
     --accent-color-1: #DCCCA3;
     --accent-color-2: #824c71;
     --text-color: #f0f0f0;
-
-    --nav-offset: 1rem;
-
 }
 
 html {
@@ -29,17 +25,19 @@ body {
     row-gap: 1rem;
 }
 
-.background {
-    background-image: url(/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    min-height: 100vh;
-    height: 100%;
-    z-index: -1;
+@supports (width: 100vw) {
+    .background {
+        background-image: url(/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        min-height: 100vh;
+        height: 100%;
+        z-index: -1;
+    }
 }
 
 main {
@@ -117,7 +115,6 @@ li {
 
 header {
     position: sticky;
-    /* top: var(--nav-offset); */
     z-index: 5;
 
     font-family: Consolas, monospace;
@@ -158,11 +155,14 @@ footer {
     padding: 1.5rem;
 }
 
-.home img {
-    object-fit: cover;
-    max-height: 16rem;
-    height: 100%;
-    width: 100%;
+
+@supports (display: flex) {
+    .home img {
+        object-fit: cover;
+        max-height: 16rem;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .home a {
