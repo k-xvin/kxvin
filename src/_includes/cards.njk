@@ -1,6 +1,7 @@
 {% macro cards(collection, tag) %}
     <ul class="cards">
         {% for page in collection | reverse %}
+            {# TODO: SUPPORT MULTIPLE TAGS!! #}
             {% if page.data.tags[1] == tag or tag == undefined %}
                 <li>
                     <div class="date-header panel">
