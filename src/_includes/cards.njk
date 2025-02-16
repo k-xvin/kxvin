@@ -1,8 +1,8 @@
 {% macro cards(collection, tag) %}
     <ul class="cards">
         {% for page in collection | reverse %}
-            {# TODO: SUPPORT MULTIPLE TAGS!! #}
-            {% if page.data.tags[1] == tag or tag == undefined %}
+            {# Include page if it contains the tag to filter by, or no tag was given (such as for the "all" page) #}
+            {% if tag in page.data.tags or tag == undefined %}
                 <li>
                     <div class="date-header panel">
                         <span>
@@ -14,7 +14,7 @@
                             /
                         </span>
                         <span>
-                            {{ page.data.tags[1] }}
+                            {{ page.data.tags[0] }}
                         </span>
                     </div>
                     <a class="card-body panel" href="{{ page.url }}">

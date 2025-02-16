@@ -45,7 +45,7 @@ function AddExtraFrontmatter(filePath, fileContent, filenameToSlugMapToFill) {
         data.layout = "post.njk";
 
         // Add "Projects" or "Notes" to the existing tags
-        data.tags.unshift(fileParsed.dir);
+        data.tags.push(fileParsed.dir);
     }
 
     return matter.stringify(content, data);
