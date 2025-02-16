@@ -40,9 +40,12 @@ function AddExtraFrontmatter(filePath, fileContent, filenameToSlugMapToFill) {
         let slug = slugify(data.title);
         filenameToSlugMapToFill.set(filename, "/" + slug);
 
-        data.tags = [fileParsed.dir, data.topic];
+        // Set permalink and layout
         data.permalink = slug + "/";
         data.layout = "post.njk";
+
+        // Add "Projects" or "Notes" to the existing tags
+        data.tags.unshift(fileParsed.dir);
     }
 
     return matter.stringify(content, data);
