@@ -1,12 +1,14 @@
-{% macro tags(base, list, url) %}
+{% macro tags(base, tagCountMap, url) %}
     <div class="tags">
         <span class="panel">
-            <a href="/{{ base }}" {% if url == "/" + base + "/" %} class="active" {% endif %}>all</a>
+            <a href="/{{ base }}" {% if url == "/" + base + "/" %} class="active" {% endif %}>all ({{ tagCountMap["all"] }})</a>
         </span>
-        {% for tag in list %}
-            <span class="panel">
-                <a href="/{{ base }}/{{ tag }}" {% if tag in url %} class="active" {% endif %}>{{ tag }}</a>
-            </span>
+        {% for tag, count in tagCountMap %}
+            {% if tag != "all" %}
+                <span class="panel">
+                    <a href="/{{ base }}/{{ tag }}" {% if tag in url %} class="active" {% endif %}>{{ tag }} ({{ count }})</a>
+                </span>
+            {% endif %}
         {% endfor %}
     </div>
 {% endmacro %}

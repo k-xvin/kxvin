@@ -5,6 +5,6 @@ layout: main.njk
 ---
 
 {% from "tags.njk" import tags %}
-{{ tags("notes", collections.notesTags, page.url) }}
+{{ tags("notes", collections.noteTags, page.url) }}
 {% from "cards.njk" import cards %}
 {{ cards(collections.notes) }}

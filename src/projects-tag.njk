@@ -1,6 +1,6 @@
 ---
 pagination:
-    data: collections.projectsTags
+    data: collections.projectTags
     size: 1
     alias: tag
 permalink: /projects/{{ tag }}/
@@ -8,6 +8,6 @@ layout: main.njk
 ---
 
 {% from "tags.njk" import tags %}
-{{ tags("projects", collections.projectsTags, page.url) }}
+{{ tags("projects", collections.projectTags, page.url) }}
 {% from "cards.njk" import cards %}
 {{ cards(collections.projects, tag) }}

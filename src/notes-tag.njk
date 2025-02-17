@@ -1,6 +1,6 @@
 ---
 pagination:
-    data: collections.notesTags
+    data: collections.noteTags
     size: 1
     alias: tag
 permalink: /notes/{{ tag }}/
@@ -8,6 +8,6 @@ layout: main.njk
 ---
 
 {% from "tags.njk" import tags %}
-{{ tags("notes", collections.notesTags, page.url) }}
+{{ tags("notes", collections.noteTags, page.url) }}
 {% from "cards.njk" import cards %}
 {{ cards(collections.notes, tag) }}

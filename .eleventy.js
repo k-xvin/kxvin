@@ -3,27 +3,36 @@ const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
 
-    // Tag filters based on https://github.com/11ty/eleventy/issues/927#issuecomment-793493549
-    eleventyConfig.addCollection('projectsTags', collections => {
-        const tags = collections
-            .getAll()
+    function getTagCounts(collections, parentTag) {
+        const tagCounts = new Map();
+        let total = 0;
+
+        collections.getAll()
             .filter(item => item.data.tags !== undefined)
-            .filter(item => item.data.tags.includes('projects'))
-            .reduce((tags, item) => tags.concat(item.data.tags), [])
-            .filter(tag => tag !== 'projects')
-            .sort();
-        return Array.from(new Set(tags))
+            .filter(item => item.data.tags.includes(parentTag))
+            .forEach(item => {
+                total += 1;
+                item.data.tags.forEach(tag => {
+                    if (tag !== parentTag) {
+                        tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
+                    }
+                });
+            });
+        tagCounts.set("all", total);
+
+        // Sort by count descending and return object for easier use in templates
+        return Object.fromEntries(
+            [...tagCounts.entries()].sort((a, b) => b[1] - a[1])
+        );
+    }
+
+    // Tag filters based on https://github.com/11ty/eleventy/issues/927#issuecomment-793493549
+    eleventyConfig.addCollection('projectTags', collections => {
+        return getTagCounts(collections, "projects");
     });
 
-    eleventyConfig.addCollection('notesTags', collections => {
-        const tags = collections
-            .getAll()
-            .filter(item => item.data.tags !== undefined)
-            .filter(item => item.data.tags.includes('notes'))
-            .reduce((tags, item) => tags.concat(item.data.tags), [])
-            .filter(tag => tag !== 'notes')
-            .sort();
-        return Array.from(new Set(tags))
+    eleventyConfig.addCollection('noteTags', collections => {
+        return getTagCounts(collections, "notes");
     });
 
     eleventyConfig.addFilter("postDate", (dateStr) => {
@@ -58,6 +67,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("cssmin", function (code) {
         return new CleanCSS({}).minify(code).styles;
     });
+
 
     eleventyConfig.addPassthroughCopy({ "src/content/attachments/nightsky2.png": "background.png" });
 
