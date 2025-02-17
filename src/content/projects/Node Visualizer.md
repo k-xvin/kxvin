@@ -1,19 +1,18 @@
 ---
-topic: uncategorized
 created: 2020-11-30T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
-title: Node Visualizer
-description: 'Adds a node visualizer view to [monday.com](http://monday.com/) project boards'
-date: 2020-11-30T00:00:00.000Z
 tags:
+  - code
   - projects
-  - uncategorized
+title: Node Visualizer
+description: Adds a node visualizer view to monday.com project boards
+date: 2020-11-30T00:00:00.000Z
 permalink: node-visualizer/
 layout: post.njk
 thumbnail: /content/attachments/node_visualizer.png
 ---
 
-Adds a node visualizer view to [monday.com](http://monday.com/) project boards
+Adds a node visualizer view to monday.com project boards
 
 # Node Visualizer
 

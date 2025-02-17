@@ -1,13 +1,12 @@
 ---
-topic: art
 created: 2020-12-15T00:00:00.000Z
 modified: 2024-12-06T00:00:00.000Z
+tags:
+  - art
+  - projects
 title: Frank
 description: Short story I wrote in a creative writing class
 date: 2020-12-15T00:00:00.000Z
-tags:
-  - projects
-  - art
 permalink: frank/
 layout: post.njk
 thumbnail: /content/attachments/placeholder.png

@@ -1,13 +1,12 @@
 ---
-topic: music
 created: 2022-10-07T00:00:00.000Z
 modified: 2024-12-06T00:00:00.000Z
+tags:
+  - music
+  - projects
 title: Return
 description: Got around to finishing a track
 date: 2022-10-07T00:00:00.000Z
-tags:
-  - projects
-  - music
 permalink: return/
 layout: post.njk
 thumbnail: /content/attachments/Return.png

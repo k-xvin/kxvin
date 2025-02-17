@@ -1,13 +1,12 @@
 ---
-topic: music
 created: 2021-10-19T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
+tags:
+  - music
+  - projects
 title: Absence
 description: Made during a week-long experiment
 date: 2021-10-19T00:00:00.000Z
-tags:
-  - projects
-  - music
 permalink: absence/
 layout: post.njk
 thumbnail: /content/attachments/absence.webp

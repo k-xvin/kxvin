@@ -1,13 +1,12 @@
 ---
-topic: uncategorized
 created: 2024-11-09T00:00:00.000Z
 modified: 2024-12-25T00:00:00.000Z
+tags:
+  - woodworking
+  - projects
 title: Wood Table and Shelf
 description: Wood table and shelf combo for my room
 date: 2024-11-09T00:00:00.000Z
-tags:
-  - projects
-  - uncategorized
 permalink: wood-table-and-shelf/
 layout: post.njk
 thumbnail: /content/attachments/table_finish_outside.jpeg

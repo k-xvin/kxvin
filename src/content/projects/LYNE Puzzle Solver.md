@@ -1,13 +1,12 @@
 ---
-topic: uncategorized
 created: 2023-12-30T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
+tags:
+  - code
+  - projects
 title: 'LYNE Puzzle Solver, C'
 description: 'A basic solution finder for the puzzle game LYNE, written in C'
 date: 2023-12-30T00:00:00.000Z
-tags:
-  - projects
-  - uncategorized
 permalink: lyne-puzzle-solver-c/
 layout: post.njk
 thumbnail: /content/attachments/header.jpg

@@ -1,13 +1,12 @@
 ---
-topic: music
 created: 2022-10-30T00:00:00.000Z
 modified: 2024-12-06T00:00:00.000Z
+tags:
+  - music
+  - projects
 title: Wobblr
 description: I was trying to type wobble
 date: 2022-10-30T00:00:00.000Z
-tags:
-  - projects
-  - music
 permalink: wobblr/
 layout: post.njk
 thumbnail: /content/attachments/placeholder.png

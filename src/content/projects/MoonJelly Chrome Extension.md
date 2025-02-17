@@ -1,13 +1,12 @@
 ---
-topic: uncategorized
 created: 2020-12-31T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
+tags:
+  - code
+  - projects
 title: MoonJelly Chrome Extension
 description: A chrome extension for navigating the Ocean Data Marketplace
 date: 2020-12-31T00:00:00.000Z
-tags:
-  - projects
-  - uncategorized
 permalink: moon-jelly-chrome-extension/
 layout: post.njk
 thumbnail: /content/attachments/moonjelly.jpeg

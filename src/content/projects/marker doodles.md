@@ -1,13 +1,12 @@
 ---
-topic: art
 created: 2022-09-20T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
+tags:
+  - art
+  - projects
 title: Marker Doodles
 description: Some random doodles with a tattoo marker.
 date: 2022-09-20T00:00:00.000Z
-tags:
-  - projects
-  - art
 permalink: marker-doodles/
 layout: post.njk
 thumbnail: /content/attachments/C91DA942-C233-4051-9698-F10C586FF46A.jpg

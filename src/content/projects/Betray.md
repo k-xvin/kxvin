@@ -1,13 +1,12 @@
 ---
-topic: music
 created: 2022-01-13T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
+tags:
+  - music
+  - projects
 title: Betray
 description: I thought about betrayal while writing it
 date: 2022-01-13T00:00:00.000Z
-tags:
-  - projects
-  - music
 permalink: betray/
 layout: post.njk
 thumbnail: /content/attachments/betray.webp

@@ -1,13 +1,12 @@
 ---
-topic: uncategorized
 created: 2022-12-19T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
+tags:
+  - code
+  - projects
 title: Crossword Navigation Extension
 description: Browser extension to add keyboard navigation to a crossword website
 date: 2022-12-19T00:00:00.000Z
-tags:
-  - projects
-  - uncategorized
 permalink: crossword-navigation-extension/
 layout: post.njk
 thumbnail: /content/attachments/nav.png

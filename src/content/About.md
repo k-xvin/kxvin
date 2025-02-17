@@ -1,13 +1,11 @@
 ---
-topic: uncategorized
 created: 2024-12-06T00:00:00.000Z
-modified: 2024-12-24T00:00:00.000Z
+modified: 2025-01-13T00:00:00.000Z
+tags:
+  - ''
 title: About
 description: hello i am kevin this is my website hooray
 date: 2024-12-06T00:00:00.000Z
-tags:
-  - ''
-  - uncategorized
 permalink: about/
 layout: post.njk
 thumbnail: /content/attachments/placeholder.png
@@ -20,8 +18,15 @@ hello i am kevin this is my website hooray
 * I have a B.S. in Computer Engineering with a Minor in Anthropology from the University of California, Irvine.
 * Feel free to send me an email: `xu (at) kxvin (dot) com`
 * This site was generated with [11ty](https://www.11ty.dev/) and is hosted on Cloudflare Pages. See the [source code](https://github.com/k-xvin/kxvin)!
+* [<3](https://sushi-aa.github.io/)
 
 ---
+# February
+* Updated how tags are displays for Projects and Notes
+# January 2025
+* Read [Liber Indigo](undefined)
+* Bought and set up a 3D printer!
+
 # December 2024
 * Moved my personal note system (back to) Obsidian after running into some flaws in Notion's export system which locked me out of downloading my files locally
 * Revamped the whole website and how I manage the website's content. [Writeup here](/december-2024-website-revamp).

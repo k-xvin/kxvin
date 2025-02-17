@@ -1,13 +1,12 @@
 ---
-topic: uncategorized
 created: 2024-07-08T00:00:00.000Z
 modified: 2024-12-06T00:00:00.000Z
+tags:
+  - uncategorized
+  - notes
 title: git checkout line by line (hunk by hunk)
 description: Use “git checkout --patch” to apply changes line by line
 date: 2024-07-08T00:00:00.000Z
-tags:
-  - notes
-  - uncategorized
 permalink: git-checkout-line-by-line-hunk-by-hunk/
 layout: post.njk
 thumbnail: /content/attachments/placeholder.png

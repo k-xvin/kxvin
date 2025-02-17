@@ -1,13 +1,12 @@
 ---
-topic: art
 created: 2022-11-06T00:00:00.000Z
-modified: 2024-12-20T00:00:00.000Z
+modified: 2025-01-19T00:00:00.000Z
+tags:
+  - art
+  - projects
 title: A Poem (from LinkedIn)
 description: From LinkedIn’s ever-useful chat suggestions
 date: 2022-11-06T00:00:00.000Z
-tags:
-  - projects
-  - art
 permalink: a-poem-from-linked-in/
 layout: post.njk
 thumbnail: /content/attachments/a_poem.png

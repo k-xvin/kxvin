@@ -1,13 +1,12 @@
 ---
-topic: uncategorized
 created: 2019-05-01T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
+tags:
+  - code
+  - projects
 title: RECT
 description: A game I made in high school in my programming class
 date: 2019-05-01T00:00:00.000Z
-tags:
-  - projects
-  - uncategorized
 permalink: rect/
 layout: post.njk
 thumbnail: /content/attachments/main.png

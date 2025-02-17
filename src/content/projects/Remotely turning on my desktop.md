@@ -1,13 +1,12 @@
 ---
-topic: uncategorized
 created: 2023-03-20T00:00:00.000Z
 modified: 2024-12-06T00:00:00.000Z
+tags:
+  - electronics
+  - projects
 title: Remotely turning on my desktop
 description: Using an ESP-32 connected an MQTT broker
 date: 2023-03-20T00:00:00.000Z
-tags:
-  - projects
-  - uncategorized
 permalink: remotely-turning-on-my-desktop/
 layout: post.njk
 thumbnail: /content/attachments/old.jpg

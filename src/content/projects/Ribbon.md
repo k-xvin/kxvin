@@ -1,13 +1,12 @@
 ---
-topic: uncategorized
 created: 2021-01-31T00:00:00.000Z
 modified: 2024-12-06T00:00:00.000Z
+tags:
+  - code
+  - projects
 title: Ribbon
 description: Analyzes group chats and comes up with fun information
 date: 2021-01-31T00:00:00.000Z
-tags:
-  - projects
-  - uncategorized
 permalink: ribbon/
 layout: post.njk
 thumbnail: /content/attachments/ribbon.png

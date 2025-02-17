@@ -1,13 +1,12 @@
 ---
-topic: uncategorized
 created: 2024-12-24T00:00:00.000Z
 modified: 2024-12-25T00:00:00.000Z
+tags:
+  - code
+  - projects
 title: December 2024 Website Revamp
 description: Yet another website redesign
 date: 2024-12-24T00:00:00.000Z
-tags:
-  - projects
-  - uncategorized
 permalink: december-2024-website-revamp/
 layout: post.njk
 thumbnail: /content/attachments/website_20241224191902.png

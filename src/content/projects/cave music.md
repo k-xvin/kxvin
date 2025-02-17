@@ -1,13 +1,12 @@
 ---
-topic: music
 created: 2023-01-19T00:00:00.000Z
 modified: 2024-12-06T00:00:00.000Z
+tags:
+  - music
+  - projects
 title: cave music
 description: seems like cavey music
 date: 2023-01-19T00:00:00.000Z
-tags:
-  - projects
-  - music
 permalink: cave-music/
 layout: post.njk
 thumbnail: /content/attachments/placeholder.png

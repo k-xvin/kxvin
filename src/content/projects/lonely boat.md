@@ -1,13 +1,12 @@
 ---
-topic: music
 created: 2021-08-11T00:00:00.000Z
 modified: 2024-12-08T00:00:00.000Z
+tags:
+  - music
+  - projects
 title: lonely boat
 description: the boat is lonely.
 date: 2021-08-11T00:00:00.000Z
-tags:
-  - projects
-  - music
 permalink: lonely-boat/
 layout: post.njk
 thumbnail: /content/attachments/lonelyboat.webp

@@ -1,13 +1,12 @@
 ---
-topic: art
 created: 2022-10-05T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
+tags:
+  - art
+  - projects
 title: Album Wall Decor
 description: Cool wall decor for the new apartment
 date: 2022-10-05T00:00:00.000Z
-tags:
-  - projects
-  - art
 permalink: album-wall-decor/
 layout: post.njk
 thumbnail: /content/attachments/wall.jpg

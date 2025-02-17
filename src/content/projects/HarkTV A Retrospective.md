@@ -1,13 +1,12 @@
 ---
-topic: uncategorized
 created: 2022-08-01T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
+tags:
+  - code
+  - projects
 title: 'HarkTV: A Retrospective'
 description: A really long hackathon project turned startup.
 date: 2022-08-01T00:00:00.000Z
-tags:
-  - projects
-  - uncategorized
 permalink: hark-tv-a-retrospective/
 layout: post.njk
 thumbnail: /content/attachments/hark.jpeg

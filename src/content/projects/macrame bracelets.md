@@ -1,13 +1,12 @@
 ---
-topic: art
 created: 2024-04-27T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
+tags:
+  - art
+  - projects
 title: Macrame Bracelets
 description: some cool bracelets I made
 date: 2024-04-27T00:00:00.000Z
-tags:
-  - projects
-  - art
 permalink: macrame-bracelets/
 layout: post.njk
 thumbnail: /content/attachments/macrame.jpg

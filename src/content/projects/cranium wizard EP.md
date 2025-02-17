@@ -1,13 +1,12 @@
 ---
-topic: music
 created: 2022-09-01T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
+tags:
+  - music
+  - projects
 title: cranium wizard EP
 description: Collection of tracks made mid-2021 to early-2022
 date: 2022-09-01T00:00:00.000Z
-tags:
-  - projects
-  - music
 permalink: cranium-wizard-ep/
 layout: post.njk
 thumbnail: /content/attachments/cranium_wizard.png

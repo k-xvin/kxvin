@@ -1,15 +1,14 @@
 ---
-topic: uncategorized
 created: 2020-08-01T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
+tags:
+  - code
+  - projects
 title: 'Quiznomer: Where it All Begins'
 description: >-
   The first website a friend and I ever made, filled with bizarre and nonsense
   quizzes
 date: 2020-08-01T00:00:00.000Z
-tags:
-  - projects
-  - uncategorized
 permalink: quiznomer-where-it-all-begins/
 layout: post.njk
 thumbnail: /content/attachments/quiznomer.png
