@@ -79,11 +79,10 @@ li {
     backdrop-filter: blur(4px);
     border-radius: 5px;
     padding: 0.5rem;
+    border: 2px solid var(--accent-color-1);
 }
 
 .post {
-    border-top: 3px solid var(--accent-color-1);
-    border-bottom: 3px solid var(--accent-color-2);
     padding: 0.5rem 1.5rem;
 }
 
@@ -179,8 +178,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0.5rem;
-    font-family: Consolas, monospace;
-    font-weight: bold;
+    justify-content: center;
 }
 
 .tags a {
@@ -205,8 +203,14 @@ footer {
     text-decoration: none;
 }
 
-.date-header {
-    width: fit-content;
+.card-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-header span {
+    display: inline-block;
+    border: 0px;
 }
 
 .card-body {

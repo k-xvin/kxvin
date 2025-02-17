@@ -4,18 +4,19 @@
             {# Include page if it contains the tag to filter by, or no tag was given (such as for the "all" page) #}
             {% if tag in page.data.tags or tag == undefined %}
                 <li>
-                    <div class="date-header panel">
-                        <span>
+                    <div class="card-header">
+                        <span class="panel">
                             <b>
                                 {{ page.data.created | postDate }}
                             </b>
                         </span>
-                        <span>
-                            /
-                        </span>
-                        <span>
-                            {{ page.data.tags[0] }}
-                        </span>
+                        {% for pageTag in page.data.tags %}
+                            {% if pageTag != "projects" and pageTag != "notes" %}
+                                <span class="panel">
+                                    {{ pageTag }}
+                                </span>
+                            {% endif %}
+                        {% endfor %}
                     </div>
                     <a class="card-body panel" href="{{ page.url }}">
                         <img class="card-thumbnail" src="{{ page.data.thumbnail }}" alt="{{ page.data.thumbnail }}"/>

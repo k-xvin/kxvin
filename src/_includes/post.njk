@@ -3,18 +3,19 @@ layout: base.njk
 ---
 
 <main>
-    <div class="panel date-header">
-        <span>
+    <div class="card-header">
+        <span class="panel">
             <b>
                 {{ created | postDate }}
             </b>
         </span>
-        <span>
-            /
-        </span>
-        <span>
-            {{ tags[1] }}
-        </span>
+        {% for pageTag in tags %}
+            {% if pageTag != "projects" and pageTag != "notes" and pageTag != "" %}
+                <span class="panel">
+                    {{ pageTag }}
+                </span>
+            {% endif %}
+        {% endfor %}
     </div>
     <div class="panel post">
         {{ content | safe }}
