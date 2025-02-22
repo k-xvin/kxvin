@@ -6,7 +6,7 @@
         {% for tag, count in tagCountMap %}
             {% if tag != "all" %}
                 <span class="panel">
-                    <a href="/{{ base }}/{{ tag }}" {% if tag in url %} class="active" {% endif %}>{{ tag }} ({{ count }})</a>
+                    <a href="/{{ base }}/{{ tag }}" {% if url == "/" + base + "/" + tag + "/" %} class="active" {% endif %}>{{ tag }} ({{ count }})</a>
                 </span>
             {% endif %}
         {% endfor %}
