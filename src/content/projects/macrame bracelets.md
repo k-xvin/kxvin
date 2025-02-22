@@ -2,8 +2,8 @@
 created: 2024-04-27T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
 tags:
-  - art
   - projects
+  - art
 title: Macrame Bracelets
 description: some cool bracelets I made
 date: 2024-04-27T00:00:00.000Z

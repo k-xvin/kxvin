@@ -2,8 +2,8 @@
 created: 2022-10-13T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
 tags:
-  - electronics
   - projects
+  - electronics
 title: Mini LED Sign
 description: Made with an ESP32 WROOM32 and 1088AS LED matrix
 date: 2022-10-13T00:00:00.000Z

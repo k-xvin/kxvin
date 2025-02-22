@@ -2,8 +2,8 @@
 created: 2023-07-17T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
 tags:
-  - electronics
   - projects
+  - electronics
 title: Creating a Simple NAS
 description: 'Network Attached Storage with Ubuntu, Webmin, and Samba'
 date: 2023-07-17T00:00:00.000Z

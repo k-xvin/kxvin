@@ -2,8 +2,8 @@
 created: 2023-12-30T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
 tags:
-  - code
   - projects
+  - code
 title: 'LYNE Puzzle Solver, C'
 description: 'A basic solution finder for the puzzle game LYNE, written in C'
 date: 2023-12-30T00:00:00.000Z

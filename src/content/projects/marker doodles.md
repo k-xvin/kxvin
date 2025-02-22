@@ -2,8 +2,8 @@
 created: 2022-09-20T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
 tags:
-  - art
   - projects
+  - art
 title: Marker Doodles
 description: Some random doodles with a tattoo marker.
 date: 2022-09-20T00:00:00.000Z

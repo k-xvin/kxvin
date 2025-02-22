@@ -2,8 +2,8 @@
 created: 2023-03-15T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
 tags:
-  - art
   - projects
+  - art
 title: Cardboard and Marker
 description: Fast and sloppy art
 date: 2023-03-15T00:00:00.000Z

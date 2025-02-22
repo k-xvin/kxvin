@@ -2,8 +2,8 @@
 created: 2021-08-07T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
 tags:
-  - music
   - projects
+  - music
 title: Architect
 description: First track I ever made
 date: 2021-08-07T00:00:00.000Z

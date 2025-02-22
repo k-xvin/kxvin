@@ -2,8 +2,8 @@
 created: 2022-11-06T00:00:00.000Z
 modified: 2025-01-19T00:00:00.000Z
 tags:
-  - art
   - projects
+  - art
 title: A Poem (from LinkedIn)
 description: From LinkedIn’s ever-useful chat suggestions
 date: 2022-11-06T00:00:00.000Z

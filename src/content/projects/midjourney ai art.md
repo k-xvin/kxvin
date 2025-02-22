@@ -2,8 +2,8 @@
 created: 2022-09-12T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
 tags:
-  - art
   - projects
+  - art
 title: Midjourney experimentation
 description: Some light experimenting with AI art using Midjourney.
 date: 2022-09-12T00:00:00.000Z

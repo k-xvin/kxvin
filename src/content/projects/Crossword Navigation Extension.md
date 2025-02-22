@@ -2,8 +2,8 @@
 created: 2022-12-19T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
 tags:
-  - code
   - projects
+  - code
 title: Crossword Navigation Extension
 description: Browser extension to add keyboard navigation to a crossword website
 date: 2022-12-19T00:00:00.000Z

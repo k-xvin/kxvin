@@ -18,11 +18,11 @@ hello i am kevin this is my website hooray
 * I have a B.S. in Computer Engineering with a Minor in Anthropology from the University of California, Irvine.
 * Feel free to send me an email: `xu (at) kxvin (dot) com`
 * This site was generated with [11ty](https://www.11ty.dev/) and is hosted on Cloudflare Pages. See the [source code](https://github.com/k-xvin/kxvin)!
-* [<3](https://sushi-aa.github.io/)
+* [♡](https://sushi-aa.github.io/)
 
 ---
-# February
-* Updated how tags are displays for Projects and Notes
+# February 2025
+* Updated how tags are displayed for Projects and Notes
 # January 2025
 * Read [Liber Indigo](undefined)
 * Bought and set up a 3D printer!

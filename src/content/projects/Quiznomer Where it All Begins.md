@@ -2,8 +2,8 @@
 created: 2020-08-01T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
 tags:
-  - code
   - projects
+  - code
 title: 'Quiznomer: Where it All Begins'
 description: >-
   The first website a friend and I ever made, filled with bizarre and nonsense

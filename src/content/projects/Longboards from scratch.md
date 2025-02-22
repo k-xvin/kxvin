@@ -2,8 +2,8 @@
 created: 2019-07-01T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
 tags:
-  - woodworking
   - projects
+  - woodworking
 title: Longboards from scratch
 description: Longboards made in a garage with friends
 date: 2019-07-01T00:00:00.000Z

@@ -2,8 +2,8 @@
 created: 2025-02-02T00:00:00.000Z
 modified: 2025-02-15T00:00:00.000Z
 tags:
-  - 3dprinting
   - projects
+  - 3dprinting
 title: Replacement Sight Blade for MP-28 II
 description: 3D printed replacement part for my dad
 date: 2025-02-02T00:00:00.000Z

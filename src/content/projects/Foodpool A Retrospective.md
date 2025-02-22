@@ -2,8 +2,8 @@
 created: 2022-07-01T00:00:00.000Z
 modified: 2024-12-24T00:00:00.000Z
 tags:
-  - code
   - projects
+  - code
 title: 'Foodpool: A Retrospective'
 description: Some reflections on another startup I cofounded
 date: 2022-07-01T00:00:00.000Z

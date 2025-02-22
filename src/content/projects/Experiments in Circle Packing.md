@@ -2,9 +2,9 @@
 created: 2022-11-12T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
 tags:
+  - projects
   - art
   - code
-  - projects
 title: Experiments in Circle Packing
 description: Generative art variations on circle packing
 date: 2022-11-12T00:00:00.000Z

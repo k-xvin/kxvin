@@ -2,8 +2,8 @@
 created: 2021-01-31T00:00:00.000Z
 modified: 2024-12-06T00:00:00.000Z
 tags:
-  - code
   - projects
+  - code
 title: Ribbon
 description: Analyzes group chats and comes up with fun information
 date: 2021-01-31T00:00:00.000Z

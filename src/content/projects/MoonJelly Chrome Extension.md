@@ -2,8 +2,8 @@
 created: 2020-12-31T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
 tags:
-  - code
   - projects
+  - code
 title: MoonJelly Chrome Extension
 description: A chrome extension for navigating the Ocean Data Marketplace
 date: 2020-12-31T00:00:00.000Z

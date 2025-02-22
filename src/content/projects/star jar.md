@@ -2,8 +2,8 @@
 created: 2023-06-14T00:00:00.000Z
 modified: 2024-12-06T00:00:00.000Z
 tags:
-  - art
   - projects
+  - art
 title: Star Jar
 description: a little jar of paper stars
 date: 2023-06-14T00:00:00.000Z

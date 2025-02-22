@@ -2,8 +2,8 @@
 created: 2024-12-24T00:00:00.000Z
 modified: 2024-12-25T00:00:00.000Z
 tags:
-  - code
   - projects
+  - code
 title: December 2024 Website Revamp
 description: Yet another website redesign
 date: 2024-12-24T00:00:00.000Z

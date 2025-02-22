@@ -2,8 +2,8 @@
 created: 2019-10-31T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
 tags:
-  - art
   - projects
+  - art
 title: Cardboard Knight Costume
 description: Halloween costume I made in back in 2019
 date: 2019-10-31T00:00:00.000Z

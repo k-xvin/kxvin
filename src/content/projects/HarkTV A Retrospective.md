@@ -2,8 +2,8 @@
 created: 2022-08-01T00:00:00.000Z
 modified: 2024-12-05T00:00:00.000Z
 tags:
-  - code
   - projects
+  - code
 title: 'HarkTV: A Retrospective'
 description: A really long hackathon project turned startup.
 date: 2022-08-01T00:00:00.000Z

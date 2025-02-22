@@ -2,8 +2,8 @@
 created: 2025-01-20T00:00:00.000Z
 modified: 2025-02-15T00:00:00.000Z
 tags:
-  - 3dprinting
   - projects
+  - 3dprinting
 title: Replacement Screw
 description: 3D printed replacement screw part for my dad’s friend
 date: 2025-01-20T00:00:00.000Z
