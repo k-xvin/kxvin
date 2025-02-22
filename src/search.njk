@@ -1,0 +1,28 @@
+---
+permalink: search/
+layout: main.njk
+---
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet"/>
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search" class="panel"></div>
+<style>
+    body {
+        --pagefind-ui-primary: var(--accent-color-1);
+        --pagefind-ui-text: var(--text-color);
+        --pagefind-ui-background: none;
+        --pagefind-ui-border: var(--accent-color-1);
+        --pagefind-ui-tag: var(--accent-color-2);
+    }
+</style>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({
+            element: "#search",
+            showSubResults: false,
+            showImages: true,
+            showEmptyFilters: false,
+            resetStyles: true
+        });
+    });
+</script>
