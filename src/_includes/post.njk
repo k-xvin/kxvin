@@ -2,7 +2,7 @@
 layout: base.njk
 ---
 
-<main>
+<main data-pagefind-body>
     <div class="card-header">
         <span class="panel">
             <b>
@@ -10,8 +10,8 @@ layout: base.njk
             </b>
         </span>
         {% for pageTag in tags %}
-            {% if pageTag != "projects" and pageTag != "notes" and pageTag != "" %}
-                <span class="panel">
+            {% if pageTag != "" %}
+                <span data-pagefind-filter="tag" class="panel">
                     {{ pageTag }}
                 </span>
             {% endif %}
