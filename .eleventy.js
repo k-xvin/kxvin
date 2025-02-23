@@ -1,8 +1,17 @@
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const CleanCSS = require("clean-css");
 const path = require("path");
+const markdownIt = require("markdown-it");
 
 module.exports = function (eleventyConfig) {
+
+    // Markdown modifications
+    let options = {
+        html: true,
+        breaks: true,
+        linkify: true,
+    };
+    eleventyConfig.setLibrary("md", markdownIt(options));
 
     // https://permortensen.com/adding-pagefind-to-an-eleventy-site/
     eleventyConfig.on("eleventy.after", async function ({ dir }) {
