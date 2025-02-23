@@ -28,25 +28,43 @@ function main() {
  */
 function AddExtraFrontmatter(filePath, fileContent, filenameToSlugMapToFill) {
     const { data, content } = matter(fileContent);
-    const firstFourLines = content.split('\n').slice(0, 4);
 
-    if (firstFourLines.length == 4) {
-        data.title = firstFourLines[3].replace('#', '').trim();
-        data.description = firstFourLines[1];
-        data.date = data.created; // Eleventy relies on the "date" field to sort
+    // Retrieve Title and Description
+    data.title = "";
+    data.description = "";
+    content.split("\n").forEach((line, index) => {
+        const trimmed = line.trim();
+        if (trimmed) {
+            // Description: First non-blank line
+            if (!data.description) {
+                data.description = trimmed;
+            }
 
-        let fileParsed = path.parse(path.relative(INPUT_DIR, filePath));
-        let filename = fileParsed.name;
-        let slug = slugify(data.title);
-        filenameToSlugMapToFill.set(filename, "/" + slug);
+            // Title: First H1 (line startrs with #)
+            if (!data.title && trimmed.startsWith("# ")) {
+                console.log(line);
+                data.title = trimmed.slice(2);
+            }
+        }
 
-        // Set permalink and layout
-        data.permalink = slug + "/";
-        data.layout = "post.njk";
+        if (data.title && data.description) return;
+    });
 
-        // Add "Projects" or "Notes" to the existing tags
-        data.tags.unshift(fileParsed.dir);
-    }
+    // Add date field. Eleventy relies on the "date" field to sort
+    data.date = data.created;
+
+    // Generate slug
+    let fileParsed = path.parse(path.relative(INPUT_DIR, filePath));
+    let filename = fileParsed.name;
+    let slug = slugify(data.title);
+    filenameToSlugMapToFill.set(filename, "/" + slug);
+
+    // Set permalink and layout
+    data.permalink = slug + "/";
+    data.layout = "post.njk";
+
+    // Add "Projects" or "Notes" to the existing tags
+    data.tags.unshift(fileParsed.dir);
 
     return matter.stringify(content, data);
 }
