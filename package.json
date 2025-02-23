@@ -2,6 +2,7 @@
   "name": "kxvin",
   "version": "1.0.0",
   "description": "kxvin",
+  "type": "module",
   "scripts": {
     "copy": "rsync -av --delete ~/Everything/Public/ src/content",
     "preprocess": "node preprocess.mjs",

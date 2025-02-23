@@ -1,17 +1,19 @@
-const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
-const CleanCSS = require("clean-css");
-const path = require("path");
-const markdownIt = require("markdown-it");
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import CleanCSS from "clean-css";
+import path from "path";
+import markdownIt from "markdown-it";
 
-module.exports = function (eleventyConfig) {
+export default async function (eleventyConfig) {
 
     // Markdown modifications
-    let options = {
+    // const { calloutsMarkdownPlugin } = require("./callouts.md-plugin.js");
+    eleventyConfig.setLibrary("md", markdownIt({
         html: true,
         breaks: true,
         linkify: true,
-    };
-    eleventyConfig.setLibrary("md", markdownIt(options));
+    })
+        // .use(calloutsMarkdownPlugin)
+    );
 
     // https://permortensen.com/adding-pagefind-to-an-eleventy-site/
     eleventyConfig.on("eleventy.after", async function ({ dir }) {
