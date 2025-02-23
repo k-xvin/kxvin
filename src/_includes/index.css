@@ -17,6 +17,7 @@ body {
     font-family: sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
+    word-wrap: break-word;
 
     padding: 8px;
     display: flex;
