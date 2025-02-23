@@ -23,8 +23,9 @@ hello i am kevin this is my website hooray
 ---
 # February 2025
 * Updated how tags are displayed for Projects and Notes
+* Reading [A View From The Stars](undefined)
 # January 2025
-* Read [Liber Indigo](undefined)
+* Read [Liber Indigo: The Affordances of Magic](/liber-indigo-the-affordances-of-magic)
 * Bought and set up a 3D printer!
 
 # December 2024
