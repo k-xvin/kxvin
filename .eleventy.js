@@ -1,7 +1,27 @@
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const CleanCSS = require("clean-css");
+const path = require("path");
 
 module.exports = function (eleventyConfig) {
+
+    // https://permortensen.com/adding-pagefind-to-an-eleventy-site/
+    eleventyConfig.on("eleventy.after", async function ({ dir }) {
+        const inputPath = dir.output;
+        const outputPath = path.join(dir.output, "pagefind");
+
+        console.log("Creating Pagefind index of %s", inputPath);
+
+        const pagefind = await import("pagefind");
+        const { index } = await pagefind.createIndex();
+        const { page_count } = await index.addDirectory({ path: inputPath });
+        await index.writeFiles({ outputPath });
+
+        console.log(
+            "Created Pagefind index of %i pages in %s",
+            page_count,
+            outputPath
+        );
+    });
 
     function getTagCounts(collections, parentTag) {
         const tagCounts = new Map();
