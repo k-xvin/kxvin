@@ -29,26 +29,13 @@ function main() {
 function AddExtraFrontmatter(filePath, fileContent, filenameToSlugMapToFill) {
     const { data, content } = matter(fileContent);
 
-    // Retrieve Title and Description
-    data.title = "";
-    data.description = "";
-    content.split("\n").forEach((line, index) => {
-        const trimmed = line.trim();
-        if (trimmed) {
-            // Description: First non-blank line
-            if (!data.description) {
-                data.description = trimmed;
-            }
+    // Title: First H1 (first line that starts with #)
+    const titleMatch = content.match(/^# (.+)/m);
+    data.title = titleMatch ? titleMatch[1] : "ERROR NO TITLE";
 
-            // Title: First H1 (line startrs with #)
-            if (!data.title && trimmed.startsWith("# ")) {
-                console.log(line);
-                data.title = trimmed.slice(2);
-            }
-        }
-
-        if (data.title && data.description) return;
-    });
+    // Description: First non-blank line
+    const descMatch = content.match(/^(.+?)$/m);
+    data.description = descMatch ? descMatch[1] : "ERROR NO DESCRIPTION";
 
     // Add date field. Eleventy relies on the "date" field to sort
     data.date = data.created;
