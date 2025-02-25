@@ -17,16 +17,15 @@ thumbnail: /content/attachments/66.png
 
 I went in thinking it was a book about novel interface design, and ended up with a new perspective on the nature of reality.
 
-# Liber Indigo: The Affordances of Magic
-Book by Justin C. Kirkwood. Get it here! [https://www.justinckirkwood.net/liber-indigo](https://www.justinckirkwood.net/liber-indigo)
+> [!warning]
+> This note is a work in progress
 
-Accompanying YouTube content! [https://youtu.be/pGpBQgZ5IsI?si=KzvPyv_j5lf8m0bP](https://youtu.be/pGpBQgZ5IsI?si=KzvPyv_j5lf8m0bP)
+# Liber Indigo: The Affordances of Magic
+Book by Justin C. Kirkwood. Get it here! https://www.justinckirkwood.net/liber-indigo
+Accompanying YouTube content! https://youtu.be/pGpBQgZ5IsI?si=KzvPyv_j5lf8m0bP
 
 ![66.png](/content/attachments/66.png)
 *SAGE MOON - Acceptance (green water) + Revelation (indigo spirit) - Contemplation, Meditation, Reflection, Rumination*
-
-WORK IN PROGRESS NOTES
-
 # Notes on the Book
 # Interface
 ## Rotating the Cube

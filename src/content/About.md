@@ -22,7 +22,7 @@ hello i am kevin this is my website hooray
 
 ---
 # February 2025
-* Updated how tags are displayed for Projects and Notes
+* Website updates: better tag support, callouts, and more!
 * Reading [A View From The Stars](undefined)
 # January 2025
 * Read [Liber Indigo: The Affordances of Magic](/liber-indigo-the-affordances-of-magic)
