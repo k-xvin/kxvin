@@ -2,17 +2,17 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import CleanCSS from "clean-css";
 import path from "path";
 import markdownIt from "markdown-it";
+import markdownItCallouts from "markdown-it-callouts";
 
 export default async function (eleventyConfig) {
 
     // Markdown modifications
-    // const { calloutsMarkdownPlugin } = require("./callouts.md-plugin.js");
     eleventyConfig.setLibrary("md", markdownIt({
         html: true,
         breaks: true,
         linkify: true,
     })
-        // .use(calloutsMarkdownPlugin)
+        .use(markdownItCallouts, { defaultElementType: "blockquote", calloutTitleElementType: "p" })
     );
 
     // https://permortensen.com/adding-pagefind-to-an-eleventy-site/

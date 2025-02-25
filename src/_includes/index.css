@@ -111,6 +111,19 @@ li {
     height: 100%;
 }
 
+blockquote {
+    border-left: 2px solid var(--accent-color-1);
+    background-color: var(--background-color-darker);
+    color: var(--accent-color-1);
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+}
+
+.callout-warning::before {
+    content: "⚠ Warning";
+    font-weight: bold;
+}
+
 /** HEADER **/
 
 header {
