@@ -3,7 +3,7 @@ created: 2024-07-14T00:00:00.000Z
 modified: 2024-12-06T00:00:00.000Z
 tags:
   - notes
-  - uncategorized
+  - git
 title: git submodule
 description: 'Initialize, pull, and update git submodules'
 date: 2024-07-14T00:00:00.000Z

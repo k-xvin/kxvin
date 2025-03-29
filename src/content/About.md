@@ -21,9 +21,14 @@ hello i am kevin this is my website hooray
 * [♡](https://sushi-aa.github.io/)
 
 ---
+# March 2025
+* Reading [Design For A Better World](undefined)
+
 # February 2025
+* Read [A View From The Stars](/a-view-from-the-stars)
 * Website updates: better tag support, callouts, and more!
-* Reading [A View From The Stars](undefined)
+* Various 3D printing projects
+
 # January 2025
 * Read [Liber Indigo: The Affordances of Magic](/liber-indigo-the-affordances-of-magic)
 * Bought and set up a 3D printer!

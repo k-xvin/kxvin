@@ -1,6 +1,6 @@
 ---
 created: 2023-07-17T00:00:00.000Z
-modified: 2024-12-05T00:00:00.000Z
+modified: 2025-03-01T00:00:00.000Z
 tags:
   - projects
   - electronics
@@ -13,8 +13,20 @@ thumbnail: /content/attachments/case.jpg
 ---
 
 Network Attached Storage with Ubuntu, Webmin, and Samba
-
 # Creating a Simple NAS
+
+>[!info] 02/28/2025
+> Upgraded the system to 8GB of RAM!
+> * The motherboard is a [ECS
+ D1F-AD V1.0A](https://theretroweb.com/motherboards/s/ecs-d1f-ad-v1-0a), which supports up to 8GB of DDR3 UDIMM RAM.
+ >
+ > Realized I can directly use the hostname of the computer instead to resolve to the IP address instead of figuring out the IP every time.
+ > * This must be some kind of DNS resolution/configuration on my local network? Or Bounjour??
+ > * In my case, my fileshare is on `\\kstore` and the Webmin UI at `https://kstore:10000`.
+ > * Either way, it's convenient for me since I don't have to figure out how to set a static IP for this server anymore
+ >
+ > Had some kind of issue where it would get stuck trying to set up the network for 2+ minutes on startup, timeout, then startup normally
+ > * Manually configuring /etc/netplan/ seemed to have fixed it: https://dev.to/joeneville_/configure-ubuntu-wifi-with-netplan-4je0
 
 In this article, I document the process I went through in setting up a NAS (network attached storage) using an old computer, two 1TB hard disks, Ubuntu 22.04, Webmin, and Samba. I go through the technical steps as well as some personal notes on the process.
 
@@ -28,10 +40,7 @@ Hopefully, it also serves as a good tutorial for others.
 
 ![webmin.png](/content/attachments/webmin.png)
 
-
-
 I wanted a secure place where I can store some local files and backups.
-
 - NOT for daily storage usage
 - System will be powered off most of the time
 - Two duplicated/mirrored drives for hardware redundancy and safety (using RAID1 configuration)
@@ -361,7 +370,7 @@ If you are unable to write to the file share, check the permissions settings of 
 - Turn on and off remotely.
     - I plan to hook up my [Creating a Simple NAS](/creating-a-simple-nas) I made to this machine, after I iron out some connection stability issues in that code.
 - Measure power consumption of the machine when on.
-- Install a PCI to SATA port adapter to accomodate the boot SSD inside of the machine instead of it being and external USB drive.
+- Install a PCI to SATA port adapter to accommodate the boot SSD inside of the machine instead of it being and external USB drive.
 - Automatic/streamlined system for moving backups and files onto this machine.
     - Need some way to duplicate certain files across local disks and others onto cloud services.
     - Basically, prevent the scenario where I have random copies of backups at random times strewn around.

@@ -82,10 +82,15 @@ export default async function (eleventyConfig) {
         // Add any other Image utility options here:
 
         // optional, output image formats
-        formats: ["jpeg"],
+        formats: ["jpeg", "gif"],
 
         // optional, output image widths
         widths: ["128", "512"],
+
+        // for animated gifs
+        sharpOptions: {
+            animated: true,
+        },
 
         // optional, attributes assigned on <img> override these values.
         defaultAttributes: {

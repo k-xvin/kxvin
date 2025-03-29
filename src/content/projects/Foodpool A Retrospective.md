@@ -1,6 +1,6 @@
 ---
 created: 2022-07-01T00:00:00.000Z
-modified: 2024-12-24T00:00:00.000Z
+modified: 2025-03-14T00:00:00.000Z
 tags:
   - projects
   - code
@@ -16,6 +16,16 @@ Some reflections on another startup I cofounded
 
 # Foodpool: A Retrospective
 (Written on 01/02/2023, but dated earlier to fit the chronological order of projects)
+
+> [!note] 03/14/2025 Update
+> The link to the menu graphic was broken on the [foodpool.app](https://foodpool.app/) website. Fix:
+> * Save the graphic in the website instead of relying on Discord as a free file hosting service (those were fun days)
+>
+> Ran into some trouble on the Cloudflare auto-deployment since it had been 3 years since the last deployment. All sorts of strange dependency and legacy package issues. Fix:
+> * Set NODE_VERSION to 16
+> * Add `.npmrc` file with `legacy-peer-deps=true`
+> * Add "@babel/core": "^7.16.0" (some weird dependency issue with react)
+
 
 ![foodpool.jpeg](/content/attachments/foodpool.jpeg)
 

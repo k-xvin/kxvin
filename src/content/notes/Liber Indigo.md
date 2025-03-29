@@ -1,10 +1,10 @@
 ---
 created: 2024-12-29T00:00:00.000Z
-modified: 2025-01-12T00:00:00.000Z
+modified: 2025-03-27T00:00:00.000Z
 tags:
   - notes
   - book
-  - current
+  - draft
 title: 'Liber Indigo: The Affordances of Magic'
 description: >-
   I went in thinking it was a book about novel interface design, and ended up
@@ -17,35 +17,46 @@ thumbnail: /content/attachments/66.png
 
 I went in thinking it was a book about novel interface design, and ended up with a new perspective on the nature of reality.
 
-> [!warning]
-> This note is a work in progress
+> [!warning] Draft
+> This note is content complete, but still needs some formatting work
 
 # Liber Indigo: The Affordances of Magic
-Book by Justin C. Kirkwood. Get it here! https://www.justinckirkwood.net/liber-indigo
+Book by [Justin C. Kirkwood](undefined). Get it here! https://www.justinckirkwood.net/liber-indigo
 Accompanying YouTube content! https://youtu.be/pGpBQgZ5IsI?si=KzvPyv_j5lf8m0bP
 
 ![66.png](/content/attachments/66.png)
 *SAGE MOON - Acceptance (green water) + Revelation (indigo spirit) - Contemplation, Meditation, Reflection, Rumination*
-# Notes on the Book
+# Takeaway
+There's more to existence and reality than we can physically perceive. Rather, it's more fun to a live a life believing this than it is to limit yourself only to materialist rationalism (all things are explained by physical processes and interactions). Why rationalize away coincidences when you can play with and link them together?
+
+Things to look into
+* Metaphors We Live By
+* Microsoft Bob
+* Zooming User Interface of Pad++
+* Canon Cat with "Leap Key" navigation
+# Notes
 # Interface
 ## Rotating the Cube
-Kirkwood primes us to begin to "rotate the cube" of how we typically perceive the world around us.
-* affordances - things environments and objects provide that let us do things.
-	* \[thing] affords \[action]
-* ex. \[metaphors] afford \[understandings]
-	* Look into *Metaphors We Live By*
-	* Metaphors shape how we perceive concepts and consequently, the actions we take
-		* ex. Team-building as "building a bridge" (emphasizes structure) vs "cultivating a garden" (emphasizes collaborative growth)
+Kirkwood asks us to begin to "rotate the cube" of how we typically perceive the world around us. View things from a different angle.
 
+**Affordances** - things environments and objects provide that let us do things
+* \[thing] affords \[action]
+* \[metaphors] afford \[understandings]
+
+Look into *Metaphors We Live By*
+* Metaphors shape how we perceive concepts and consequently, the actions we take
+	* ex. Team-building as "building a bridge" (emphasizes structure) vs "cultivating a garden" (emphasizes collaborative growth)
 ## The Vital Remainder
-* "Hierarchy is the official metaphysic of the computer world. Today's hierarchical computer tools impose hierarchy where it may not exist; they can model the hierarchical aspects of the world but not the **vital remainder**. They teach beginners that it's the necessary structure of computers and the universe" - Ted Nelson (Kirkwood 8-9)
-* WIMP - Windows, Icons, Menus, Pointers
-	* The design that have entrenched itself in computer interfaces
-* Non-WIMP examples to look into
-	* Microsoft Bob
-	* Zooming User Interface of Pad++
-	* Canon Cat with "Leap Key" navigation
-* Kirkwood asks us to consider and remember "the vital remainder": the aspects of things that are hidden and not accounted for within the equations of our most common interfaces, affordances, and metaphors.
+> "Hierarchy is the official metaphysic of the computer world. Today's hierarchical computer tools impose hierarchy where it may not exist; they can model the hierarchical aspects of the world but not the **vital remainder**. They teach beginners that it's the necessary structure of computers and the universe" - Ted Nelson (Kirkwood 8-9)
+
+Kirkwood asks us to consider and remember "the vital remainder": the aspects of things that are hidden and not accounted for within the equations of our most common interfaces, affordances, and metaphors.
+
+WIMP - Windows, Icons, Menus, Pointers
+* The design that have entrenched itself in computer interfaces
+Non-WIMP examples to look into
+* Microsoft Bob
+* Zooming User Interface of Pad++
+* Canon Cat with "Leap Key" navigation
 ## Ambient Assumptions
 * Kirkwood highlights the perceptions of the world that we take for granted; our "ambient assumptions"
 * Ontological materialism - Physical objects and matter constitute all of reality and the processes in it. Matter creates consciousness.
@@ -204,8 +215,38 @@ Kirkwood constructs "The Spectral Annulus", a mapping of color to the principles
 * With this model, "magic" doesn't seem so out of place. Warping consciousness creates the conditions for meaningful events to align
 	* Kirkwood doesn't state this directly, but I think you can reason about this unmagically too -- you end up seeing what you want to see by looking for it. It's like when you see a random number always appearing in everyday life. You gave it more meaning (increased mass), so you have attracted its occurrence to you (increased gravity, thus warping spacetime).
 	* But think about it this way. What's more fun? Convincing yourself everything is illusion and coincidence, or that there's a great plane of consciousness moving events to each other? That's what I thought.
-	* This is a fun and useful model, but we should remember not to confuse the territory for the map. We will never know how consciouosness truly works. But that doesn't make the map any less useful!
-* todo
+	* This is a fun and useful model, but we should remember not to confuse the territory for the map. We will never know how consciousness truly works. But that doesn't make the map any less useful!
+* Thus, magic is all about amplifying meaning and intention
+	* Through frameworks, sigils, etc
+* Chaos magic - belief itself is the magic. Combine all actions that increase meaning and intention, without regard for particular frameworks like astrology, alchemy, etc
+* Basic magical ritual framework - separate the *sacred* and *profane* spaces
+	* Through separation, you can amplify the meaning of ritual acts by NOT blending it all together as chaos magic might do
+* Sanctification
+	* Space - Separate non-magic and magic spaces
+		* ex. draw a simple circle to form a separation. Magic occurs within the circle and mundane outside of it
+	* Objects - Pick meaningful objects dedicated to magic
+		* ex. Pen dedicated to drawing sigils, and NOTHING ELSE
+		* ex. Gift from an old friend, never used, exposed to the full moon, buried for a year in a special location, etc... Not used for ANYTHING ELSE.
+			* Exposing the object to meaningful events is a "hack" to increase the meaning of an object in your mind. "Meaningful events" -> events meaningful to YOU. It might mean the event is rare, or you have to put concerted effort into something, etc.
+		* The point is to have an object associated solely for magical purposes that holds a special place/meaning in your mind
+	* Language - Use a dedicated language for magic
+		* Separate everyday language from magical language to amplify meaning
+		* ex. Use esperanto because you never use it for anything else
+	* Numinosity - To be in an "awe-inspiring mystery"
+		* Create an awe-inspiring aesthetic for the ritual.
+		* You have to bring you mind into a state of awe and wonder, thus separating the the ritual from everyday life
+		* ex. Occult paraphenalia and curios. It's meant to inspire your mind to be in a different place than everyday life
+	* Layering - Invoke hermetic correspondences in the design of the ritual
+		* Add layers of meaning to your ritual by designing your ritual as such
+		* ex. Four directions to four objects to four actions, etc
+		* Again, the point is to amplify meaning and intention
+* Through the act of sanctification, you amplify the meaning you can give to an action
+	* Through amplified meaning, you increase synchronicity. Synchronicity only draws together things with a similar meaning.
+	* Nonmagically, coincidences are only coincidences because of their shared *meaning*. In a sense, you can "manufacture" more coincidences by looking for more connections/more meanings.
+* Chaos magic is more pragmatic and flexible than the frameworks of old
+	* "Chaos magic democratizes the practice of magic, making it accessible to anyone willing to engage their imagination and willpower" (Kirkwood 106)
+* "The universe will answer our call to dance with it, but it will always lead the dance, and we must do our best not to step on its toes." (Kirkwood 110)
+	* Very "cosmic joker" esque
 ## The Spectral Cross
 * A fun divinatory expansion to The Spectral Annulus, much like the *I Ching*'s combinations of primary "elements"
 * Divination as a mechanism to induce synchronicity.
@@ -214,14 +255,17 @@ Kirkwood constructs "The Spectral Annulus", a mapping of color to the principles
 * https://www.justinckirkwood.net/spectral-cross
 
 # Conclusion: Wrath and Clarity
-* "wrath and clarity"
-	* maybe Kirkwood is emphasizing a sort of "vicious levelheadedness" to which one should approach art and the world
-	* the ferocity and energy of wrath in conjunction with the vision and calmness of clarity. With all of those elements combined, we can aim for change in this world
+* "Wrath and Clarity"
+	* Kirkwood is emphasizing a sort of "vicious levelheadedness" to which one should approach art and the world
+	* The ferocity and energy of wrath in conjunction with the vision and calmness of clarity. With all of those elements combined, we can aim for change in this world
 * Not only is there so much more to human-computer interfaces, there is so much more to human-world interfaces!
-	* Our perception of reality is really just our human interface to reality
-	* Much like how the WIMP desktop is a human interface to the operating system of the computer
-	* the implication here is that there are so many more modalities and perspectives to interact and view things, from computers to reality itself!!
+	* Much like how the classic WIMP desktop interface obscures the underlying operations of the OS, the human interface obscures the operating system of reality
+* Remember that "intention", "meaning", "synchronicity" are still just frameworks/interfaces for magical thought. It's the map, not the territory.
+* Marshall McLuhan's *The Medium is the Message: An Inventory of Effects*
+* Art is the act of pulling an image from the mind and placing it into the world. Through art, we can scratch at our divine power of creation.
+* There are so so many more modalities and perspectives to interact and view things, from computers to reality itself!! So don't lock yourself into one modality, whatever the situation/context is.
 # Afterword: Keys Blue Keys
+It's a nice poem by Kirkwood that shows how language/poetry can be used to evoke numinosity. I think it's meant to capture Kirkwood's experience with magic in a linguistic format. It reminds me of Lewis Carroll's poems (like *Jabberwocky*).
 # Notes on the accompanying videos
 * [Metaphysical Prisoners of the Desktop](https://youtu.be/pGpBQgZ5IsI?si=SbuUAwHoiXew-_H6)
 * [The Background Hum of Default Reality](https://youtu.be/5Vsy3r7cqKc?si=XCMbz0jKIKLbDt32)
@@ -237,3 +281,35 @@ Kirkwood constructs "The Spectral Annulus", a mapping of color to the principles
 	* Emanationism - You start with a pure source, and every additional bit of detail adds more complexity
 		* Gnosticism and the rings of reality
 		* Neoplatonism, Hermeticism
+* [The Principle of Correspondence](https://youtu.be/V9hCFDhdRqc?si=hzl2fSOwAapeUk4v)
+	* CLIs and technical terms as “software occultism”. Fun way to put it!
+	* Engineering is more fun if you frame it as casting magic spells and rituals
+	* correspondences as affordances to manipulate/influence the corresponding concept
+	* quinta essentia - the fifth element that makes up the other four, the final distillation, the spirit
+	* alchemy - transforming the basic (lead) into something greater (gold)
+* [Gnosis of the Colorblind](https://youtu.be/zDCV7p7lwFU?si=DwRFMc01WeAD_i6G)
+	* annuli (circular diagram) better at portraying a concept as interconnected rather than hierarchical
+	* you are the magician who makes the grass green
+	* our tools shape us, so how do we want to shape our tools? how can we make tools that guide us towards what we want to be?
+	* are the way things are because of deliberate intention, or arbitrary selection? is it because of a deadline that this product is the way it is?
+* [The Enchanted Interface](https://youtu.be/woq5bSLQq18?si=dn8qNVJDfFPOvfQQ)
+	* serendipity - newness and unplanned encounters broaden your mind
+	* I gotta visit some used book stores
+	* the medici in florence's brining together of all kinds of art and sciences in one place led to the renaissance
+		* Which is to say, bringing together all kinds of ideas from many different facets will lead to awesome new innovations in your own mind
+	* This video series is a lot more wrapped together with desktop interfaces than the book, which I appreciate
+	* Kirkwood's desktop idea first principles
+		* Annularity
+		* Gravitation
+		* Visual Scalability
+		* Personalization
+			* * why is F\*ing the ONLY interface for everything computer???
+	* Serendipity modes
+	* We are holding ourselves back with a FAILURE OF IMAGINATION
+		* limits of imagination =\\= limits of reality
+		* relates to [you dont have to live with it](undefined)
+	* Ted Nelson
+	* YO he made a discord
+	* Directionless play! We need the spirit of PLAY!
+		* Something about [The 6 Shapes of God](undefined) here and Lila and play
+	* "Reenchantment is resistance" - Justin Kirkwood
