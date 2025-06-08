@@ -4,7 +4,6 @@ modified: 2025-03-27T00:00:00.000Z
 tags:
   - notes
   - book
-  - draft
 title: 'Liber Indigo: The Affordances of Magic'
 description: >-
   I went in thinking it was a book about novel interface design, and ended up

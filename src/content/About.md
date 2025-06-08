@@ -21,6 +21,13 @@ hello i am kevin this is my website hooray
 * [♡](https://sushi-aa.github.io/)
 
 ---
+# May 2025
+* Working on a project for Open Sauce 2025
+* Finished reading [Flowers For Algernon](/flowers-for-algernon)
+
+# April 2025
+* Working on [Genuary 2025](https://genuary.art/) prompts
+
 # March 2025
 * Reading [Design For A Better World](undefined)
 
