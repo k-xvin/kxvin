@@ -72,14 +72,14 @@ function ReplaceWikilinks(filePath, content, filenameToSlugMap) {
     // Step 1: Escape links inside code blocks and inline code
     const escapedCodeBlocks = content
         .replace(/```([\s\S]*?)```/g, (match, code) =>
-            `\`\`\`${code.replace(/!\[\[(.*?\.(?:jpg|jpeg|png|gif|webp|bmp|tiff))\]\]/gi, '[BLOCK IMAGE $1]')
+            `\`\`\`${code.replace(/!\[\[(.*?\.(?:jpg|svg|jpeg|png|gif|webp|bmp|tiff))\]\]/gi, '[BLOCK IMAGE $1]')
                 .replace(/\[\[(.*?)(?:\|(.*?))?\]\]/g, '[BLOCK LINK $1|$2]')}\`\`\``)
         .replace(/`([^`]+)`/g, (match, code) =>
-            `\`${code.replace(/!\[\[(.*?\.(?:jpg|jpeg|png|gif|webp|bmp|tiff))\]\]/gi, '[INLINE IMAGE $1]')
+            `\`${code.replace(/!\[\[(.*?\.(?:jpg|svg|jpeg|png|gif|webp|bmp|tiff))\]\]/gi, '[INLINE IMAGE $1]')
                 .replace(/\[\[(.*?)(?:\|(.*?))?\]\]/g, '[INLINE LINK $1|$2]')}\``);
 
     // Step 2: Replace image links outside of code blocks
-    const replacedImages = escapedCodeBlocks.replace(/!\[\[(.*?\.(?:jpg|jpeg|png|gif|webp|bmp|tiff))\]\]/gi, (match, filename) => {
+    const replacedImages = escapedCodeBlocks.replace(/!\[\[(.*?\.(?:jpg|svg|jpeg|png|gif|webp|bmp|tiff))\]\]/gi, (match, filename) => {
         const noBaseDirPath = INPUT_DIR.replace(/^\/?[^\/]+/, '');
         return `![${filename}](${noBaseDirPath}attachments/${filename})`; // Replace with Markdown image syntax
     });
@@ -109,7 +109,7 @@ function ReplaceWikilinks(filePath, content, filenameToSlugMap) {
 function AddThumbnailImage(filePath, fileContent, filenameToSlugMapToFill) {
     const { data, content } = matter(fileContent);
 
-    const regex = /(?<!`|```)[^`]*?\!\[.*?\]\((.*?\.(?:jpg|jpeg|png|gif|webp|bmp|tiff))\)/i;
+    const regex = /(?<!`|```)[^`]*?\!\[.*?\]\((.*?\.(?:jpg|svg|jpeg|png|gif|webp|bmp|tiff))\)/i;
     const match = content.match(regex);
     data.thumbnail = match ? match[1] : "/content/attachments/placeholder.png"
 

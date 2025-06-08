@@ -82,7 +82,7 @@ export default async function (eleventyConfig) {
         // Add any other Image utility options here:
 
         // optional, output image formats
-        formats: ["jpeg", /*"gif",*/],
+        formats: ["jpeg", "svg" /*"gif",*/],
 
         // optional, output image widths
         widths: ["128", "512"],
