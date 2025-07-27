@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import slugify from '@sindresorhus/slugify';
+import MarkdownIt from 'markdown-it';
 
 const INPUT_DIR = "src/content/"
 
@@ -57,46 +58,30 @@ function AddExtraFrontmatter(filePath, fileContent, filenameToSlugMapToFill) {
 }
 
 /**
- * Replace all wikilink-style links with standard Markdown links.
+ * Replace all wikilink-style links with standard Markdown links using markdown-it.
  * Converts image wikilinks to Markdown image links with absolute paths from "/attachments".
  * Converts non-attachment wikilinks to standard Markdown links with absolute paths from filenameToSlugMap.
  * @param {string} filePath path to a file
  * @param {string} fileContent contents of the file
  * @param {map} filenameToSlugMap map object to read filename to slug mapping
- * @returns 
+ * @returns {string} Processed Markdown string
  */
-function ReplaceWikilinks(filePath, content, filenameToSlugMap) {
-
-    // TODO: Does the below even work? I think there's some edge cases with inline code blocks this hasn't accounted for...
-
-    // Step 1: Escape links inside code blocks and inline code
-    const escapedCodeBlocks = content
-        .replace(/```([\s\S]*?)```/g, (match, code) =>
-            `\`\`\`${code.replace(/!\[\[(.*?\.(?:jpg|svg|jpeg|png|gif|webp|bmp|tiff))\]\]/gi, '[BLOCK IMAGE $1]')
-                .replace(/\[\[(.*?)(?:\|(.*?))?\]\]/g, '[BLOCK LINK $1|$2]')}\`\`\``)
-        .replace(/`([^`]+)`/g, (match, code) =>
-            `\`${code.replace(/!\[\[(.*?\.(?:jpg|svg|jpeg|png|gif|webp|bmp|tiff))\]\]/gi, '[INLINE IMAGE $1]')
-                .replace(/\[\[(.*?)(?:\|(.*?))?\]\]/g, '[INLINE LINK $1|$2]')}\``);
-
-    // Step 2: Replace image links outside of code blocks
-    const replacedImages = escapedCodeBlocks.replace(/!\[\[(.*?\.(?:jpg|svg|jpeg|png|gif|webp|bmp|tiff))\]\]/gi, (match, filename) => {
+function ReplaceWikilinks(filePath, fileContent, filenameToSlugMap) {
+    const md = new MarkdownIt();
+    // Preprocess: Replace wikilinks in the markdown source before parsing
+    let processed = fileContent.replace(/!\[\[(.*?\.(?:jpg|svg|jpeg|png|gif|webp|bmp|tiff))\]\]/gi, (match, filename) => {
         const noBaseDirPath = INPUT_DIR.replace(/^\/?[^\/]+/, '');
-        return `![${filename}](${noBaseDirPath}attachments/${filename})`; // Replace with Markdown image syntax
+        return `![${filename}](${noBaseDirPath}attachments/${filename})`;
     });
-
-    // Step 3: Replace non-image wikilinks outside of code blocks
-    const replacedLinks = replacedImages.replace(/\[\[(.*?)(?:\|(.*?))?\]\]/g, (match, filename, alias) => {
-        const text = alias || filename; // Use alias if available; otherwise, use the filename
+    processed = processed.replace(/\[\[(.*?)(?:\|(.*?))?\]\]/g, (match, filename, alias) => {
+        const text = alias || filename;
         const path = filenameToSlugMap.get(filename);
-        return `[${text}](${path})`; // Replace with Markdown link syntax
+        return `[${text}](${path})`;
     });
-
-    // Step 4: Restore placeholders in code blocks and inline code
-    return replacedLinks
-        .replace(/\[BLOCK IMAGE (.*?)\]/g, (match, filename) => `![[${filename}]]`)
-        .replace(/\[INLINE IMAGE (.*?)\]/g, (match, filename) => `![[${filename}]]`)
-        .replace(/\[BLOCK LINK (.*?)\|(.*?)\]/g, (match, filename, alias) => alias ? `[[${filename}|${alias}]]` : `[[${filename}]]`)
-        .replace(/\[INLINE LINK (.*?)\|(.*?)\]/g, (match, filename, alias) => alias ? `[[${filename}|${alias}]]` : `[[${filename}]]`);
+    // Optionally, you can parse and render to HTML if needed:
+    // const html = md.render(processed);
+    // But we want to keep it as Markdown, so just return processed
+    return processed;
 }
 
 /**
@@ -131,12 +116,10 @@ function ModifyMarkdownFiles(directoryPath, processCallback, filenameToSlugMap) 
                 // Subdirectory found, go in
                 ModifyMarkdownFiles(filePath, processCallback, filenameToSlugMap);
             } else if (file.endsWith('.md')) {
-
                 // Read file, transform content, then write file
                 const content = fs.readFileSync(filePath, 'utf8');
                 const updatedContent = processCallback(filePath, content, filenameToSlugMap);
                 fs.writeFileSync(filePath, updatedContent, 'utf8');
-
                 console.log(`Processed and saved: ${filePath}`);
             }
         });
