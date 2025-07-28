@@ -82,14 +82,16 @@ export default async function (eleventyConfig) {
         // Add any other Image utility options here:
 
         // optional, output image formats
-        formats: ["jpeg", "svg", "gif"],
+        formats: ["jpeg", "svg"/*, "gif"*/],
 
         // optional, output image widths
         widths: ["128", "512"],
 
-        sharpOptions: {
-            animated: true,
-        },
+        // TODO: Figure out how to use animated gifs without breaking VipsJpeg in Cloudflare pages
+        // "Error: VipsJpeg: Maximum supported image dimension is 65500 pixels" 
+        // sharpOptions: {
+        //     animated: true,
+        // },
 
         // optional, attributes assigned on <img> override these values.
         defaultAttributes: {
