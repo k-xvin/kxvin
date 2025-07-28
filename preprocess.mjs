@@ -75,8 +75,14 @@ function ReplaceWikilinks(filePath, fileContent, filenameToSlugMap) {
     });
     processed = processed.replace(/\[\[(.*?)(?:\|(.*?))?\]\]/g, (match, filename, alias) => {
         const text = alias || filename;
-        const path = filenameToSlugMap.get(filename);
-        return `[${text}](${path})`;
+        // If the filename has an extension, use /content/attachments as fallback
+        if (filenameToSlugMap.get(filename) !== undefined) {
+            return `[${text}](${filenameToSlugMap.get(filename)})`;
+        } else if (/\.[a-zA-Z0-9]+$/.test(filename)) {
+            return `[${text}](/content/attachments/${filename})`;
+        } else {
+            return `[${text}](undefined)`;
+        }
     });
     // Optionally, you can parse and render to HTML if needed:
     // const html = md.render(processed);

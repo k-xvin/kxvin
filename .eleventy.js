@@ -107,6 +107,10 @@ export default async function (eleventyConfig) {
 
 
     eleventyConfig.addPassthroughCopy({ "src/content/attachments/nightsky2.png": "background.png" });
+    // Pass-through copy all non-image files from attachments
+    eleventyConfig.addPassthroughCopy({
+        "src/content/attachments/!(*.jpg|*.jpeg|*.png|*.gif|*.svg|*.webp|*.bmp|*.tiff)": "content/attachments/"
+    });
 
     return {
         dir: {
