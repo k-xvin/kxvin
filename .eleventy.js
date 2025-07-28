@@ -82,16 +82,14 @@ export default async function (eleventyConfig) {
         // Add any other Image utility options here:
 
         // optional, output image formats
-        formats: ["jpeg", "svg" /*"gif",*/],
+        formats: ["jpeg", "svg", "gif"],
 
         // optional, output image widths
         widths: ["128", "512"],
 
-        // TODO: figure how to make gifs move without blowing up Sharp
-        // for animated gifs
-        // sharpOptions: {
-        //     animated: true,
-        // },
+        sharpOptions: {
+            animated: true,
+        },
 
         // optional, attributes assigned on <img> override these values.
         defaultAttributes: {
