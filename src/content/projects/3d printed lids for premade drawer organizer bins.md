@@ -28,7 +28,7 @@ I didn't want these organizer bins to go completely to waste, so I came up with 
 > * 1x2: [On Onshape](https://cad.onshape.com/documents/f895a4f17b71de44f471f2b1/w/cf0f272d6c720475acf0b602/e/e70addfa3af79479d8469726)
 > * 1x3: [On Onshape](https://cad.onshape.com/documents/dd723b83767ece95f41c4b16/w/d9fae84d3db1e87301fd9d17/e/0774b5e690ab4869257d5dd9)
 > * 2x3: [On Onshape](https://cad.onshape.com/documents/1669189259216ea742a2e689/w/826654676de829ef78b791d0/e/d30f6b976975b9e21c378530)
-> * All STLs: [lids.zip](undefined) (TODO: link is broken; need to add raw file download support to site)
+> * All STLs: [lids.zip](/content/attachments/lids.zip)
 
 Several iterations later, this is what I came up with:
 

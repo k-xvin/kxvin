@@ -1,6 +1,6 @@
 ---
 created: 2024-12-06T00:00:00.000Z
-modified: 2025-01-13T00:00:00.000Z
+modified: 2025-07-27T00:00:00.000Z
 tags:
   - ''
 title: About
@@ -21,8 +21,11 @@ hello i am kevin this is my website hooray
 * [♡](https://sushi-aa.github.io/)
 
 ---
+# July 2025
+* Completed and exhibited version 2 of [The Bobamabob](https://bobamabob.com/) at [Open Sauce 2025](https://opensauce.com/). Very tiring, but awesome!
+
 # May 2025
-* Working on a project for Open Sauce 2025
+* Working on a project for [Open Sauce 2025](https://opensauce.com/)
 * Finished reading [Flowers For Algernon](/flowers-for-algernon)
 
 # April 2025

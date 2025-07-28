@@ -1,6 +1,6 @@
 ---
 created: 2025-01-17T00:00:00.000Z
-modified: 2025-06-08T00:00:00.000Z
+modified: 2025-07-23T00:00:00.000Z
 tags:
   - notes
   - 3dprinting
@@ -124,3 +124,17 @@ Once the print is complete, let the base plate cool before taking the print off.
 	2. Distribute blobs of grease on 3-4 spots across the z screw
 	3. Work the grease into the threads on these spots
 	4. The grease will be automatically distributed as the z axis moves
+# 5 Extra
+* Tabletop spool holder/roller?
+	* https://www.thingiverse.com/thing:2047554
+	* https://www.printables.com/model/73636-filament-spool-roller-w-608-bearings
+		* https://www.printables.com/model/1303421-spool-roller-filament-guide
+* Air filtration
+	* https://youtu.be/XlXNTQoyRBs?si=iTZySf84WxCA1wZQ
+	* Have good ventilation and air filtration
+* Filament profile calibration
+	* https://youtu.be/7rNlBwYd30k?si=LzxVIi-2MMpMF2jF
+	* temp tower test - pick correct temperature
+	* retraction test - reduce stringing
+	* max flow rate test - how fast can your filament print
+an your filament print

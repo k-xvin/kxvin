@@ -168,7 +168,7 @@ You can get your IP address on Ubuntu with `ip a` and then identifying the netwo
 
 Note: since Webmin's SSL certificate is self-signed, you may receive a security warning from your browser. Navigate past this and you will be greeted with the Webmin login screen. Use the credentials of a user on the host (ubuntu) machine to log in, and you will be greeted with a dashboard.
 
-![[webmin_dash.png]]
+![webmin_dash.png](/content/attachments/webmin_dash.png)
 
 _Small aside: How does webmin host a server locally?_
 
@@ -204,7 +204,7 @@ sudo apt install mdadm
 
 Webmin simplifies the process for creating a RAID by providing you with a GUI that will build and run the `mdadm` command.
 
-![[webmin_raid.png]]
+![webmin_raid.png](/content/attachments/webmin_raid.png)
 
 ```Plain
 Webmin > Hardware > Linux RAID
@@ -258,7 +258,7 @@ a certain folder (i.e "mounting").
 
 We will be using Samba to create a file share that is accessible from Windows (and other operating systems). You can also use NFS if you do not need Windows accessibility.
 
-![[webmin_samba.png]]
+![webmin_samba.png](/content/attachments/webmin_samba.png)
 
 Install Samba:
 
