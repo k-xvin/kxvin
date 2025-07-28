@@ -240,6 +240,7 @@ footer {
 .card-thumbnail {
     object-fit: cover;
     height: 4rem;
+    min-width: 4rem;
     max-width: 4rem;
     width: 100%;
     border: 4px solid var(--accent-color-2);
