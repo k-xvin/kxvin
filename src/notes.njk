@@ -3,8 +3,10 @@ permalink: notes/
 title: Notes
 layout: main.njk
 ---
-
+{# Import macros #}
 {% from "tags.njk" import tags %}
-{{ tags("notes", collections.noteTags, page.url) }}
 {% from "cards.njk" import cards %}
+
+{# List the tags, then the cards #}
+{{ tags("notes", collections.noteTags, page.url) }}
 {{ cards(collections.notes) }}

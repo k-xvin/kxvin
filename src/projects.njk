@@ -3,8 +3,10 @@ permalink: projects/
 title: Projects
 layout: main.njk
 ---
-
+{# Import macros #}
 {% from "tags.njk" import tags %}
-{{ tags("projects", collections.projectTags, page.url) }}
 {% from "cards.njk" import cards %}
+
+{# List the tags, then the cards #}
+{{ tags("projects", collections.projectTags, page.url) }}
 {{ cards(collections.projects) }}
