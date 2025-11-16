@@ -105,6 +105,11 @@ export default async function (eleventyConfig) {
         return new CleanCSS({}).minify(code).styles;
     });
 
+    // TODO: Make a filter that wraps consecutive images in a grid in order to display images side by side
+    // eleventyConfig.addFilter("imageGridify", function(content) {
+    //     console.log("hello");
+    //     return content;
+    // });
 
     eleventyConfig.addPassthroughCopy({ "src/content/attachments/nightsky2.png": "background.png" });
     // Pass-through copy all non-image files from attachments
