@@ -4,7 +4,7 @@
   "description": "kxvin",
   "type": "module",
   "scripts": {
-    "copy": "rsync -av --delete ~/Everything/Public/ src/content",
+    "copy": "rsync -av --delete ~/obsidian/Everything/Public/ src/content",
     "preprocess": "node preprocess.mjs",
     "sync": "npm run copy && npm run preprocess",
     "start": "eleventy --serve",
