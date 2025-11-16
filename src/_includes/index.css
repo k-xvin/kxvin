@@ -152,6 +152,10 @@ nav a {
     text-decoration: none;
 }
 
+img {
+    background-color: var(--accent-color-1);
+}
+
 /** FOOTER */
 
 footer {
