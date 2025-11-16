@@ -187,14 +187,14 @@ footer {
     font-weight: bold;
 }
 
-/** POST LISTS **/
+/** POST/ARTICLE LISTS **/
 
 .tags {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0.5rem;
-    justify-content: center;
+    margin: 0.5rem;
 }
 
 .tags a {
