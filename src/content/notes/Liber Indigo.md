@@ -1,6 +1,6 @@
 ---
 created: 2024-12-29T00:00:00.000Z
-modified: 2025-03-27T00:00:00.000Z
+modified: 2025-09-19T00:00:00.000Z
 tags:
   - notes
   - book
@@ -77,7 +77,7 @@ Non-WIMP examples to look into
 ## Mapping Polarity
 * Carl G. Jung's *Synchronicity: An Acausal Connecting Principle*
 	* Events connected by some meaning are attracted to each other acausally through space and time. Coincidences become *meaningful*.
-*  Ramsey Dukes' description of divination as leveraging "stochastic resonance"
+* Ramsey Dukes' description of divination as leveraging "stochastic resonance"
 	* Using random noise to amplify and reveal signals in reality
 * Personification as a useful affordance for understanding complex ideas
 * Don't confuse the map (metaphor) for the territory (the actual concept/thing)!
@@ -281,7 +281,7 @@ It's a nice poem by Kirkwood that shows how language/poetry can be used to evoke
 		* Gnosticism and the rings of reality
 		* Neoplatonism, Hermeticism
 * [The Principle of Correspondence](https://youtu.be/V9hCFDhdRqc?si=hzl2fSOwAapeUk4v)
-	* CLIs and technical terms as “software occultism”. Fun way to put it!
+	* CLIs and technical terms as "software occultism". Fun way to put it!
 	* Engineering is more fun if you frame it as casting magic spells and rituals
 	* correspondences as affordances to manipulate/influence the corresponding concept
 	* quinta essentia - the fifth element that makes up the other four, the final distillation, the spirit

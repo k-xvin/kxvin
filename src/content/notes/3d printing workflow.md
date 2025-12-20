@@ -1,6 +1,6 @@
 ---
 created: 2025-01-17T00:00:00.000Z
-modified: 2025-07-23T00:00:00.000Z
+modified: 2025-08-21T00:00:00.000Z
 tags:
   - notes
   - 3dprinting
@@ -97,7 +97,7 @@ Once the print is complete, let the base plate cool before taking the print off.
 * Lubricating oil - For lubricating linear rails (x and y axis)
 	* Super Lube 51004 synthetic oil
 * Lubricating grease - For lubricating Z-axis screws
-	*  Super Lube 21030 grease
+	* Super Lube 21030 grease
 * Sponge-tip swabs - For applying oil and grease
 * Non-woven fabric/towel - For cleaning off old oil/grease without leaving lint
 * (Optional) Nylon bristle cleaning brushes - For cleaning off old oil/grease without leaving lint or scratches
@@ -137,4 +137,5 @@ Once the print is complete, let the base plate cool before taking the print off.
 	* temp tower test - pick correct temperature
 	* retraction test - reduce stringing
 	* max flow rate test - how fast can your filament print
-an your filament print
+* Blog post breaking down mechanical design tips for 3d printing
+	* https://blog.rahix.de/design-for-3d-printing/

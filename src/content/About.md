@@ -1,6 +1,6 @@
 ---
 created: 2024-12-06T00:00:00.000Z
-modified: 2025-07-27T00:00:00.000Z
+modified: 2025-11-14T00:00:00.000Z
 tags:
   - ''
 title: About
@@ -21,6 +21,15 @@ hello i am kevin this is my website hooray
 * [♡](https://sushi-aa.github.io/)
 
 ---
+
+# December 2025
+* Cleaning up some loose ends: backups, notes, and organization.
+
+# November 2025
+* Working on a version 2 of [The Bobamabob](https://bobamabob.com/).
+* Started work at Applied Intuition!
+* Added some small visual updates to the website and some stray projects and notes.
+
 # July 2025
 * Completed and exhibited version 2 of [The Bobamabob](https://bobamabob.com/) at [Open Sauce 2025](https://opensauce.com/). Very tiring, but awesome!
 
@@ -59,7 +68,7 @@ hello i am kevin this is my website hooray
 * I have a couple of projects brewing in my mind. We'll see if I'll get to them...
 
 # August 2023
-* Started working full time!
+* Started working full time at Roku!
 
 # June 2023
 * I graduated! It's been a long four years.
