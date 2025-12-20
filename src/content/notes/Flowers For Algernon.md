@@ -1,6 +1,6 @@
 ---
 created: 2025-04-23T00:00:00.000Z
-modified: 2025-06-07T00:00:00.000Z
+modified: 2025-12-20T00:00:00.000Z
 tags:
   - notes
   - book
@@ -9,10 +9,12 @@ description: is it better to have loved than to have never loved at all?
 date: 2025-04-23T00:00:00.000Z
 permalink: flowers-for-algernon/
 layout: post.njk
-thumbnail: /content/attachments/placeholder.png
+thumbnail: /content/attachments/algernon.png
 ---
 is it better to have loved than to have never loved at all?
 # Flowers For Algernon
+
+![algernon.png](/content/attachments/algernon.png)
 
 I enjoyed reading Flowers For Algernon by Daniel Keyes. On the surface, it's a story that discusses knowledge, intelligence, and their relation to the human experience through the character of Charlie Gordon, who undergoes an experimental surgery to remove his learning disability and increase his intelligence. But for me, it's a story that made me sad and reflective. I was bummed out for a few days afterwards.
 
@@ -71,7 +73,7 @@ More points from the [Wikipedia entry](https://en.wikipedia.org/wiki/Flowers_for
 > "I see now that the path I choose through that maze makes what I am. I am not only a thing, but also a way of being--one of many ways..." (Keyes 203)
 * Reminds me of [Design For A Better World](undefined)'s discussion on "path dependence". We are where we came from.
 
->  "I said it because he needed it, but I felt hollow." (Keyes 210)
+> "I said it because he needed it, but I felt hollow." (Keyes 210)
 * Charlie complimenting a learning disabled person's woodworking. The world is always complex, but its concepts can always be made simpler, at the cost of some details.
 
 > "Alice is a great help to me now. She brings me sandwiches and coffee, but she makes no demands." (Keyes 219)
@@ -79,7 +81,7 @@ More points from the [Wikipedia entry](https://en.wikipedia.org/wiki/Flowers_for
 
 > "Pushing too hard will only make things freeze up. How many great problems have gone unsolved because men didn't know enough, or have enough faith in the creative process and in themselves, to let go for the *whole* mind to work at it?" (Keyes 223)
 
->  "I passed your floor on the way up, and now I'm passing it on the way down" (Keyes 266)
+> "I passed your floor on the way up, and now I'm passing it on the way down" (Keyes 266)
 
 > "It doesn't mean," she shrugged. "
 > "It just is--like a poem. I wanted to see you. (Keyes 268)
@@ -87,4 +89,4 @@ More points from the [Wikipedia entry](https://en.wikipedia.org/wiki/Flowers_for
 > "Then all of a suddin I remembered some things about the operashun and me getting smart and I said holy smoke I reely pulled a Charlie Gordon that time." (Keyes 284)
 * I found this quote from Charlie really funny, but at the same time, it's a very tragic moment between Charlie and Alice
 
->  "Its easy to have frends if you let pepul laff at you. Im going to have lots of frends where I go." (Keyes 286)
+> "Its easy to have frends if you let pepul laff at you. Im going to have lots of frends where I go." (Keyes 286)

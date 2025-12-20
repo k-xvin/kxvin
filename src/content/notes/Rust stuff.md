@@ -9,7 +9,7 @@ description: 'Miscellaneous notes on Rust concepts, coming from a C background'
 date: 2025-10-19T00:00:00.000Z
 permalink: rust-stuff/
 layout: post.njk
-thumbnail: /content/attachments/placeholder.png
+thumbnail: /content/attachments/rust.png
 ---
 
 Miscellaneous notes on Rust concepts, coming from a C background
@@ -17,6 +17,8 @@ Miscellaneous notes on Rust concepts, coming from a C background
 
 > [!warning] Messy
 > This note is just a blob of personal notes on Rust, in a similar vein as that [blob of notes on C++](/learning-c). I also stopped taking notes at some point in my readings so this page doesn't cover everything. Beware!!!
+
+![rust.png](/content/attachments/rust.png)
 
 https://doc.rust-lang.org/book/
 https://rust-unofficial.github.io/too-many-lists/

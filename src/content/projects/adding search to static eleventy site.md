@@ -9,10 +9,13 @@ description: Using Pagefind to add search to my website
 date: 2025-02-16T00:00:00.000Z
 permalink: adding-search-to-an-eleventy-site/
 layout: post.njk
-thumbnail: /content/attachments/placeholder.png
+thumbnail: /content/attachments/pagefind.png
 ---
 Using Pagefind to add search to my website
 # Adding Search to an Eleventy Site
+
+![pagefind.png](/content/attachments/pagefind.png)
+
 Since this website has a lot of stuff on it, I wanted to try adding a low-overhead search feature. After some digging around, it seems like Pagefind is the solution for me.
 
 As of writing this article, I haven't actually added an official search button. Maybe by the time you're reading this, it exists. For now, it is directly accessible at https://kxvin.com/search.

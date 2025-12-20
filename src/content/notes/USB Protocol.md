@@ -9,12 +9,13 @@ description: Notes on USB!
 date: 2025-06-23T00:00:00.000Z
 permalink: usb-protocol/
 layout: post.njk
-thumbnail: /content/attachments/placeholder.png
+thumbnail: /content/attachments/usb.png
 ---
 Notes on USB!
 # USB Protocol
 
-TODO: draw a big USB picture here
+![usb.png](/content/attachments/usb.png)
+
 # USB ?
 At work, I wrote a USB host-side driver and client-facing library from scratch. This also included implementing host-side support for the CDC device class. All on a custom RTOS on a new SoC.
 
