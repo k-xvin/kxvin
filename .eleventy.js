@@ -4,6 +4,34 @@ import path from "path";
 import markdownIt from "markdown-it";
 import markdownItCallouts from "markdown-it-callouts";
 
+// When consecutive images have no blank line between them in markdown,
+// render them in a <div class="image-grid"> instead of a <p>.
+//
+// In markdown-it, a paragraph <p> is always three tokens: open, inline, close.
+// Check if the inline token's children are *only* images (ignoring
+// line breaks between them) and swap the <p> wrapper (open, close) for a <div>.
+function imageGridPlugin(md) {
+    function isParagraphConsecutiveImages(tokens, i) {
+        // inline is always the middle token
+        const inline = tokens[i + 1];
+        if (!inline || inline.type !== 'inline') return false;
+        // Strip softbreaks (new line without blank line inbetween), then check that only images remain
+        const gridCandidate = (inline.children || []).filter(t => t.type !== 'softbreak');
+        return gridCandidate.length >= 2 && gridCandidate.every(t => t.type === 'image');
+    }
+
+    // NOTE: isParagraphConsecutiveImages is called independently in to avoid sharing state between
+    // the open and close renderers
+
+    // Open, will become <p> but swap for <div> if it's an image grid
+    md.renderer.rules.paragraph_open = (tokens, i, options, env, self) =>
+        isParagraphConsecutiveImages(tokens, i) ? '<div class="image-grid">' : self.renderToken(tokens, i, options);
+
+    // Close, will become </p> but swap for </div> if it's an image grid
+    md.renderer.rules.paragraph_close = (tokens, i, options, env, self) =>
+        isParagraphConsecutiveImages(tokens, i - 2) ? '</div>' : self.renderToken(tokens, i, options);
+}
+
 export default async function (eleventyConfig) {
 
     // Markdown modifications
@@ -12,7 +40,10 @@ export default async function (eleventyConfig) {
         breaks: true,
         linkify: true,
     })
+        // Special call-out quote block
         .use(markdownItCallouts, { defaultElementType: "blockquote", calloutTitleElementType: "p" })
+        // Special wrapper around consecutive images
+        .use(imageGridPlugin)
     );
 
     // https://permortensen.com/adding-pagefind-to-an-eleventy-site/
@@ -81,17 +112,15 @@ export default async function (eleventyConfig) {
 
         // Add any other Image utility options here:
 
-        // optional, output image formats
-        formats: ["jpeg", "svg"/*, "gif"*/],
+        // prefer webp, fall back to original input format
+        formats: ["webp", null],
 
         // optional, output image widths
         widths: ["128", "512"],
 
-        // TODO: Figure out how to use animated gifs without breaking VipsJpeg in Cloudflare pages
-        // "Error: VipsJpeg: Maximum supported image dimension is 65500 pixels" 
-        // sharpOptions: {
-        //     animated: true,
-        // },
+        sharpOptions: {
+            animated: true,
+        },
 
         // optional, attributes assigned on <img> override these values.
         defaultAttributes: {
@@ -104,12 +133,6 @@ export default async function (eleventyConfig) {
     eleventyConfig.addFilter("cssmin", function (code) {
         return new CleanCSS({}).minify(code).styles;
     });
-
-    // TODO: Make a filter that wraps consecutive images in a grid in order to display images side by side
-    // eleventyConfig.addFilter("imageGridify", function(content) {
-    //     console.log("hello");
-    //     return content;
-    // });
 
     eleventyConfig.addPassthroughCopy({ "src/content/attachments/nightsky2.png": "background.png" });
     // Pass-through copy all non-image files from attachments

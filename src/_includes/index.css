@@ -108,10 +108,36 @@ li {
 
 .post img {
     object-fit: contain;
-    max-width: 100%;
+    /* max-width: 100%; */
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
     width: 100%;
     max-height: 50vh;
     height: 100%;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.image-grid br { display: none; }
+
+.image-grid picture { aspect-ratio: 1/1; }
+
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    max-width: unset;
+    max-height: unset;
+    margin: 0;
+    object-fit: cover;
+}
+
+@media (max-width: 500px) {
+    .image-grid { grid-template-columns: 1fr; }
 }
 
 blockquote {
@@ -153,7 +179,7 @@ nav a {
 }
 
 img {
-    background-color: var(--accent-color-1);
+    /* background-color: var(--accent-color-1); */
 }
 
 /** FOOTER */
