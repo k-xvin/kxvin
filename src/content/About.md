@@ -1,6 +1,6 @@
 ---
 created: 2024-12-06T00:00:00.000Z
-modified: 2025-11-14T00:00:00.000Z
+modified: 2026-04-07T00:00:00.000Z
 tags:
   - ''
 title: About
@@ -14,13 +14,26 @@ thumbnail: /content/attachments/placeholder.png
 hello i am kevin this is my website hooray
 
 # About
-* I'm Kevin. I enjoy working on a variety of technical and artistic projects, which include web development, creative coding, embedded systems, music, and visual art.
+* I enjoy working on tech and art: embedded systems, web development, creative coding, music, and visual art.
 * I have a B.S. in Computer Engineering with a Minor in Anthropology from the University of California, Irvine.
 * Feel free to send me an email: `xu (at) kxvin (dot) com`
 * This site was generated with [11ty](https://www.11ty.dev/) and is hosted on Cloudflare Pages. See the [source code](https://github.com/k-xvin/kxvin)!
 * [♡](https://sushi-aa.github.io/)
 
 ---
+
+# April 2025
+* Finished reading [The Windup Girl](/the-windup-girl)
+* Still working on version 2 of [The Bobamabob](/the-bobamabob-v1)
+* I'm a contributor to [Fuchsia](https://fuchsia.dev/) now!
+* Switched my main home computer to Linux. No more Windows!
+* Some minor website tweaks, like image grids and animated `.webp`!
+* (there are several new projects and notes I need to publish to this website...)
+
+# January 2025
+* Finally learned to touch type. It took a few weeks of practice to get my touch type speed up to my honed hunt-and-peck style and actually have a usable typing speed. It was kind of a weird transition period since my job involves a lot of typing.
+* That said, I still don't touch type quite properly, but it's definitely less strange than it was before.
+* [learning to touch type](/learning-to-touch-type)
 
 # December 2025
 * Cleaning up some loose ends: backups, notes, and organization.
