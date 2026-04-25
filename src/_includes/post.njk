@@ -19,5 +19,8 @@ layout: base.njk
     </div>
     <div class="panel post">
         {{ content | safe }}
+        <br/>
+        <em>last updated {{ modified | postDate }}</em>
+        <br/>
     </div>
 </main>
