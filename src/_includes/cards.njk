@@ -1,6 +1,6 @@
 {% macro cards(collection, tag) %}
     <ul class="cards">
-        {% for page in collection | reverse %}
+        {% for page in collection %}
             {# Include page if it contains the tag to filter by, or no tag was given (such as for the "all" page) #}
             {% if tag in page.data.tags or tag == undefined %}
                 <li>

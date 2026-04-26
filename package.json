@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "copy": "rsync -av --delete ~/obsidian/Everything/Public/ src/content",
-    "preprocess": "node preprocess.mjs",
-    "sync": "npm run copy && npm run preprocess",
+    "sync": "npm run copy",
     "start": "eleventy --serve",
     "build": "eleventy"
   },

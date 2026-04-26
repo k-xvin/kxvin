@@ -2,11 +2,12 @@
 pagination:
     data: collections.noteTags
     size: 1
+    filter: keys
     alias: tag
-permalink: /notes/{{ tag }}/
+eleventyComputed:
+  permalink: "/notes/{{ tag }}/"
 layout: main.njk
 ---
-
 {% from "tags.njk" import tags %}
 {{ tags("notes", collections.noteTags, page.url) }}
 {% from "cards.njk" import cards %}

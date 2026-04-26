@@ -1,11 +1,11 @@
-{% macro tags(base, tagCountMap, url) %}
+{% macro tags(base, tagCounts, url) %}
 <details class="panel" {% if url != "/" + base + "/" %} open {% endif %}>
     <summary> Browse by category </summary>
     <div class="tags">
         <span class="panel">
-            <a href="/{{ base }}" {% if url == "/" + base + "/" %} class="active" {% endif %}>all ({{ tagCountMap["all"] }})</a>
+            <a href="/{{ base }}" {% if url == "/" + base + "/" %} class="active" {% endif %}>all ({{ tagCounts.all }})</a>
         </span>
-        {% for tag, count in tagCountMap %}
+        {% for tag, count in tagCounts %}
             {% if tag != "all" %}
                 <span class="panel">
                     <a href="/{{ base }}/{{ tag }}" {% if url == "/" + base + "/" + tag + "/" %} class="active" {% endif %}>{{ tag }} ({{ count }})</a>
