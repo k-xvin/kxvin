@@ -1,22 +1,15 @@
 ---
-created: 2022-12-19T00:00:00.000Z
-modified: 2024-12-05T00:00:00.000Z
+created: 2022-12-19
+modified: 2024-12-05
 tags:
-  - projects
   - code
-title: Crossword Navigation Extension
-description: Browser extension to add keyboard navigation to a crossword website
-date: 2022-12-19T00:00:00.000Z
-permalink: crossword-navigation-extension/
-layout: post.njk
-thumbnail: /content/attachments/nav.png
 ---
 
 Browser extension to add keyboard navigation to a crossword website
 
 # Crossword Navigation Extension
 
-![nav.png](/content/attachments/nav.png)
+![[nav.png]]
 
 I recently found the website [freecrosswordpuzzles.com.au](https://freecrosswordpuzzles.com.au/). It's a pretty old website, but it's got a heck of a lot of free crosswords on it.
 

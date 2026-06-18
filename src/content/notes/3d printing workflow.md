@@ -1,20 +1,13 @@
 ---
-created: 2025-01-17T00:00:00.000Z
-modified: 2025-08-21T00:00:00.000Z
+created: 2025-01-17
+modified: 2025-08-21
 tags:
-  - notes
   - 3dprinting
-title: 3D Printing Workflow
-description: Notes on 3D Printer usage and maintenance
-date: 2025-01-17T00:00:00.000Z
-permalink: 3-d-printing-workflow/
-layout: post.njk
-thumbnail: /content/attachments/3d_workflow.png
 ---
 Notes on 3D Printer usage and maintenance
 # 3D Printing Workflow
 
-![3d_workflow.png](/content/attachments/3d_workflow.png)
+![[3d_workflow.png]]
 
 I own a Bambu Lab A1, so some sections may make specific reference to the Bambu Lab A1.
 # 1 Model

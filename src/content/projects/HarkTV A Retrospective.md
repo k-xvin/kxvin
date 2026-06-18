@@ -1,24 +1,17 @@
 ---
-created: 2022-08-01T00:00:00.000Z
-modified: 2024-12-05T00:00:00.000Z
+created: 2022-08-01
+modified: 2026-04-26
 tags:
-  - projects
   - code
-title: 'HarkTV: A Retrospective'
-description: A really long hackathon project turned startup.
-date: 2022-08-01T00:00:00.000Z
-permalink: hark-tv-a-retrospective/
-layout: post.njk
-thumbnail: /content/attachments/hark.jpeg
 ---
-
+**
 A really long hackathon project turned startup.
 
 # HarkTV: A Retrospective
 
 (Written on 01/04/2023, but dated earlier to fit the chronological order of projects)
 
-![hark.jpeg](/content/attachments/hark.jpeg)
+![[hark.jpeg]]
 
 This was a loooong hackathon. This project was part of the [Theta Q1 2021 Hackathon](https://theta-hackathon-v2.devpost.com/) hosted by the [Theta Network](https://www.thetatoken.org/), and the hackathon lasted about 4 months. We won 1st place at this hackathon.
 
@@ -71,4 +64,4 @@ We even got some awards!
 - Our $50,000 prize was payed out in [THETA tokens](https://coinmarketcap.com/currencies/theta-network/) back in April/May 2021, and the token price has since decayed to under 1/10 of what it used to be as of Jan 2023.
 - Blockchain still seems to be a solution looking for a problem.
 - You can find much of codebase for public viewing [here](https://github.com/hark-streaming).
-- This was the third and final hackathon of the triple hackathon streak Jeremy and I went on: [Node Visualizer](/node-visualizer) -> [MoonJelly](/moon-jelly-chrome-extension) -> [HarkTV](/hark-tv-a-retrospective)
+- This was the third and final hackathon of the triple hackathon streak Jeremy and I went on: [[Node Visualizer]] -> [[MoonJelly Chrome Extension|MoonJelly]] -> [[HarkTV A Retrospective|HarkTV]]

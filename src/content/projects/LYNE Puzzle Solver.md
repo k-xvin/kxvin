@@ -1,26 +1,19 @@
 ---
-created: 2023-12-30T00:00:00.000Z
-modified: 2024-12-05T00:00:00.000Z
+created: 2023-12-30
+modified: 2024-12-05
 tags:
-  - projects
   - code
-title: 'LYNE Puzzle Solver, C'
-description: 'A basic solution finder for the puzzle game LYNE, written in C'
-date: 2023-12-30T00:00:00.000Z
-permalink: lyne-puzzle-solver-c/
-layout: post.njk
-thumbnail: /content/attachments/header.jpg
 ---
 
 A basic solution finder for the puzzle game LYNE, written in C
 
 # LYNE Puzzle Solver, C
 
-![header.jpg](/content/attachments/header.jpg)
+![[header.jpg]]
 
-![GIFa_small.gif](/content/attachments/GIFa_small.gif)
+![[GIFa_small.gif]]
 
-![GIFb_small.gif](/content/attachments/GIFb_small.gif)
+![[GIFb_small.gif]]
 
 [LYNE on Steam](https://store.steampowered.com/app/266010/LYNE/). Images above taken from the Steam page.
 

@@ -1,22 +1,15 @@
 ---
-created: 2022-10-13T00:00:00.000Z
-modified: 2024-12-05T00:00:00.000Z
+created: 2022-10-13
+modified: 2024-12-05
 tags:
-  - projects
   - electronics
-title: Mini LED Sign
-description: Made with an ESP32 WROOM32 and 1088AS LED matrix
-date: 2022-10-13T00:00:00.000Z
-permalink: mini-led-sign/
-layout: post.njk
-thumbnail: /content/attachments/mini_led_sign.jpg
 ---
 
 Made with an ESP32 WROOM32 and 1088AS LED matrix
 
 # Mini LED Sign
 
-![mini_led_sign.jpg](/content/attachments/mini_led_sign.jpg)
+![[mini_led_sign.jpg]]
 
 This was my first project in messing around with an ESP32. I've always wanted to make a scrolling LED sign ever since I saw one as an artpiece in the SFMOMA. For some reason, that artpiece really left an impression in my mind. I originally made this back in May 2022.
 

@@ -1,14 +1,7 @@
 ---
-created: 2024-12-06T00:00:00.000Z
-modified: 2026-04-07T00:00:00.000Z
-tags:
-  - ''
-title: About
-description: hello i am kevin this is my website hooray
-date: 2024-12-06T00:00:00.000Z
-permalink: about/
-layout: post.njk
-thumbnail: /content/attachments/placeholder.png
+created: 2024-12-06
+modified: 2026-06-17
+tags: []
 ---
 
 hello i am kevin this is my website hooray
@@ -22,18 +15,15 @@ hello i am kevin this is my website hooray
 
 ---
 
-# April 2025
-* Finished reading [The Windup Girl](/the-windup-girl)
-* Still working on version 2 of [The Bobamabob](/the-bobamabob-v1)
+# April 2026
+* Finished reading [[The Windup Girl]]
+* Still working on version 2 of [[The Bobamabob]]
 * I'm a contributor to [Fuchsia](https://fuchsia.dev/) now!
 * Switched my main home computer to Linux. No more Windows!
 * Some minor website tweaks, like image grids and animated `.webp`!
-* (there are several new projects and notes I need to publish to this website...)
 
-# January 2025
-* Finally learned to touch type. It took a few weeks of practice to get my touch type speed up to my honed hunt-and-peck style and actually have a usable typing speed. It was kind of a weird transition period since my job involves a lot of typing.
-* That said, I still don't touch type quite properly, but it's definitely less strange than it was before.
-* [learning to touch type](/learning-to-touch-type)
+# January 2026
+* Finally learned to touch type. It took a few weeks of practice to get my touch type speed to match my honed hunt-and-peck style. It was kind of a weird transition period since my job involves a lot of typing ([[learning to touch type]]).
 
 # December 2025
 * Cleaning up some loose ends: backups, notes, and organization.
@@ -48,26 +38,26 @@ hello i am kevin this is my website hooray
 
 # May 2025
 * Working on a project for [Open Sauce 2025](https://opensauce.com/)
-* Finished reading [Flowers For Algernon](/flowers-for-algernon)
+* Finished reading [[Flowers For Algernon]]
 
 # April 2025
 * Working on [Genuary 2025](https://genuary.art/) prompts
 
 # March 2025
-* Reading [Design For A Better World](undefined)
+* Reading [[Design For A Better World]]
 
 # February 2025
-* Read [A View From The Stars](/a-view-from-the-stars)
+* Read [[A View From The Stars]]
 * Website updates: better tag support, callouts, and more!
 * Various 3D printing projects
 
 # January 2025
-* Read [Liber Indigo: The Affordances of Magic](/liber-indigo-the-affordances-of-magic)
+* Read [[Liber Indigo|Liber Indigo: The Affordances of Magic]]
 * Bought and set up a 3D printer!
 
 # December 2024
 * Moved my personal note system (back to) Obsidian after running into some flaws in Notion's export system which locked me out of downloading my files locally
-* Revamped the whole website and how I manage the website's content. [Writeup here](/december-2024-website-revamp).
+* Revamped the whole website and how I manage the website's content. [[December 2024 Website Revamp|Writeup here]].
 
 # September 2024
 * Reorganized my personal note system (in Notion) to better keep track of my ideas and projects.

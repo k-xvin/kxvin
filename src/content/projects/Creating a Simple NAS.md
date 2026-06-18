@@ -1,15 +1,8 @@
 ---
-created: 2023-07-17T00:00:00.000Z
-modified: 2025-03-01T00:00:00.000Z
+created: 2023-07-17
+modified: 2025-03-01
 tags:
-  - projects
   - electronics
-title: Creating a Simple NAS
-description: 'Network Attached Storage with Ubuntu, Webmin, and Samba'
-date: 2023-07-17T00:00:00.000Z
-permalink: creating-a-simple-nas/
-layout: post.njk
-thumbnail: /content/attachments/case.jpg
 ---
 
 Network Attached Storage with Ubuntu, Webmin, and Samba
@@ -36,18 +29,18 @@ Hopefully, it also serves as a good tutorial for others.
 
 # Background
 
-![case.jpg](/content/attachments/case.jpg)
+![[case.jpg]]
 
-![webmin.png](/content/attachments/webmin.png)
+![[webmin.png]]
 
 I wanted a secure place where I can store some local files and backups.
 - NOT for daily storage usage
 - System will be powered off most of the time
 - Two duplicated/mirrored drives for hardware redundancy and safety (using RAID1 configuration)
 
-![inside.jpg](/content/attachments/inside.jpg)
+![[inside.jpg]]
 
-![disks.jpg](/content/attachments/disks.jpg)
+![[disks.jpg]]
 
 Hardware for this project was simple and breathed new life into some old, unused hardware.
 
@@ -168,7 +161,7 @@ You can get your IP address on Ubuntu with `ip a` and then identifying the netwo
 
 Note: since Webmin's SSL certificate is self-signed, you may receive a security warning from your browser. Navigate past this and you will be greeted with the Webmin login screen. Use the credentials of a user on the host (ubuntu) machine to log in, and you will be greeted with a dashboard.
 
-![webmin_dash.png](/content/attachments/webmin_dash.png)
+![[webmin_dash.png]]
 
 _Small aside: How does webmin host a server locally?_
 
@@ -204,7 +197,7 @@ sudo apt install mdadm
 
 Webmin simplifies the process for creating a RAID by providing you with a GUI that will build and run the `mdadm` command.
 
-![webmin_raid.png](/content/attachments/webmin_raid.png)
+![[webmin_raid.png]]
 
 ```Plain
 Webmin > Hardware > Linux RAID
@@ -258,7 +251,7 @@ a certain folder (i.e "mounting").
 
 We will be using Samba to create a file share that is accessible from Windows (and other operating systems). You can also use NFS if you do not need Windows accessibility.
 
-![webmin_samba.png](/content/attachments/webmin_samba.png)
+![[webmin_samba.png]]
 
 Install Samba:
 
@@ -361,14 +354,14 @@ We can now access the file share from Windows through through the file explorer.
 (log in with the username and password of a Samba user you set)
 ```
 
-![windows.jpg](/content/attachments/windows.jpg)
+![[windows.jpg]]
 
 If you are unable to write to the file share, check the permissions settings of the file share in Webmin.
 
 # Future Considerations
 
 - Turn on and off remotely.
-    - I plan to hook up my [Creating a Simple NAS](/creating-a-simple-nas) I made to this machine, after I iron out some connection stability issues in that code.
+    - I plan to hook up my [[Creating a Simple NAS]] I made to this machine, after I iron out some connection stability issues in that code.
 - Measure power consumption of the machine when on.
 - Install a PCI to SATA port adapter to accommodate the boot SSD inside of the machine instead of it being and external USB drive.
 - Automatic/streamlined system for moving backups and files onto this machine.

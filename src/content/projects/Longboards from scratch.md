@@ -1,15 +1,8 @@
 ---
-created: 2019-07-01T00:00:00.000Z
-modified: 2024-12-05T00:00:00.000Z
+created: 2019-07-01
+modified: 2024-12-05
 tags:
-  - projects
   - woodworking
-title: Longboards from scratch
-description: Longboards made in a garage with friends
-date: 2019-07-01T00:00:00.000Z
-permalink: longboards-from-scratch/
-layout: post.njk
-thumbnail: /content/attachments/cad.png
 ---
 
 Longboards made in a garage with friends
@@ -26,13 +19,13 @@ We made about 5 different longboards, and sold a few to some other friends.
 
 # The Process
 
-![cad.png](/content/attachments/cad.png)
+![[cad.png]]
 
-![press.jpg](/content/attachments/press.jpg)
+![[press.jpg]]
 
-![blank.jpg](/content/attachments/blank.jpg)
+![[blank.jpg]]
 
-![board1.jpg](/content/attachments/board1.jpg)
+![[board1.jpg]]
 
 The gist of building a longboard from scratch goes something like this:
 
@@ -53,13 +46,13 @@ The gist of building a longboard from scratch goes something like this:
 11. Mount the trucks
 12. You are done!
 
-![dry.jpg](/content/attachments/dry.jpg)
+![[dry.jpg]]
 
-![dry2.jpg](/content/attachments/dry2.jpg)
+![[dry2.jpg]]
 
-![paint1.jpg](/content/attachments/paint1.jpg)
+![[paint1.jpg]]
 
-![soap.jpg](/content/attachments/soap.jpg)
+![[soap.jpg]]
 
 
 
@@ -73,4 +66,4 @@ The gist of building a longboard from scratch goes something like this:
     - I swapped out the wheels for those wavy shark wheels--they're not that different from normal wheels.
     - Picture below.
 
-![modern.jpg](/content/attachments/modern.jpg)
+![[modern.jpg]]

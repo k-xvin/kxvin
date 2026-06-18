@@ -1,15 +1,8 @@
 ---
-created: 2021-01-31T00:00:00.000Z
-modified: 2024-12-06T00:00:00.000Z
+created: 2021-01-31
+modified: 2024-12-06
 tags:
-  - projects
   - code
-title: Ribbon
-description: Analyzes group chats and comes up with fun information
-date: 2021-01-31T00:00:00.000Z
-permalink: ribbon/
-layout: post.njk
-thumbnail: /content/attachments/ribbon.png
 ---
 
 Analyzes group chats and comes up with fun information
@@ -18,7 +11,7 @@ Analyzes group chats and comes up with fun information
 
 (Written on 01/07/2023, but dated earlier to fit the chronological order of projects)
 
-![ribbon.png](/content/attachments/ribbon.png)
+![[ribbon.png]]
 
 [https://www.youtube.com/embed/LzmqoJtgHC8](https://www.youtube.com/embed/LzmqoJtgHC8)
 

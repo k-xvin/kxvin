@@ -1,15 +1,8 @@
 ---
-created: 2025-07-23T00:00:00.000Z
-modified: 2025-07-23T00:00:00.000Z
+created: 2025-07-23
+modified: 2025-07-23
 tags:
-  - projects
   - 3dprinting
-title: Large 90 Degree Triangle Bracket for 2020 Aluminum Extrusions
-description: Meant as both a structural element and connector.
-date: 2025-07-23T00:00:00.000Z
-permalink: large-90-degree-triangle-bracket-for-2020-aluminum-extrusions/
-layout: post.njk
-thumbnail: /content/attachments/90degree_model.jpeg
 ---
 Meant as both a structural element and connector.
 # Large 90 Degree Triangle Bracket for 2020 Aluminum Extrusions
@@ -21,10 +14,10 @@ I recommend printing it on its side with supports enabled so the holes don't bec
 Uploaded to Printables!
 https://www.printables.com/model/1363699-large-90-degree-triangle-bracket-for-2020-aluminum
 
-![90degree_model.jpeg](/content/attachments/90degree_model.jpeg)
-![90degree_in_use.jpeg](/content/attachments/90degree_in_use.jpeg)
-![90degree_print.jpeg](/content/attachments/90degree_print.jpeg)
+![[90degree_model.jpeg]]
+![[90degree_in_use.jpeg]]
+![[90degree_print.jpeg]]
 
 Original files:
-1.  [120mm_90degree_bracket_for_2020_aluminum_extrusion.stl](/content/attachments/120mm_90degree_bracket_for_2020_aluminum_extrusion.stl)
-2.  [90_bracket.fcstd](/content/attachments/90_bracket.fcstd)
+1.  [[120mm_90degree_bracket_for_2020_aluminum_extrusion.stl]]
+2.  [[90_bracket.fcstd]]

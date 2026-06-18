@@ -1,22 +1,15 @@
 ---
-created: 2024-07-08T00:00:00.000Z
-modified: 2025-12-20T00:00:00.000Z
+created: 2024-07-08
+modified: 2025-12-20
 tags:
-  - notes
   - git
-title: git checkout line by line (hunk by hunk)
-description: Use "git checkout --patch" to apply changes line by line
-date: 2024-07-08T00:00:00.000Z
-permalink: git-checkout-line-by-line-hunk-by-hunk/
-layout: post.njk
-thumbnail: /content/attachments/git_hunk.png
 ---
 
 Use "git checkout --patch" to apply changes line by line
 
 # git checkout line by line (hunk by hunk)
 
-![git_hunk.png](/content/attachments/git_hunk.png)
+![[git_hunk.png]]
 
 [Is it possible to git-checkout a single line instead of the entire file?](https://stackoverflow.com/a/39158451)
 

@@ -1,15 +1,8 @@
 ---
-created: 2025-03-13T00:00:00.000Z
-modified: 2025-03-29T00:00:00.000Z
+created: 2025-03-13
+modified: 2025-03-29
 tags:
-  - projects
   - 3dprinting
-title: Screwdriver Box
-description: Low effort project completed during a week
-date: 2025-03-13T00:00:00.000Z
-permalink: screwdriver-box/
-layout: post.njk
-thumbnail: /content/attachments/screwdriver_box_open.jpeg
 ---
 Low effort project completed during a week
 # Screwdriver Box
@@ -21,9 +14,9 @@ I ended up using this variant on the original. All parts were printed in PLA, an
 
 Before I even really knew what I wanted to put in the box, I started printing out a 3x4x6U box. It was a long print with multiple components, so I started thinking about what I wanted to put in it as it printed. My precision screwdriver set and some related tools seemed like a good candidate, so I went with it.
 
-![screwdriver_box_open.jpeg](/content/attachments/screwdriver_box_open.jpeg)
+![[screwdriver_box_open.jpeg]]
 
-![screwdriver_box_closed.jpeg](/content/attachments/screwdriver_box_closed.jpeg)
+![[screwdriver_box_closed.jpeg]]
 
 I really didn't want to spend the time making custom models for each thing I was going to store, so I took the shortcut of "good enough" boxes with [Perplexing Lab's Gridfinity Generator web tool](https://gridfinity.perplexinglabs.com/pr/gridfinity-rebuilt/0/0). There's quite a few options, like adding slopes and holes to the boxes. It got the job done.
 
@@ -31,4 +24,4 @@ The screw bit holder didn't turn out that well. I tried to use a soldering iron 
 
 The original design for the bit-holder was bad anyway since it would have been a pain removing the bits from these holes. So I kept the bits in their original holders and used the piece as a normal container (with a few burn marks).
 
-![screwdriver_box_burns.jpeg](/content/attachments/screwdriver_box_burns.jpeg)
+![[screwdriver_box_burns.jpeg]]

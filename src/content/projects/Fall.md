@@ -1,15 +1,8 @@
 ---
-created: 2022-10-30T00:00:00.000Z
-modified: 2024-12-06T00:00:00.000Z
+created: 2022-10-30
+modified: 2024-12-06
 tags:
-  - projects
   - music
-title: Fall
-description: A little more mellow
-date: 2022-10-30T00:00:00.000Z
-permalink: fall/
-layout: post.njk
-thumbnail: /content/attachments/placeholder.png
 ---
 
 A little more mellow

@@ -1,17 +1,8 @@
 ---
-created: 2024-12-29T00:00:00.000Z
-modified: 2025-09-19T00:00:00.000Z
+created: 2024-12-29
+modified: 2025-09-19
 tags:
-  - notes
   - book
-title: 'Liber Indigo: The Affordances of Magic'
-description: >-
-  I went in thinking it was a book about novel interface design, and ended up
-  with a new perspective on the nature of reality.
-date: 2024-12-29T00:00:00.000Z
-permalink: liber-indigo-the-affordances-of-magic/
-layout: post.njk
-thumbnail: /content/attachments/66.png
 ---
 
 I went in thinking it was a book about novel interface design, and ended up with a new perspective on the nature of reality.
@@ -20,10 +11,10 @@ I went in thinking it was a book about novel interface design, and ended up with
 > This note is content complete, but still needs some formatting work
 
 # Liber Indigo: The Affordances of Magic
-Book by [Justin C. Kirkwood](undefined). Get it here! https://www.justinckirkwood.net/liber-indigo
+Book by [[Justin Kirkwood|Justin C. Kirkwood]]. Get it here! https://www.justinckirkwood.net/liber-indigo
 Accompanying YouTube content! https://youtu.be/pGpBQgZ5IsI?si=KzvPyv_j5lf8m0bP
 
-![66.png](/content/attachments/66.png)
+![[66.png]]
 *SAGE MOON - Acceptance (green water) + Revelation (indigo spirit) - Contemplation, Meditation, Reflection, Rumination*
 # Takeaway
 There's more to existence and reality than we can physically perceive. Rather, it's more fun to a live a life believing this than it is to limit yourself only to materialist rationalism (all things are explained by physical processes and interactions). Why rationalize away coincidences when you can play with and link them together?
@@ -306,9 +297,9 @@ It's a nice poem by Kirkwood that shows how language/poetry can be used to evoke
 	* Serendipity modes
 	* We are holding ourselves back with a FAILURE OF IMAGINATION
 		* limits of imagination =\\= limits of reality
-		* relates to [you dont have to live with it](undefined)
+		* relates to [[you dont have to live with it]]
 	* Ted Nelson
 	* YO he made a discord
 	* Directionless play! We need the spirit of PLAY!
-		* Something about [The 6 Shapes of God](undefined) here and Lila and play
+		* Something about [[The 6 Shapes of God]] here and Lila and play
 	* "Reenchantment is resistance" - Justin Kirkwood

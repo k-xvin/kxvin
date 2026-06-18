@@ -1,42 +1,67 @@
 ---
-created: 2025-06-23T00:00:00.000Z
-modified: 2025-09-19T00:00:00.000Z
+created: 2025-06-23
+modified: 2026-04-14
 tags:
-  - notes
   - electronics
-title: USB Protocol
-description: Notes on USB!
-date: 2025-06-23T00:00:00.000Z
-permalink: usb-protocol/
-layout: post.njk
-thumbnail: /content/attachments/usb.png
 ---
 Notes on USB!
 # USB Protocol
 
-![usb.png](/content/attachments/usb.png)
+![[usb.png]]
 
 # USB ?
 At work, I wrote a USB host-side driver and client-facing library from scratch. This also included implementing host-side support for the CDC device class. All on a custom RTOS on a new SoC.
 
-Armed with only some reference code from the chip vendor and the USB spec, it was pretty tough!
+Armed with only some reference code from the chip vendor and the USB 2.0 spec, it was pretty tough!
+
 ## High level overview of USB terminology
 
-All USB topologies (a bunch of connected USB devices) consist of **one host** (typically your computer) and **one or more devices** (things you plug into your computer).
-* There can only be one host on a USB topology. This is important!!
+Every USB bus consists of **one host** (typically your computer) and **one or more devices** (things you plug into your computer). A USB host and all of its devices make up a *USB topology*.
+* There can only be one host on a USB topology. This is important!
+USB is a host-initiated protocol, meaning the host will start all transactions on the bus (in USB 2.0, this is over 4 physical wires).
+* The host initiates every transaction by addressing a specific device, then data flows accordingly.
+* With this agreement, the host always knows what device it is talking to and devices always know when to send their data/perform their action.
+* The bulk of the USB 2.0 spec deals with the protocol of *how* the data over the 4 wires is formatted and ordered.
 
-USB is a host-initiated protocol, meaning the host will start all transactions on the bus (the 4 physical wires that make up USB).
-* So the host first sends some data over the wires, then devices will send some data "back" over the wires, and so forth.
-* With this agreement, the host always knows what device it is talking to and devices always know when to send their data/perform their action
-* The bulk of the USB spec deals with the protocol of *how* the data over the 4 wires is formatted and ordered
+A physical USB device might actually be made up of several logical USB devices (ex. a USB hub with an SD card reader). Depending on the physical device, this could be implemented in two ways:
+* As a **compound USB device**. To the host, the device looks like a USB hub with one or more devices permanently attached to it (ex. a USB hub with a built-in SD card reader and Ethernet dongle). The hub itself also counts as a USB devices.
+* As a **composite USB device**. To the host, the device looks like one USB device. But this one USB device might expose multiple functionalities (ex. a USB webcam that contains a camera and a microphone).
+* To the end user, both types of USB device will accomplish more or less the same thing. The difference really only matters at the software/driver level.
+```mermaid
+graph TD
+    usb_host["USB Host"]
 
-A physical USB device might actually be made up of several logical USB devices (ex. a usb hub with an SD card reader). Depending on the physical device, this could be implemented in two ways:
-* As a *compound USB device*. To the host, the device looks like two different USB device: a USB hub and a something that is always plugged in to the USB hub
-* As a *composite USB device*. To the host, the device looks like one USB device. However, the USB device allows itself to be controlled in multiple ways.
+    subgraph compound["Compound device"]
+        hub["Hub"]
+        sd["SD card reader"]
+        eth["Ethernet dongle"]
+        hub --> sd
+        hub --> eth
+    end
+ 
+    subgraph composite["Composite device"]
+        dev["Single USB Device"]
+        int0["Interface 0: Video"]
+        int1["Interface 1: Microphone"]
+        dev --> int0
+        dev --> int1
+    end
 
-Each "function" of a USB device is known a *USB function*. All non-composite devices has one USB function, while composite devices have multiple USB functions. You might see "device" and "function" be used interchangeably, but there is a difference!
+    usb_host -->|"sees as 3 devices"| hub
+    usb_host -->|"sees as 1 device"| dev
+```
+
+Each logical "thing" a USB device does is known as a *USB function*.
+* All non-composite devices have one USB function (ex. one physical USB hub, one physical USB SD card reader).
+* Composite devices have multiple USB functions (ex. USB webcam has both video and microphone functionality).
+* Since most USB devices are non-composite, you might see "device" and "function" be used interchangeably. But there is a difference!
+
+Each function exposes one or more *endpoints*, which are addressable sources or sinks of data that the USB host will communicate with.
+* Most of the USB protocol concerns itself with how the USB host receives data from and sends data to the different endpoints of connected USB functions.
+
 
 # Details
+
 > [!warning] Draft
 > I intend to give a full overview of how to implement USB. But I'm still missing some details below.
 
@@ -57,34 +82,44 @@ Watching these videos also helped me establish a baseline understanding of USB
 USB has four wires
 Data goes over D+ and D- lines as a differential pair
 Data over the lines are NRZI encoded
+
 # Core
 All sets of messages (transactions) on the USB bus are initiated by the host
 Data is sent along fixed time intervals called *frames*. The time interval for a frame depends on what speed the USB bus is configured at (low-speed, full-speed, high-speed, ...)
+
 # Packets
 Every *frame* contains a series of *packets*
 Every packet starts with a sync field and end with an end-of-packet (EOP) field. This delineates where a packet starts and stops on the bus.
 Every packet contain a packet id (PID) field that states the type of packet being sent
+
 # Transactions
 A *transaction* is made up of a series of packets. Every transaction consists of a token packet, an optional data packet, and an optional handshake packet.
 A *function* is a USB device that adds any peripheral feature to a host (keyboard, audio output, ...)
 Functions are made up of *endpoints*. Packets are sent to/from endpoints. An endpoint is either a source or a sink for packets.
 A *pipe* is a logical connection between the host and a function's endpoint. Only one type and of transfer can occur on a given pipe.
+
 # Transfers
 Transfers are pre-defined transactions (series-of-packets) that occur between the host and an endpoint. All packets sent over USB will fit into a transfer type, and every endpoint on a USB function only supports one transfer type at a time.
+
 ## Control Transfer
 Setup stage transaction
 Data stage transaction
 Status stage transaction
+
 ## Bulk Transfer
 Host sends an out transaction with data
 Host sends an in transaction and waits for data
+
 ## Interrupt Transfer
 Host sends an IN transaction at an endpoint-specified interval (interval expressed in frames). Device responds when it has data. This is the device sending an "interrupt".
 Host sends an OUT transaction at no greater than the endpoint-specified interval. Device accepts data when it is ready. This is the host sending an "interrupt" to the device.
+
 ## Isochronous Transfer
 Host sends or receives data at an endpoint-specific interval. There is no handshake packet in this transaction.
+
 # Standard Request
 Standard requests are specially-defined control transfer with set request and response payloads that each USB function must support. The purpose of standard requests are to establish a known baseline for the USB host to communicate with and learn the configuration of connected USB functions
+
 ## Standard USB descriptors
 These descriptors define the response format to standard "get descriptor"-type requests
 Device descriptor
@@ -92,8 +127,10 @@ Configuration descriptor
 Interface descriptor
 Endpoint descriptor
 String descriptor
+
 # Device Classes
 Finally, usage of the USB protocol is grouped together into common use cases known as *device classes*. This defines standard ways common peripherals (keyboards, audio in/out, printers, virtual serial ports, ...) will use the USB protocol to communicate with the host. By defining these classes, the host can now implement common software (*device drivers*) to communicate with these peripherals.
+
 # Implementation
 Using the above tools, the USB protocol can now be used to implement a USB host or a USB device.  This includes:
 * Bus enumeration

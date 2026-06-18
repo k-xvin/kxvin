@@ -1,15 +1,8 @@
 ---
-created: 2025-02-07T00:00:00.000Z
-modified: 2025-02-08T00:00:00.000Z
+created: 2025-02-07
+modified: 2025-02-08
 tags:
-  - projects
   - 3dprinting
-title: Partial Faucet Handle Lock
-description: Device to limit the movement of a faucet's handles
-date: 2025-02-07T00:00:00.000Z
-permalink: partial-faucet-handle-lock/
-layout: post.njk
-thumbnail: /content/attachments/faucet_lock1.gif
 ---
 Device to limit the movement of a faucet's handles
 # Partial Faucet Handle Lock
@@ -30,10 +23,10 @@ You can find the model free to use and modify [here on Onshape](https://cad.onsh
 
 I made the gif below using [LICEcap](https://www.cockos.com/licecap/). Open source and easy to use! Passed it through https://ezgif.com/ afterwards to reduce the size.
 
-![faucet_lock1.gif](/content/attachments/faucet_lock1.gif)
+![[faucet_lock1.gif]]
 
-![faucet_handle_faucet.jpeg](/content/attachments/faucet_handle_faucet.jpeg)
+![[faucet_handle_faucet.jpeg]]
 
-![faucet_lock_off.jpeg](/content/attachments/faucet_lock_off.jpeg)
+![[faucet_lock_off.jpeg]]
 
-![faucet_lock_on.jpeg](/content/attachments/faucet_lock_on.jpeg)
+![[faucet_lock_on.jpeg]]

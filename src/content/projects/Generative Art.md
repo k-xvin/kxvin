@@ -1,16 +1,9 @@
 ---
-created: 2021-03-01T00:00:00.000Z
-modified: 2024-12-06T00:00:00.000Z
+created: 2021-03-01
+modified: 2024-12-06
 tags:
-  - projects
   - art
   - code
-title: Generative Art
-description: Written in various programming languages and frameworks
-date: 2021-03-01T00:00:00.000Z
-permalink: generative-art/
-layout: post.njk
-thumbnail: /content/attachments/placeholder.png
 ---
 
 Written in various programming languages and frameworks

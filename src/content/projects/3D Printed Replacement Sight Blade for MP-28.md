@@ -1,15 +1,8 @@
 ---
-created: 2025-02-02T00:00:00.000Z
-modified: 2025-02-15T00:00:00.000Z
+created: 2025-02-02
+modified: 2025-02-15
 tags:
-  - projects
   - 3dprinting
-title: Replacement Sight Blade for MP-28 II
-description: 3D printed replacement part for my dad
-date: 2025-02-02T00:00:00.000Z
-permalink: replacement-sight-blade-for-mp-28-ii/
-layout: post.njk
-thumbnail: /content/attachments/mp28_1.jpeg
 ---
 
 3D printed replacement part for my dad
@@ -22,6 +15,6 @@ I used a digital caliper to make the measurements, and made good use of the loft
 
 Model is public on [OnShape](https://cad.onshape.com/documents/59133791f4f274020ef7bd54/w/0a5394a7dd48ed6bcf3af651/e/0c3081bcaa59c61ee4ddec0a).
 
-![mp28_1.jpeg](/content/attachments/mp28_1.jpeg)
+![[mp28_1.jpeg]]
 
-![mp28_2.jpeg](/content/attachments/mp28_2.jpeg)
+![[mp28_2.jpeg]]

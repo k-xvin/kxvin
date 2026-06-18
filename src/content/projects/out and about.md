@@ -1,15 +1,8 @@
 ---
-created: 2023-02-16T00:00:00.000Z
-modified: 2024-12-06T00:00:00.000Z
+created: 2023-02-16
+modified: 2024-12-06
 tags:
-  - projects
   - music
-title: out and about
-description: a happy little tune
-date: 2023-02-16T00:00:00.000Z
-permalink: out-and-about/
-layout: post.njk
-thumbnail: /content/attachments/placeholder.png
 ---
 
 a happy little tune

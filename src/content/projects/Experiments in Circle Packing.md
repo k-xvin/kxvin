@@ -1,29 +1,22 @@
 ---
-created: 2022-11-12T00:00:00.000Z
-modified: 2024-12-05T00:00:00.000Z
+created: 2022-11-12
+modified: 2024-12-05
 tags:
-  - projects
   - art
   - code
-title: Experiments in Circle Packing
-description: Generative art variations on circle packing
-date: 2022-11-12T00:00:00.000Z
-permalink: experiments-in-circle-packing/
-layout: post.njk
-thumbnail: /content/attachments/1.jpg
 ---
 
 Generative art variations on circle packing
 
 # Experiments in Circle Packing
 
-![1.jpg](/content/attachments/1.jpg)
+![[1.jpg]]
 
-![2.jpg](/content/attachments/2.jpg)
+![[2.jpg]]
 
-![3.jpg](/content/attachments/3.jpg)
+![[3.jpg]]
 
-![4.jpg](/content/attachments/4.jpg)
+![[4.jpg]]
 
 
 

@@ -1,20 +1,13 @@
 ---
-created: 2025-04-23T00:00:00.000Z
-modified: 2025-12-20T00:00:00.000Z
+created: 2025-04-23
+modified: 2025-12-20
 tags:
-  - notes
   - book
-title: Flowers For Algernon
-description: is it better to have loved than to have never loved at all?
-date: 2025-04-23T00:00:00.000Z
-permalink: flowers-for-algernon/
-layout: post.njk
-thumbnail: /content/attachments/algernon.png
 ---
 is it better to have loved than to have never loved at all?
 # Flowers For Algernon
 
-![algernon.png](/content/attachments/algernon.png)
+![[algernon.png]]
 
 I enjoyed reading Flowers For Algernon by Daniel Keyes. On the surface, it's a story that discusses knowledge, intelligence, and their relation to the human experience through the character of Charlie Gordon, who undergoes an experimental surgery to remove his learning disability and increase his intelligence. But for me, it's a story that made me sad and reflective. I was bummed out for a few days afterwards.
 
@@ -71,7 +64,7 @@ More points from the [Wikipedia entry](https://en.wikipedia.org/wiki/Flowers_for
 > "A child may not know how to feed itself, or what to eat, yet it knows hunger." (Keyes 184)
 
 > "I see now that the path I choose through that maze makes what I am. I am not only a thing, but also a way of being--one of many ways..." (Keyes 203)
-* Reminds me of [Design For A Better World](undefined)'s discussion on "path dependence". We are where we came from.
+* Reminds me of [[Design For A Better World]]'s discussion on "path dependence". We are where we came from.
 
 > "I said it because he needed it, but I felt hollow." (Keyes 210)
 * Charlie complimenting a learning disabled person's woodworking. The world is always complex, but its concepts can always be made simpler, at the cost of some details.

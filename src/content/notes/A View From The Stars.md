@@ -1,15 +1,8 @@
 ---
-created: 2025-02-22T00:00:00.000Z
-modified: 2025-03-02T00:00:00.000Z
+created: 2025-02-22
+modified: 2025-03-02
 tags:
-  - notes
   - book
-title: A View From The Stars
-description: Cixin Liu's short stories and essays on sci-fi
-date: 2025-02-22T00:00:00.000Z
-permalink: a-view-from-the-stars/
-layout: post.njk
-thumbnail: /content/attachments/heard_it_in_the_morning.jpeg
 ---
 Cixin Liu's short stories and essays on sci-fi
 # A View From The Stars
@@ -17,7 +10,7 @@ A collection of short stories and essays by Cixin Liu. Liu is well known as the 
 # Takeaway
 There were more essays than stories in here than I expected, but I enjoyed Liu's discussion on sci-fi as a genre, his short stories, and also how he approaches writing. I never thought about sci-fi as a genre so intertwined with exploring humanity, our reality, and the universe.
 
-![heard_it_in_the_morning.jpeg](/content/attachments/heard_it_in_the_morning.jpeg)
+![[heard_it_in_the_morning.jpeg]]
 *My sticky note scrawling of "Heard It In The Morning", a story included in this collection*
 # Notes
 I wonder how all of these essay and stories were transformed when being translated from Mandarin. Translators are at times thankless, but they share an equal part in the art that was created. Translators essentially transcribe one creation to a new medium.
@@ -45,9 +38,9 @@ Premonition in stories as a tool for evoking wonder and numinosity. In this case
 > "Humanity has a future" ... A sense of well-being suffused him from head to toe. He could finally rest. (Liu 35)
 
 Albert Einstein! Liu hints at this being the character of the story, but I still wasn't expecting it. It's a fun twist. History-inspired fiction serves a purpose in giving us imaginative, human, stories of real events that let us connect better with the real event. Fiction can infuse an otherwise boring historical event with magic and meaning. It makes history more *meaningful*. Humans are always looking for meaning.
-*  Making things meaningful is a key discussion in Norman's [Design For A Better World](undefined).
+*  Making things meaningful is a key discussion in Norman's [[Design For A Better World]].
 
-God playing dice echoes some Neoplatonic ideas--events are probabilistic at our human perception scale, and also probabilistic at the quantum level? (see [Liber Indigo](/liber-indigo-the-affordances-of-magic) for more info on Neoplatonism)
+God playing dice echoes some Neoplatonic ideas--events are probabilistic at our human perception scale, and also probabilistic at the quantum level? (see [[Liber Indigo]] for more info on Neoplatonism)
 # Thirty Years of Making Magic out of Ordinariness
 Liu's recounting of the history of sci-fi intertwined with his own personal history. It's a engaging format.
 
@@ -76,7 +69,7 @@ How do you balance the quality of a novel with the need to finish writing the no
 
 > ...science fiction is the product of leisurely and carefree minds... Only when our lives are stable and quiet can we allow the universe's catastrophes to fascinate and awe us. (Liu 82)
 * I think this applies to all curiosity and expression. Only when we are able to look past the problems in our immediate vicinity, we can explore grander ideas.
-* Liu scratches at the idea that by raising the quality of life of humanity, we can raise the curiosity and creativity of humanity. I think this goes hand-in-hand with [Design For A Better World](undefined)'s message of creating a meaningful, sustainable, human-centered world.
+* Liu scratches at the idea that by raising the quality of life of humanity, we can raise the curiosity and creativity of humanity. I think this goes hand-in-hand with [[Design For A Better World]]'s message of creating a meaningful, sustainable, human-centered world.
 # The Battle Between Sci-Fi and Fantasy
 I think both fields could make up whatever and justify it within their own frameworks. So is this comparable?
 
@@ -93,7 +86,7 @@ Fiction has the power to transform how you look at the world. Humans don't reall
 
 > ...sci-fi is at its strongest and most charming when it depicts the relationship between people and the universe. (Liu 94)
 * This theme comes up again in later essays. Sci-fi's focus is on the universe and humanity's relationship to it.
-* Universe, God, Consciousness - all forms of the same thing? (see [The 6 Shapes of God](undefined) by CJ the X)
+* Universe, God, Consciousness - all forms of the same thing? (see [[The 6 Shapes of God]] by CJ the X)
 
 Further reading
 * Father to the Stars by Frederik Pohl
@@ -105,21 +98,21 @@ Short and sweet story about reaching the "end" of physics.
 
 I think this story accomplishes exploring people's relationship with the universe while still balancing human to human relationships to make an engaging story.
 
-Sci-fi and fiction is and artform that can take conjecture and run with it. It gives us a glimpse at how the unseen world (see [Liber Indigo](/liber-indigo-the-affordances-of-magic)) might work. Yet, I think true reality will always be more astonishing than even the limits of our imagination.
+Sci-fi and fiction is and artform that can take conjecture and run with it. It gives us a glimpse at how the unseen world (see [[Liber Indigo]]) might work. Yet, I think true reality will always be more astonishing than even the limits of our imagination.
 # Poetic Science Fiction
 Poeticness - the aesthetic qualities of a piece of art
 * According to Liu, classic literature and science fiction literature possess different poeticnesses.
 * What does this mean? I think it boils down to science fiction having a greater focus on discussing what it is like to *exist* and *be* in the universe, while non-sci-fi is about human-to-human relationships.
 	* "human-to-technology, human-to-universe, and human-to-nature relationships" (Liu 110)
 
-Liu really sings praises for [Ken Liu](undefined)! A "one-in-a-million" author that can blend both sci-fi and literature poeticness together.
+Liu really sings praises for [[Ken Liu]]! A "one-in-a-million" author that can blend both sci-fi and literature poeticness together.
 * From [Ken Liu's website](https://kenliu.name/): "My story, “The Paper Menagerie,” is the first piece of fiction to win three genre literary awards: the Hugo, the Nebula, and the World Fantasy Award." -- Seems like it's very much agreed that this was a great story!
 
 I wonder if this essay was written before or after Ken Liu had translated Liu's Three Body Problem from Chinese to English.
 * Ken Liu translated the work in 2014, and this essay was written in 2014
 
 Fiction as a way to "expand your imagination".
-* Mysticism also as a way to expand your imagination? ([Liber Indigo](/liber-indigo-the-affordances-of-magic))
+* Mysticism also as a way to expand your imagination? ([[Liber Indigo]])
 
 Further reading
 * The Paper Menagerie by Ken Liu. I've read this. A great short story and collection of short stories. I should read it again!
@@ -166,7 +159,7 @@ Sport as a substitute for war.
 
 Smartphones are pretty magical things. Even in 2005, Liu is pointing out there magic. But at the same time, we haven't really expanded upon the idea? They do more now, but they're still just boxes in our pocket.
 * It doesn't feel like there has been a total modality shift with (smart)phones in the past 20 years.
-* I'm scratching at Kirkwood's discussions on more innovative desktop interfaces in [Liber Indigo](/liber-indigo-the-affordances-of-magic)
+* I'm scratching at Kirkwood's discussions on more innovative desktop interfaces in [[Liber Indigo]]
 # Heard It in the Morning
 This is my favorite short story in this collection.
 * It presents such a fantastical event of a "dehazardization officer" of the universe appearing, both implying a greater system in the universe AND advanced alien life.

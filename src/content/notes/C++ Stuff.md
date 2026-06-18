@@ -1,15 +1,8 @@
 ---
-created: 2025-09-24T00:00:00.000Z
-modified: 2025-10-10T00:00:00.000Z
+created: 2025-09-24
+modified: 2025-10-10
 tags:
-  - notes
   - code
-title: Learning C++
-description: 'Miscellaneous notes on C++ concepts, coming from a C background'
-date: 2025-09-24T00:00:00.000Z
-permalink: learning-c/
-layout: post.njk
-thumbnail: /content/attachments/cpp.png
 ---
 
 Miscellaneous notes on C++ concepts, coming from a C background
@@ -18,7 +11,7 @@ Miscellaneous notes on C++ concepts, coming from a C background
 > [!warning] Messy
 > This note is just a blob of personal notes on C++. Beware!!!
 
-![cpp.png](/content/attachments/cpp.png)
+![[cpp.png]]
 
 In summary,
 * Holy moly, there's a lot of nuance in C++, especially with regard to memory, performance, and safety. I've been living in the C stone age for so long I didn't know all this stuff existed!

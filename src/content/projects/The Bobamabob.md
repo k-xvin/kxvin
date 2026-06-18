@@ -1,24 +1,17 @@
 ---
-created: 2025-07-23T00:00:00.000Z
-modified: 2025-07-28T00:00:00.000Z
+created: 2025-07-23
+modified: 2025-07-28
 tags:
-  - projects
   - robotics
   - electronics
   - code
-title: 'The Bobamabob, V1'
-description: We exhibited our robot at Open Sauce 2025!
-date: 2025-07-23T00:00:00.000Z
-permalink: the-bobamabob-v1/
-layout: post.njk
-thumbnail: /content/attachments/bobamabob_v1.jpeg
 ---
 We exhibited our robot at Open Sauce 2025!
 # The Bobamabob, V1
 
 It's a robot that makes boba!  You can find a video of it in action at https://bobamabob.com/.
 
-![bobamabob_v1.jpeg](/content/attachments/bobamabob_v1.jpeg)
+![[bobamabob_v1.jpeg]]
 
 It took about 6 months of outside-of-job time, starting from almost no knowledge of how to put a robot together. Plus, we kind of built two copies of this robot since my friend and I live in different states.
 

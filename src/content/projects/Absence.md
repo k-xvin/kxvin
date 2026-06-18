@@ -1,22 +1,15 @@
 ---
-created: 2021-10-19T00:00:00.000Z
-modified: 2024-12-05T00:00:00.000Z
+created: 2021-10-19
+modified: 2024-12-05
 tags:
-  - projects
   - music
-title: Absence
-description: Made during a week-long experiment
-date: 2021-10-19T00:00:00.000Z
-permalink: absence/
-layout: post.njk
-thumbnail: /content/attachments/absence.webp
 ---
 
 Made during a week-long experiment
 
 # Absence
 
-![absence.webp](/content/attachments/absence.webp)
+![[absence.webp]]
 
 Made over the21 course of a week, with the constraint that I could not listen to any other music but my own.
 

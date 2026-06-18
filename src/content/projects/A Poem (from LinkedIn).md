@@ -1,15 +1,8 @@
 ---
-created: 2022-11-06T00:00:00.000Z
-modified: 2025-01-19T00:00:00.000Z
+created: 2022-11-06
+modified: 2025-01-19
 tags:
-  - projects
   - art
-title: A Poem (from LinkedIn)
-description: From LinkedIn’s ever-useful chat suggestions
-date: 2022-11-06T00:00:00.000Z
-permalink: a-poem-from-linked-in/
-layout: post.njk
-thumbnail: /content/attachments/a_poem.png
 ---
 
 From LinkedIn’s ever-useful chat suggestions
@@ -24,4 +17,4 @@ My only input was selecting the suggested chat response blurbs to send. I though
 > And you, too
 > Goodbye
 
-![a_poem.png](/content/attachments/a_poem.png)
+![[a_poem.png]]

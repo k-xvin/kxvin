@@ -1,15 +1,8 @@
 ---
-created: 2020-12-15T00:00:00.000Z
-modified: 2024-12-06T00:00:00.000Z
+created: 2020-12-15
+modified: 2024-12-06
 tags:
-  - projects
   - art
-title: Frank
-description: Short story I wrote in a creative writing class
-date: 2020-12-15T00:00:00.000Z
-permalink: frank/
-layout: post.njk
-thumbnail: /content/attachments/placeholder.png
 ---
 
 Short story I wrote in a creative writing class

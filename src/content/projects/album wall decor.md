@@ -1,15 +1,8 @@
 ---
-created: 2022-10-05T00:00:00.000Z
-modified: 2024-12-05T00:00:00.000Z
+created: 2022-10-05
+modified: 2024-12-05
 tags:
-  - projects
   - art
-title: Album Wall Decor
-description: Cool wall decor for the new apartment
-date: 2022-10-05T00:00:00.000Z
-permalink: album-wall-decor/
-layout: post.njk
-thumbnail: /content/attachments/wall.jpg
 ---
 
 Cool wall decor for the new apartment
@@ -20,8 +13,8 @@ Empty walls call for art. Albums were selected between my roommates and I. One o
 
 We ordered the prints on 8" by 8" foamboard [from printmoz](https://www.printmoz.com/). The price was very reasonable (about $3-4 per album cover print), and the quality was also fantastic. The colors came out just right, with no blurriness or pixelation either.
 
-![wall.jpg](/content/attachments/wall.jpg)
+![[wall.jpg]]
 
-![venn_diagram.png](/content/attachments/venn_diagram.png)
+![[venn_diagram.png]]
 
-![process.png](/content/attachments/process.png)
+![[process.png]]

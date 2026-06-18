@@ -1,22 +1,15 @@
 ---
-created: 2024-07-14T00:00:00.000Z
-modified: 2024-12-06T00:00:00.000Z
+created: 2024-07-14
+modified: 2024-12-06
 tags:
-  - notes
   - git
-title: git submodule
-description: 'Initialize, pull, and update git submodules'
-date: 2024-07-14T00:00:00.000Z
-permalink: git-submodule/
-layout: post.njk
-thumbnail: /content/attachments/git_submodule.png
 ---
 
 Initialize, pull, and update git submodules
 
 # git submodule
 
-![git_submodule.png](/content/attachments/git_submodule.png)
+![[git_submodule.png]]
 
 Initialize and update all git submodules
 ```Bash

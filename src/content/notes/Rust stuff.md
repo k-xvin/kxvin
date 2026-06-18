@@ -1,24 +1,17 @@
 ---
-created: 2025-10-19T00:00:00.000Z
-modified: 2025-10-31T00:00:00.000Z
+created: 2025-10-19
+modified: 2025-10-31
 tags:
-  - notes
   - code
-title: Rust stuff
-description: 'Miscellaneous notes on Rust concepts, coming from a C background'
-date: 2025-10-19T00:00:00.000Z
-permalink: rust-stuff/
-layout: post.njk
-thumbnail: /content/attachments/rust.png
 ---
 
 Miscellaneous notes on Rust concepts, coming from a C background
 # Rust stuff
 
 > [!warning] Messy
-> This note is just a blob of personal notes on Rust, in a similar vein as that [blob of notes on C++](/learning-c). I also stopped taking notes at some point in my readings so this page doesn't cover everything. Beware!!!
+> This note is just a blob of personal notes on Rust, in a similar vein as that [[C++ Stuff|blob of notes on C++]]. I also stopped taking notes at some point in my readings so this page doesn't cover everything. Beware!!!
 
-![rust.png](/content/attachments/rust.png)
+![[rust.png]]
 
 https://doc.rust-lang.org/book/
 https://rust-unofficial.github.io/too-many-lists/

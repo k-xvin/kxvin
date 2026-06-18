@@ -1,20 +1,13 @@
 ---
-created: 2025-02-16T00:00:00.000Z
-modified: 2025-12-19T00:00:00.000Z
+created: 2025-02-16
+modified: 2025-12-19
 tags:
-  - projects
   - code
-title: Adding Search to an Eleventy Site
-description: Using Pagefind to add search to my website
-date: 2025-02-16T00:00:00.000Z
-permalink: adding-search-to-an-eleventy-site/
-layout: post.njk
-thumbnail: /content/attachments/pagefind.png
 ---
 Using Pagefind to add search to my website
 # Adding Search to an Eleventy Site
 
-![pagefind.png](/content/attachments/pagefind.png)
+![[pagefind.png]]
 
 Since this website has a lot of stuff on it, I wanted to try adding a low-overhead search feature. After some digging around, it seems like Pagefind is the solution for me.
 

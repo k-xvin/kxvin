@@ -1,15 +1,8 @@
 ---
-created: 2024-12-24T00:00:00.000Z
-modified: 2024-12-25T00:00:00.000Z
+created: 2024-12-24
+modified: 2024-12-25
 tags:
-  - projects
   - code
-title: December 2024 Website Revamp
-description: Yet another website redesign
-date: 2024-12-24T00:00:00.000Z
-permalink: december-2024-website-revamp/
-layout: post.njk
-thumbnail: /content/attachments/website_20241224191902.png
 ---
 
 Yet another website redesign
@@ -21,7 +14,7 @@ Previously, I wrote all my articles directly into my repo, into fixed categories
 
 The old website is still up at [old.kxvin.com](https://old.kxvin.com/). If I ever redo my website again, expect the one referenced in this article to go to the titular old2.kxvin.com.
 # The Result
-![website_20241224191902.png](/content/attachments/website_20241224191902.png)
+![[website_20241224191902.png]]
 * Better content management system
 	* Directly copies notes from my personal note system into the website repo, removing article writing/publishing friction.
 * More flexible top-level categories

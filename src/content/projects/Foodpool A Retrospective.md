@@ -1,15 +1,8 @@
 ---
-created: 2022-07-01T00:00:00.000Z
-modified: 2025-03-14T00:00:00.000Z
+created: 2022-07-01
+modified: 2025-03-14
 tags:
-  - projects
   - code
-title: 'Foodpool: A Retrospective'
-description: Some reflections on another startup I cofounded
-date: 2022-07-01T00:00:00.000Z
-permalink: foodpool-a-retrospective/
-layout: post.njk
-thumbnail: /content/attachments/foodpool.jpeg
 ---
 
 Some reflections on another startup I cofounded
@@ -27,9 +20,9 @@ Some reflections on another startup I cofounded
 > * Add "@babel/core": "^7.16.0" (some weird dependency issue with react)
 
 
-![foodpool.jpeg](/content/attachments/foodpool.jpeg)
+![[foodpool.jpeg]]
 
-![foodpool-website.png](/content/attachments/foodpool-website.png)
+![[foodpool-website.png]]
 
 What the heck is a Foodpool?
 

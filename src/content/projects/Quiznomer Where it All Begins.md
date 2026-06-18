@@ -1,17 +1,8 @@
 ---
-created: 2020-08-01T00:00:00.000Z
-modified: 2024-12-05T00:00:00.000Z
+created: 2020-08-01
+modified: 2024-12-05
 tags:
-  - projects
   - code
-title: 'Quiznomer: Where it All Begins'
-description: >-
-  The first website a friend and I ever made, filled with bizarre and nonsense
-  quizzes
-date: 2020-08-01T00:00:00.000Z
-permalink: quiznomer-where-it-all-begins/
-layout: post.njk
-thumbnail: /content/attachments/quiznomer.png
 ---
 
 The first website a friend and I ever made, filled with bizarre and nonsense quizzes
@@ -20,7 +11,7 @@ The first website a friend and I ever made, filled with bizarre and nonsense qui
 
 (Written on 01/03/2023, but dated earlier to fit the chronological order of projects)
 
-![quiznomer.png](/content/attachments/quiznomer.png)
+![[quiznomer.png]]
 
 In the words of my friend Jeremy,
 
@@ -59,4 +50,4 @@ While the original Quiznomer is gone, the main page was [archived at archive.org
     - If we were to build it again with the choice of any framework/software/etc, it would still take a non-trivial amount of time just due to the amount of features we had.
 - I repurchased the [quiznomer.com](https://quiznomer.com/) domain, and am currently converting it to an archive for the quizzes we were able to partially recover from cache plugin data.
 
-![sad_walnut.jpg](/content/attachments/sad_walnut.jpg)
+![[sad_walnut.jpg]]

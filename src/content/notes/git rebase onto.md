@@ -1,21 +1,14 @@
 ---
-created: 2025-03-04T00:00:00.000Z
-modified: 2025-03-04T00:00:00.000Z
+created: 2025-03-04
+modified: 2025-03-04
 tags:
-  - notes
   - git
-title: git rebase onto
-description: change the base of a branch to a different branch
-date: 2025-03-04T00:00:00.000Z
-permalink: git-rebase-onto/
-layout: post.njk
-thumbnail: /content/attachments/git_rebase.png
 ---
 
 change the base of a branch to a different branch
 # git rebase onto
 
-![git_rebase.png](/content/attachments/git_rebase.png)
+![[git_rebase.png]]
 
 Useful for moving a branch based off of unmerged features to a more recent branch that has now merged those features.
 

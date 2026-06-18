@@ -1,15 +1,8 @@
 ---
-created: 2023-03-20T00:00:00.000Z
-modified: 2025-10-13T00:00:00.000Z
+created: 2023-03-20
+modified: 2025-10-13
 tags:
-  - projects
   - electronics
-title: Remotely turning on my desktop
-description: Using an ESP-32 connected an MQTT broker
-date: 2023-03-20T00:00:00.000Z
-permalink: remotely-turning-on-my-desktop/
-layout: post.njk
-thumbnail: /content/attachments/old.jpg
 ---
 
 Using an ESP-32 connected an MQTT broker
@@ -59,9 +52,9 @@ With slightly more jargon:
 
 ## The Build
 
-![old.jpg](/content/attachments/old.jpg)
+![[old.jpg]]
 
-![done.jpg](/content/attachments/done.jpg)
+![[done.jpg]]
 
 I used an ESP32, Adafruit IO, and a 5V relay module.
 
@@ -82,13 +75,13 @@ I put it all together on a breadboard, and it got the job done. This worked well
 
 A few weeks later, I caved and went ahead and put together an enclosure for it.
 
-![drilled.jpg](/content/attachments/drilled.jpg)
+![[drilled.jpg]]
 
-![solder.jpg](/content/attachments/solder.jpg)
+![[solder.jpg]]
 
-![no_lid.jpg](/content/attachments/no_lid.jpg)
+![[no_lid.jpg]]
 
-![with_lid.jpg](/content/attachments/with_lid.jpg)
+![[with_lid.jpg]]
 
 ## In Conclusion
 

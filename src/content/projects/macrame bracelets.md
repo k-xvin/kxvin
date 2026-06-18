@@ -1,22 +1,15 @@
 ---
-created: 2024-04-27T00:00:00.000Z
-modified: 2024-12-05T00:00:00.000Z
+created: 2024-04-27
+modified: 2024-12-05
 tags:
-  - projects
   - art
-title: Macrame Bracelets
-description: some cool bracelets I made
-date: 2024-04-27T00:00:00.000Z
-permalink: macrame-bracelets/
-layout: post.njk
-thumbnail: /content/attachments/macrame.jpg
 ---
 
 some cool bracelets I made
 
 # Macrame Bracelets
 
-![macrame.jpg](/content/attachments/macrame.jpg)
+![[macrame.jpg]]
 
 I made these macrame bracelets following the tutorial below. Despite looking intricate, the process was straightforward and enjoyable. I found it similar to origami.
 

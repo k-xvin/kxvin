@@ -1,15 +1,8 @@
 ---
-created: 2019-05-01T00:00:00.000Z
-modified: 2024-12-05T00:00:00.000Z
+created: 2019-05-01
+modified: 2024-12-05
 tags:
-  - projects
   - code
-title: RECT
-description: A game I made in high school in my programming class
-date: 2019-05-01T00:00:00.000Z
-permalink: rect/
-layout: post.njk
-thumbnail: /content/attachments/main.png
 ---
 
 A game I made in high school in my programming class
@@ -18,9 +11,9 @@ A game I made in high school in my programming class
 
 (Written on 01/07/2023, but dated earlier to fit the chronological order of projects)
 
-![main.png](/content/attachments/main.png)
+![[main.png]]
 
-![room.png](/content/attachments/room.png)
+![[room.png]]
 
 RECT is a top-down roguelike adventure game focused on item synergies and bullet-hell-esque combat. It's
 pretty much just a clone of
@@ -38,10 +31,10 @@ I've made the source code [available here](https://github.com/k-xvin/RECT), alon
 - 2 unique bosses
 - 15 unique items that can synergize with each other
 
-![item.png](/content/attachments/item.png)
+![[item.png]]
 
-![boss1.png](/content/attachments/boss1.png)
+![[boss1.png]]
 
-![item2.png](/content/attachments/item2.png)
+![[item2.png]]
 
-![boss2.png](/content/attachments/boss2.png)
+![[boss2.png]]
