@@ -1,10 +1,9 @@
 ---
 created: 2026-04-04
-modified: 2026-06-17
+modified: 2026-09-05
 tags:
   - code
   - art
-  - todo
 ---
 I played with some cellular automata
 # Cellpond spells

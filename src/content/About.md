@@ -1,6 +1,6 @@
 ---
 created: 2024-12-06
-modified: 2026-06-17
+modified: 2026-09-12
 tags: []
 ---
 
@@ -15,6 +15,12 @@ hello i am kevin this is my website hooray
 
 ---
 
+# September 2026
+* Learning about computer graphics and renderers, and exploring other little projects.
+# July 2026
+* Bobamabob 2 at Open Sauce 2026!
+	* https://www.opensauce.com/exhibits/bobamabob-boba-vending-machine-robot
+	* In short, we made it bigger and vending machine sized, compared to version 1 last year. A lot of the mechanisms also got refined and worked much more reliably.
 # April 2026
 * Finished reading [[The Windup Girl]]
 * Still working on version 2 of [[The Bobamabob]]

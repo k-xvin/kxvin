@@ -1,10 +1,9 @@
 ---
 created: 2025-01-18
-modified: 2026-05-03
+modified: 2026-09-05
 tags:
   - art
   - code
-  - todo
 ---
 
 Not done in January or 2025. And I didn't even finish it 💀
