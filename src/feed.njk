@@ -1,0 +1,29 @@
+---
+eleventyExcludeFromCollections: true
+eleventyComputed:
+    permalink: /feed.xml
+layout: false
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>kxvin</title>
+    <subtitle>Where Kevin documents his projects (and more)</subtitle>
+    <link href="{{ site.url }}/feed.xml" rel="self"/>
+    <link href="{{ site.url }}/"/>
+    <id>{{ site.url }}/</id>
+    {%- set latest = collections.feed | sort(true, false, "data.modified") | first %}
+    <updated>{{ latest.data.modified | postDate }}T00:00:00Z</updated>
+    <author>
+        <name>Kevin Xu</name>
+    </author>
+    {%- for post in collections.feed %}
+    <entry>
+        <title>{{ post.data.title }}</title>
+        <link href="{{ site.url }}{{ post.url }}"/>
+        <id>{{ site.url }}{{ post.url }}</id>
+        <published>{{ post.data.created | postDate }}T00:00:00Z</published>
+        <updated>{{ post.data.modified | postDate }}T00:00:00Z</updated>
+        <summary>{{ post.data.description }}</summary>
+    </entry>
+    {%- endfor %}
+</feed>

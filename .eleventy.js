@@ -206,6 +206,13 @@ export default async function (eleventyConfig) {
             .sort((a, b) => new Date(b.data.created) - new Date(a.data.created))
     );
 
+    // RSS (Atom) feed
+    eleventyConfig.addCollection("feed", (c) =>
+        c.getAll()
+            .filter((item) => isProject(item) || isNote(item))
+            .sort((a, b) => new Date(b.data.created) - new Date(a.data.created))
+    );
+
     // Tag counts for projects/notes pages - used by tags macro and for pagination
     eleventyConfig.addCollection("projectTags", (c) =>
         getTagCounts(c.getAll().filter(isProject), "projects")
