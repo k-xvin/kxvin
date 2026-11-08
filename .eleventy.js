@@ -248,7 +248,7 @@ export default async function (eleventyConfig) {
         formats: ["webp", null],
 
         // optional, output image widths
-        widths: ["128", "512"],
+        widths: ["512", "1024"],
 
         // allow animated webp
         sharpOptions: {
