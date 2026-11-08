@@ -1,10 +1,9 @@
 ---
 created: 2022-08-01
-modified: 2026-04-26
+modified: 2026-11-07
 tags:
   - code
 ---
-**
 A really long hackathon project turned startup.
 
 # HarkTV: A Retrospective
@@ -17,9 +16,9 @@ This was a loooong hackathon. This project was part of the [Theta Q1 2021 Hackat
 
 In summary,
 
-- We built a livestreaming platform that used the Theta Network's hybrid distributed peer-to-peer + content delivery network model.
-- Our platform was focused around donating to nonprofits and organizations.
-- We pitched it at a bunch of local entrepreneurship competitions at our universities.
+* We built a livestreaming platform that used the Theta Network's hybrid distributed peer-to-peer + content delivery network model.
+* Our platform was focused around donating to nonprofits and organizations.
+* We pitched it at a bunch of local entrepreneurship competitions at our universities.
 
 The fruits of our labor can be seen in the video below.
 
@@ -39,29 +38,29 @@ Ultimately, the server costs behind running a streaming platform are very expens
 
 Despite not having commercial success, we got quite far with what we built.
 
-- A fully functional streaming platform
-    - Profiles, channels, streams, payments--all things considered, it worked!
-- I managed to integrate Theta's hybrid streaming model.
-    - Integrating Theta's library was quite difficult, mainly due to a lack of documentation. I had to do **a lot of digging around** in the source code to get it to work.
-- Smart contracts that minted our own token and set up a working distribution/governance system
-    - Jeremy was the smart contract man
-- RTMP-HLS streaming servers built on top of [nginx](https://nginx.org/en/) and [Docker](https://www.docker.com/)
-- Our own chat servers, built on [Socket.io](https://socket.io/) and deployed on [AWS Fargate](https://aws.amazon.com/fargate/)
-    - It would not have been possible without [this tutorial](https://medium.com/containers-on-aws/building-a-socket-io-chat-app-and-deploying-it-using-aws-fargate-86fd7cbce13f)
-- An API built on [Firebase Cloud Functions](https://firebase.google.com/docs/functions/) and [Express.js](https://expressjs.com/)
+* A fully functional streaming platform
+    * Profiles, channels, streams, payments--all things considered, it worked!
+* I managed to integrate Theta's hybrid streaming model.
+    * Integrating Theta's library was quite difficult, mainly due to a lack of documentation. I had to do **a lot of digging around** in the source code to get it to work.
+* Smart contracts that minted our own token and set up a working distribution/governance system
+    * Jeremy was the smart contract man
+* RTMP-HLS streaming servers built on top of [nginx](https://nginx.org/en/) and [Docker](https://www.docker.com/)
+* Our own chat servers, built on [Socket.io](https://socket.io/) and deployed on [AWS Fargate](https://aws.amazon.com/fargate/)
+    * It would not have been possible without [this tutorial](https://medium.com/containers-on-aws/building-a-socket-io-chat-app-and-deploying-it-using-aws-fargate-86fd7cbce13f)
+* An API built on [Firebase Cloud Functions](https://firebase.google.com/docs/functions/) and [Express.js](https://expressjs.com/)
 
 We even got some awards!
 
-- 1st Place Winner at the [Theta Q1 2021 Hackathon](https://theta-hackathon-v2.devpost.com/) ($50,000 prize)
-- Best Pitch at [UW Transcend](https://www.transcenduw.com/) ($3000 prize)
-- Semifinalist at [CS Nest 2021 Pitch Competition](https://www.csnest.com/)
-- Semifinalist at [UCI New Ventures Competition](https://merage.uci.edu/research-faculty/centers/innovation-entrepreneurship/new-venture-competiton.html)
+* 1st Place Winner at the [Theta Q1 2021 Hackathon](https://theta-hackathon-v2.devpost.com/) ($50,000 prize)
+* Best Pitch at [UW Transcend](https://www.transcenduw.com/) ($3000 prize)
+* Semifinalist at [CS Nest 2021 Pitch Competition](https://www.csnest.com/)
+* Semifinalist at [UCI New Ventures Competition](https://merage.uci.edu/research-faculty/centers/innovation-entrepreneurship/new-venture-competiton.html)
 
 # Closing thoughts
 
-- This was very technically challenging for me, and I learned a lot.
-    - Notably: Firebase, Docker, API development, websockets
-- Our $50,000 prize was payed out in [THETA tokens](https://coinmarketcap.com/currencies/theta-network/) back in April/May 2021, and the token price has since decayed to under 1/10 of what it used to be as of Jan 2023.
-- Blockchain still seems to be a solution looking for a problem.
-- You can find much of codebase for public viewing [here](https://github.com/hark-streaming).
-- This was the third and final hackathon of the triple hackathon streak Jeremy and I went on: [[Node Visualizer]] -> [[MoonJelly Chrome Extension|MoonJelly]] -> [[HarkTV A Retrospective|HarkTV]]
+* This was very technically challenging for me, and I learned a lot.
+    * Notably: Firebase, Docker, API development, websockets
+* Our $50,000 prize was payed out in [THETA tokens](https://coinmarketcap.com/currencies/theta-network/) back in April/May 2021, and the token price has since decayed to under 1/10 of what it used to be as of Jan 2023.
+* Blockchain still seems to be a solution looking for a problem.
+* You can find much of codebase for public viewing [here](https://github.com/hark-streaming).
+* This was the third and final hackathon of the triple hackathon streak Jeremy and I went on: [[Node Visualizer]] -> [[MoonJelly Chrome Extension|MoonJelly]] -> [[HarkTV A Retrospective|HarkTV]]
