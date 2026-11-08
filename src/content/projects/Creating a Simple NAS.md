@@ -1,6 +1,6 @@
 ---
 created: 2023-07-17
-modified: 2025-03-01
+modified: 2026-10-17
 tags:
   - electronics
 ---
@@ -20,6 +20,14 @@ Network Attached Storage with Ubuntu, Webmin, and Samba
  >
  > Had some kind of issue where it would get stuck trying to set up the network for 2+ minutes on startup, timeout, then startup normally
  > * Manually configuring /etc/netplan/ seemed to have fixed it: https://dev.to/joeneville_/configure-ubuntu-wifi-with-netplan-4je0
+ > 
+ > We can manually scan for a Samba and Webmin device on our local network like so
+ > ```
+ > # Figure out your local subnet
+ > ip -4 route
+ > # Scan for ssh (22), samba (445), webmin (10000) on the local network
+ > nmap -n -sT -p 22,445,10000 --open <ex. 192.168.0.0/24>
+ > ```
 
 In this article, I document the process I went through in setting up a NAS (network attached storage) using an old computer, two 1TB hard disks, Ubuntu 22.04, Webmin, and Samba. I go through the technical steps as well as some personal notes on the process.
 
