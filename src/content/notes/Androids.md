@@ -15,3 +15,5 @@ I like code and I like operating systems. So it was an enjoyable read, though it
 It was fun to learn about the technical concepts and words you see in Android (ex. zygote) in a less technical context.
 
 Makes you think about framing your own work with your own team as a story.
+
+I also had a lot of fun making my own Bugdroid in MagicaVoxel! Mine is a little chunky :)
