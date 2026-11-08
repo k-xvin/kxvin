@@ -275,6 +275,9 @@ export default async function (eleventyConfig) {
     // Pass-through copy the background image at full resolution
     eleventyConfig.addPassthroughCopy({ "src/content/attachments/nightsky2.png": "background.png" });
 
+    // Pass-through copy the banner so there is a stable URL for it and size is correct
+    eleventyConfig.addPassthroughCopy({ "src/content/attachments/nightsky2_88x31.gif": "banner.gif" });
+
     // Pass-through copy all non-image files from attachments
     eleventyConfig.addPassthroughCopy({
         "src/content/attachments/!(*.jpg|*.jpeg|*.png|*.gif|*.svg|*.webp|*.bmp|*.tiff)": "content/attachments/",

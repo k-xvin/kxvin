@@ -186,12 +186,24 @@ img {
 
 footer {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
 
     padding: 0.5rem;
     max-width: fit-content;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.banner {
+    border: var(--text-color) 2px solid;
+    border-radius: 5px;
 }
 
 /** HOME PAGE **/
